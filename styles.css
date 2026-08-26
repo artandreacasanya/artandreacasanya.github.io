@@ -12,7 +12,7 @@ body {
     padding: 0 40px;
 }
 
-/* CABECERA Y NAVEGACIÓN */
+/* CABECERA Y NAVEGACIÓN CON IMÁGENES PROCREATE */
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,22 +22,30 @@ body {
     margin: 0 auto;
 }
 
-.logo {
-    font-family: 'Alex Brush', cursive;
-    font-size: 3rem;
-    font-weight: normal;
+.nav-img-logo {
+    height: 45px;
+    width: auto;
+    display: block;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    margin-left: 30px;
-    font-weight: 600;
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
-/* PORTADA DE INICIO */
+.nav-img {
+    height: 18px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.nav a:hover .nav-img {
+    opacity: 0.6;
+}
+
+/* PORTADA CON TU FOTO */
 .hero-section {
     max-width: 1000px;
     margin: 10px auto 80px auto;
@@ -50,18 +58,32 @@ body {
     display: block;
 }
 
-/* SECCIÓN DE OBRAS */
+/* SECCIÓN DE OBRAS Y TÍTULO COMPUESTO */
 .portfolio-section {
     max-width: 1200px;
     margin: 0 auto 100px auto;
 }
 
-.section-title {
-    font-family: 'Alex Brush', cursive;
-    font-size: 2.8rem;
-    font-weight: normal;
-    text-align: left;
+.section-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 40px;
+}
+
+.title-obras-img {
+    height: 35px;
+    width: auto;
+}
+
+.title-guion-img {
+    height: 15px;
+    width: auto;
+}
+
+.title-serie-img {
+    height: 35px;
+    width: auto;
 }
 
 /* REJILLA DE 3 COLUMNAS */
@@ -108,7 +130,8 @@ body {
 @media (max-width: 768px) {
     body { padding: 0 15px; }
     .header { flex-direction: column; gap: 20px; }
-    .nav a { margin: 0 10px; }
+    .nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
     .gallery-grid { grid-template-columns: 1fr; }
     .hero-img { height: 300px; }
+    .section-title-container { flex-wrap: wrap; }
 }
