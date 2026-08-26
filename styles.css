@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FDFDFB; /* Blanco hueso ultra claro */
+    background-color: #FFFEFC; /* Prácticamente blanco puro */
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-logo {
-    height: 65px;
+    height: 60px;
     width: auto;
     display: block;
 }
@@ -50,21 +50,21 @@ body {
     transition: opacity 0.2s ease;
 }
 
-/* AJUSTES DE ALTURA INDIVIDUALES DEL MENÚ */
+/* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA */
 .nav-item-obras {
-    height: 17px;
+    height: 22px;
 }
 
 .nav-item-proceso {
-    height: 18px;
+    height: 22px;
 }
 
 .nav-item-sobre-mi {
-    height: 27px;
+    height: 38px; /* Subido para igualar el trazo fino */
 }
 
 .nav-item-contacto {
-    height: 16px;
+    height: 18px; /* Bajado para no verse gigante */
 }
 
 .nav-item-img:hover {
@@ -136,7 +136,7 @@ body {
     width: auto;
 }
 
-/* GALERÍA DE OBRAS (3 COLUMNAS) */
+/* GALERÍA DE OBRAS */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -164,20 +164,12 @@ body {
     color: #2b2b2b;
 }
 
-.work-series {
-    font-size: 13px;
-    margin-bottom: 10px;
-    color: #444;
-    border-bottom: 1px solid #dcd8d0;
-    padding-bottom: 4px;
-}
-
 .work-info strong {
     font-weight: bold;
     color: #000;
 }
 
-/* ADAPTACIÓN PARA PANTALLAS PEQUEÑAS */
+/* ADAPTACIÓN PARA MÓVIL */
 @media (max-width: 900px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
