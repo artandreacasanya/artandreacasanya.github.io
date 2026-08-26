@@ -5,8 +5,8 @@
     --tamano-logo: 65px;         /* Tamaño del logo principal (Casanya) */
     --tamano-menu: 22px;         /* Tamaño de las opciones del menú superior */
     --tamano-idioma: 20px;       /* Tamaño de ES / EN */
-    --tamano-titulos-paginas: 55px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
-    --tamano-obras-palabra: 28px;   /* Tamaño de la palabra "Obras" */
+    --tamano-titulos-paginas: 30px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
+    --tamano-obras-palabra: 30px;   /* Tamaño de la palabra "Obras" */
     --tamano-obras-guion: 18px;     /* Tamaño del guion "-" */
     --tamano-obras-serie: 28px;     /* Tamaño de "Serie París 2025" */
 }
