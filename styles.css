@@ -1,4 +1,3 @@
-/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +6,25 @@
 
 body {
     background-color: #ffffff;
-    font-family: sans-serif;
+    font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
-    overflow-x: hidden;
 }
 
-/* NAVBAR HEADER */
+/* ENCUADRE DE LA WEB */
+.site-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 40px 0 25px 0;
     width: 100%;
-    background-color: #ffffff;
 }
 
 .nav-left {
@@ -28,74 +32,83 @@ body {
     align-items: center;
 }
 
-/* FIRMA CASANYA LOGO */
+/* FIRMA CASANYA */
 .nav-logo {
-    height: 38px;
+    height: 52px;
     width: auto;
     display: block;
 }
 
-/* BOTONES DEL MENÚ */
+/* MENÚ Y BOTONES */
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
 }
 
 .nav-item-img {
-    height: 16px;
+    height: 17px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
 }
 
 .nav-item-img:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
-/* SELECTOR DE IDIOMA */
+/* SELECTOR ES / EN */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-left: 15px;
+    gap: 8px;
+    margin-left: 10px;
 }
 
 .lang-img {
-    height: 14px;
+    height: 15px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
 }
 
 .lang-btn:hover .lang-img {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .lang-img-divider {
-    height: 14px;
+    height: 15px;
     width: auto;
     display: block;
 }
 
-/* SECCIÓN PRINCIPAL DE OBRAS */
-.section-container {
-    padding: 20px 40px 60px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* PORTADA PRINCIPAL */
+.hero-section {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-/* TÍTULO COMPUESTO (OBRAS - SERIE PARÍS) */
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TÍTULO DE OBRAS */
+.obras-section {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
 .section-title-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .title-obras-img {
-    height: 22px;
+    height: 24px;
     width: auto;
 }
 
@@ -105,42 +118,74 @@ body {
 }
 
 .title-serie-img {
-    height: 20px;
+    height: 22px;
     width: auto;
 }
 
-/* CONTENEDOR DE LA OBRA PRINCIPAL */
-.hero-image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* PARRILLA DE 3 OBRAS POR FILA */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    row-gap: 55px;
 }
 
-.hero-image {
-    max-width: 100%;
+.work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-image {
+    width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 18px;
+}
+
+/* FICHA FORMATO ILLUSTRATOR */
+.work-info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2b2b2b;
+}
+
+.work-series {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 4px;
+}
+
+.work-info strong {
+    font-weight: bold;
+    color: #000;
 }
 
 /* ADAPTACIÓN MÓVIL */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .site-container {
+        padding: 0 20px;
+    }
     .navbar {
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
+        padding: 25px 0;
     }
-
     .nav-right {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 16px;
     }
-
-    .section-container {
-        padding: 20px;
-    }
-
-    .section-title-container {
-        justify-content: center;
+    .works-grid {
+        grid-template-columns: 1fr;
     }
 }
