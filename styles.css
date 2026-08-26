@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F7F5F0; /* Fondo crudo/lino cálido */
+    background-color: #F7F5F0;
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
@@ -32,9 +32,9 @@ body {
     align-items: center;
 }
 
-/* FIRMA CASANYA */
+/* FIRMA CASANYA (AGRANDADA) */
 .nav-logo {
-    height: 52px;
+    height: 65px;
     width: auto;
     display: block;
 }
@@ -43,7 +43,7 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 32px; /* Un poco más de espacio entre cada palabra del menú */
+    gap: 32px;
 }
 
 .nav-item-img {
@@ -52,7 +52,6 @@ body {
     transition: opacity 0.2s ease;
 }
 
-/* TAMAÑOS MÁS GRANDES Y EQUILIBRADOS PARA EL MENÚ */
 .nav-item-obras {
     height: 22px;
 }
@@ -62,7 +61,7 @@ body {
 }
 
 .nav-item-sobre-mi {
-    height: 16px; /* Ajustado proporcionalmente para equilibrar la altura de las letras */
+    height: 16px;
 }
 
 .nav-item-contacto {
@@ -73,16 +72,16 @@ body {
     opacity: 0.5;
 }
 
-/* SELECTOR ES / EN (MÁS COMPACTO Y SECUNDARIO) */
+/* SELECTOR ES / EN */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 1px; /* Letras y barra muy pegaditas */
+    gap: 1px;
     margin-left: 15px;
 }
 
 .lang-img {
-    height: 14px; /* Más pequeño en comparación con el menú principal */
+    height: 14px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -110,7 +109,7 @@ body {
     display: block;
 }
 
-/* TÍTULO DE OBRAS */
+/* TÍTULO DE OBRAS (AGRANDADO) */
 .obras-section {
     width: 100%;
     padding-bottom: 80px;
@@ -119,22 +118,22 @@ body {
 .section-title-container {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 35px;
+    gap: 14px;
+    margin-bottom: 40px;
 }
 
 .title-obras-img {
-    height: 24px;
+    height: 34px;
     width: auto;
 }
 
 .title-guion-img {
-    height: 8px;
+    height: 11px;
     width: auto;
 }
 
 .title-serie-img {
-    height: 25px;
+    height: 35px;
     width: auto;
 }
 
