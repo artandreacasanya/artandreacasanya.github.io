@@ -18,26 +18,29 @@ body {
     padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ CENTRADO */
+/* CABECERA Y MENÚ (LOGO IZQUIERDA, MENÚ CENTRO, IDIOMA DERECHA) */
 .navbar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
     margin-bottom: 50px;
 }
 
 .nav-left .nav-logo {
-    height: 32px;
+    height: 40px; /* Logo más grande pero elegante */
     width: auto;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+}
+
+/* Enlaces del menú centrales */
+.nav-right > a {
+    display: inline-flex;
+    align-items: center;
 }
 
 .nav-item-img {
@@ -51,12 +54,12 @@ body {
     opacity: 1;
 }
 
-/* SELECTOR DE IDIOMA */
+/* SELECTOR DE IDIOMA A LA DERECHA */
 .lang-selector {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .lang-btn {
@@ -103,7 +106,7 @@ body {
     display: block;
 }
 
-/* PORTADA Y CUADRÍCULA DE OBRAS (RESTAURADA) */
+/* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-image-container {
     margin-bottom: 50px;
     text-align: center;
@@ -196,10 +199,13 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        gap: 15px;
+        flex-direction: column;
+        gap: 20px;
     }
     
     .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
     }
 
