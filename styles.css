@@ -192,7 +192,7 @@ p {
 
 /* Control para bajar SOLO el texto respecto al título */
 .about-text {
-    margin-top: 40px; /* <--- Sube o baja este número (ej: 20px o 60px) para ajustar la altura del texto */
+    margin-top: 80px; /* <--- Sube o baja este número (ej: 20px o 60px) para ajustar la altura del texto */
 }
 
 .about-image-container {
