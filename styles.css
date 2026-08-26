@@ -1,4 +1,4 @@
-¡/* CONFIGURACIÓN GLOBAL */
+/* CONFIGURACIÓN GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
 
 body {
@@ -18,7 +18,7 @@ body {
     padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ (CENTRADO) */
+/* CABECERA Y MENÚ CENTRADO */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -92,18 +92,18 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA (TAMAÑO EQUILIBRADO Y CORREGIDO PARA OBRAS) */
+/* TÍTULOS DE PÁGINA */
 .section-title-container {
     margin-bottom: 35px;
 }
 
 .title-obras-img-grande {
-    height: 45px; /* Tamaño correcto y elegante para los títulos de sección como Obras o Serie París */
+    height: 45px;
     width: auto;
     display: block;
 }
 
-/* PORTADA Y GALERÍA DE OBRAS */
+/* PORTADA Y CUADRÍCULA DE OBRAS (RESTAURADA) */
 .hero-image-container {
     margin-bottom: 50px;
     text-align: center;
@@ -118,14 +118,14 @@ body {
 
 .works-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 .work-image {
@@ -137,6 +137,7 @@ body {
 .work-info p {
     text-align: justify;
     margin: 0;
+    font-size: 0.95rem;
 }
 
 /* PÁGINA PROCESO */
@@ -187,6 +188,12 @@ body {
 }
 
 /* RESPONSIVO */
+@media (max-width: 1024px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         gap: 15px;
@@ -194,6 +201,10 @@ body {
     
     .nav-right {
         gap: 15px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-container {
