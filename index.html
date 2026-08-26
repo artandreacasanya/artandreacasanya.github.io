@@ -8,44 +8,221 @@
 </head>
 <body>
 
-    <!-- CABECERA Y NAVEGACIÓN -->
-    <header class="navbar">
-        <div class="nav-left">
-            <a href="index.html">
-                <img src="casanya.png" alt="Casanya" class="nav-logo">
-            </a>
-        </div>
-        
-        <nav class="nav-right">
-            <a href="#obras"><img src="obras.png" alt="Obras" class="nav-item-img"></a>
-            <a href="#proceso"><img src="proceso.png" alt="Proceso" class="nav-item-img"></a>
-            <a href="#sobre-mi"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-img"></a>
-            <a href="#contacto"><img src="contacto.png" alt="Contacto" class="nav-item-img"></a>
-            
-            <div class="lang-selector">
-                <a href="?lang=es" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
-                <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
-                <a href="?lang=en" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
+    <div class="site-container">
+        <!-- CABECERA -->
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
             </div>
-        </nav>
-    </header>
+            
+            <nav class="nav-right">
+                <a href="#obras"><img src="obras.png" alt="Obras" class="nav-item-img"></a>
+                <a href="#proceso"><img src="proceso.png" alt="Proceso" class="nav-item-img"></a>
+                <a href="#sobre-mi"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-img"></a>
+                <a href="#contacto"><img src="contacto.png" alt="Contacto" class="nav-item-img"></a>
+                
+                <div class="lang-selector">
+                    <a href="?lang=es" class="lang-btn"><img src="es.png" alt="ES" class="lang-img"></a>
+                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                    <a href="?lang=en" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
+                </div>
+            </nav>
+        </header>
 
-    <!-- SECCIÓN DE PORTADA / OBRAS -->
-    <main>
-        <section id="obras" class="section-container">
-            <!-- Título secundario compuesto -->
+        <!-- SECCIÓN DE PORTADA -->
+        <section class="hero-section">
+            <img src="foto_portada.jpg" alt="Portada Casanya" class="hero-image">
+        </section>
+
+        <!-- SECCIÓN DE OBRAS -->
+        <section id="obras" class="obras-section">
             <div class="section-title-container">
                 <img src="obras.png" alt="Obras" class="title-obras-img">
                 <img src="guion.png" alt="-" class="title-guion-img">
                 <img src="serie_paris.png" alt="Serie París 2025" class="title-serie-img">
             </div>
 
-            <!-- Imagen principal de la obra -->
-            <div class="hero-image-container">
-                <img src="foto_portada.jpg" alt="Obra de arte Casanya" class="hero-image">
+            <!-- GALERÍA DE 14 OBRAS (3 POR FILA) -->
+            <div class="works-grid">
+                
+                <!-- Obra 1 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Jardin des Tuileries" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 1 de 14</p>
+                        <p>Títol: <strong>Jardin des Tuileries</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 2 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Parc Monceau" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 2 de 14</p>
+                        <p>Títol: <strong>Parc Monceau</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 3 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Pont des Arts" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 3 de 14</p>
+                        <p>Títol: <strong>Pont des Arts</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 4 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Montmartre" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 4 de 14</p>
+                        <p>Títol: <strong>Montmartre</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 5 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Le Marais" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 5 de 14</p>
+                        <p>Títol: <strong>Le Marais</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 6 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Place des Vosges" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 6 de 14</p>
+                        <p>Títol: <strong>Place des Vosges</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 7 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Quai de Seine" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 7 de 14</p>
+                        <p>Títol: <strong>Quai de Seine</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 8 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Jardin du Luxembourg" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 8 de 14</p>
+                        <p>Títol: <strong>Jardin du Luxembourg</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 9 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Saint-Germain-des-Prés" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 9 de 14</p>
+                        <p>Títol: <strong>Saint-Germain-des-Prés</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 10 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Canal Saint-Martin" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 10 de 14</p>
+                        <p>Títol: <strong>Canal Saint-Martin</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 11 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Île Saint-Louis" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 11 de 14</p>
+                        <p>Títol: <strong>Île Saint-Louis</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 12 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Opéra Garnier" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 12 de 14</p>
+                        <p>Títol: <strong>Opéra Garnier</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 13 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Jardin des Tuileries II" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 13 de 14</p>
+                        <p>Títol: <strong>Jardin des Tuileries</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
+                <!-- Obra 14 -->
+                <article class="work-card">
+                    <img src="foto_prueba_obras.jpg" alt="Place Vendôme" class="work-image">
+                    <div class="work-info">
+                        <p class="work-series">Sèrie París 2025 - Obra núm. 14 de 14</p>
+                        <p>Títol: <strong>Place Vendôme</strong></p>
+                        <p>Tècnica: <strong>Oli sobre taula</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Any: <strong>2025</strong></p>
+                    </div>
+                </article>
+
             </div>
         </section>
-    </main>
+
+        <!-- SECCIONES DE ANCLAJE -->
+        <section id="proceso" class="info-section"></section>
+        <section id="sobre-mi" class="info-section"></section>
+        <section id="contacto" class="info-section"></section>
+    </div>
 
 </body>
 </html>
