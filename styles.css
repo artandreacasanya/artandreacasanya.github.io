@@ -78,7 +78,7 @@ body {
     opacity: 0.4;
 }
 
-/* CONTENIDO GENERAL DE PÁGINAS Y TEXTOS JUSTIFICADOS */
+/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
 .page-content {
     max-width: 900px;
     margin: 0 auto;
@@ -89,13 +89,13 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA AMPLIADOS */
+/* TÍTULOS DE PÁGINA UNIFICADOS (TAMAÑO INTERMEDIO PARA TODOS) */
 .section-title-container {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .title-obras-img-grande {
-    height: 42px;
+    height: 28px;
     width: auto;
     display: block;
 }
@@ -170,7 +170,7 @@ body {
     text-decoration: underline;
 }
 
-/* DISEÑO RESPONSIVO BÁSICO */
+/* RESPONSIVO */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
