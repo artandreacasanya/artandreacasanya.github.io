@@ -5,84 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casanya — Artista</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- CABECERA CON NAVEGACIÓN -->
-    <header class="header">
-        <div class="logo">
-            <a href="#"><img src="casanya.png" alt="Casanya" class="nav-img-logo"></a>
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="casanya.png" alt="Casanya" class="nav-logo">
+            </a>
         </div>
-        <nav class="nav">
-            <a href="#obras"><img src="obras.png" alt="Obras" class="nav-img"></a>
-            <a href="#proceso"><img src="proceso.png" alt="Proceso" class="nav-img"></a>
-            <a href="#sobre-mi"><img src="sobre_mi.png" alt="Sobre mí" class="nav-img"></a>
-            <a href="#contacto"><img src="contacto.png" alt="Contacto" class="nav-img"></a>
+        
+        <nav class="nav-right">
+            <a href="#obras"><img src="obras.png" alt="Obras" class="nav-item-img"></a>
+            <a href="#proceso"><img src="proceso.png" alt="Proceso" class="nav-item-img"></a>
+            <a href="#sobre-mi"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-img"></a>
+            <a href="#contacto"><img src="contacto.png" alt="Contacto" class="nav-item-img"></a>
+            
+            <div class="lang-selector">
+                <a href="?lang=es" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
+                <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                <a href="?lang=en" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
+            </div>
         </nav>
     </header>
 
-    <!-- PÁGINA 1: PORTADA -->
-    <section class="hero-section">
-        <div class="hero-image-container">
-            <img src="foto_portada.jpg" alt="Andrea Casanya pintando en París" class="hero-img">
-        </div>
-    </section>
+    <!-- SECCIÓN DE PORTADA / OBRAS -->
+    <main>
+        <section id="obras" class="section-container">
+            <!-- Título secundario compuesto -->
+            <div class="section-title-container">
+                <img src="obras.png" alt="Obras" class="title-obras-img">
+                <img src="guion.png" alt="-" class="title-guion-img">
+                <img src="serie_paris.png" alt="Serie París 2025" class="title-serie-img">
+            </div>
 
-    <!-- PÁGINA 2: OBRAS -->
-    <section id="obras" class="portfolio-section">
-        <div class="section-title-container">
-            <img src="obras.png" alt="Obras" class="title-obras-img">
-            <img src="guion.png" alt="-" class="title-guion-img">
-            <img src="serie_parís.png" alt="Serie París 2025" class="title-serie-img">
-        </div>
-        
-        <div class="gallery-grid">
-            <!-- Obra 1 -->
-            <article class="art-card">
-                <div class="canvas-frame">
-                    <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=600" alt="Parc Montsouris">
-                </div>
-                <div class="art-info">
-                    <h3>Título: Parc Montsouris</h3>
-                    <p>Técnica: Óleo sobre tabla</p>
-                    <p>Dimensiones: 34 x 24 cm</p>
-                    <p>Año: 2025</p>
-                    <p class="price">Precio: 250€</p>
-                </div>
-            </article>
-
-            <!-- Obra 2 -->
-            <article class="art-card">
-                <div class="canvas-frame">
-                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=600" alt="Parc Monceau">
-                </div>
-                <div class="art-info">
-                    <h3>Título: Parc Monceau</h3>
-                    <p>Técnica: Óleo sobre tabla</p>
-                    <p>Dimensiones: 34 x 24 cm</p>
-                    <p>Año: 2025</p>
-                    <p class="price">Precio: 250€</p>
-                </div>
-            </article>
-
-            <!-- Obra 3 -->
-            <article class="art-card">
-                <div class="canvas-frame">
-                    <img src="https://images.unsplash.com/photo-1582561817333-670782a1738d?q=80&w=600" alt="Parc Monceau 2">
-                </div>
-                <div class="art-info">
-                    <h3>Título: Parc Monceau</h3>
-                    <p>Técnica: Óleo sobre tabla</p>
-                    <p>Dimensiones: 34 x 24 cm</p>
-                    <p>Año: 2025</p>
-                    <p class="price">Precio: 250€</p>
-                </div>
-            </article>
-        </div>
-    </section>
+            <!-- Imagen principal de la obra -->
+            <div class="hero-image-container">
+                <img src="foto_portada.jpg" alt="Obra de arte Casanya" class="hero-image">
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
