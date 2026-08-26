@@ -1,214 +1,143 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* CONFIGURACIÓN GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
 
 body {
-    background-color: #FFFEFC;
-    font-family: Garamond, Georgia, serif;
-    color: #1a1a1a;
-    width: 100%;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #222222;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* TEXTOS JUSTIFICADOS Y ELEGANTES */
-p, .process-intro, .contact-intro, .about-text, .work-info {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ENCUADRE GENERAL */
 .site-container {
-    max-width: 1350px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ FIJO A LA DERECHA */
+/* CABECERA Y MENÚ */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 25px 0;
-    width: 100%;
+    margin-bottom: 60px;
 }
 
-.nav-left {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo {
-    height: 60px;
+.nav-left .nav-logo {
+    height: 28px;
     width: auto;
-    display: block;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 28px;
-    margin-left: auto;
+    gap: 30px;
 }
 
 .nav-item-img {
+    height: 14px;
     width: auto;
-    display: block;
-    transition: opacity 0.2s ease;
-}
-
-/* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA DEL MENÚ */
-.nav-item-obras {
-    height: 23px;
-}
-
-.nav-item-proceso {
-    height: 23px;
-}
-
-.nav-item-sobre-mi {
-    height: 20px; 
-}
-
-.nav-item-contacto {
-    height: 22px; 
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 .nav-item-img:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
-/* SELECTOR ES / EN */
+/* SELECTOR DE IDIOMA */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 2px;
-    margin-left: 12px;
+    gap: 6px;
+    margin-left: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
 }
 
 .lang-img {
-    height: 15px;
+    height: 12px;
     width: auto;
-    display: block;
-    transition: opacity 0.2s ease;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
 }
 
 .lang-btn:hover .lang-img {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .lang-img-divider {
-    height: 14px;
+    height: 12px;
     width: auto;
-    display: block;
+    opacity: 0.4;
 }
 
-/* PORTADA */
-.hero-section {
-    width: 100%;
-    margin-bottom: 90px;
+/* CONTENIDO GENERAL DE PÁGINAS Y TEXTOS JUSTIFICADOS */
+.page-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
+.page-content p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-/* TÍTULO OBRAS - SERIE PARÍS */
-.obras-section {
-    width: 100%;
-    padding-bottom: 80px;
-}
-
+/* TÍTULOS DE PÁGINA AMPLIADOS */
 .section-title-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     margin-bottom: 40px;
 }
 
-.title-obras-img {
-    height: 30px;
+.title-obras-img-grande {
+    height: 42px;
     width: auto;
+    display: block;
 }
 
-.title-guion-img {
-    height: 10px;
-    width: auto;
+/* PÁGINA PROCESO */
+.process-intro {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
-.title-serie-img {
-    height: 31px;
-    width: auto;
-}
-
-/* GALERÍA DE OBRAS */
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 35px;
-    row-gap: 55px;
+    grid-template-columns: 1fr;
+    gap: 30px;
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
 }
 
 .work-image {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 18px;
 }
 
-.work-info {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #2b2b2b;
+.work-info p {
+    text-align: justify;
+    margin: 0;
 }
 
-.work-info strong {
-    font-weight: bold;
-    color: #000;
-}
-
-/* ESTILOS PARA PÁGINAS SECUNDARIAS (PROCESO, SOBRE MÍ, CONTACTO) */
-.page-content {
-    padding: 20px 0 80px 0;
-}
-
-.page-title {
-    font-size: 28px;
-    font-weight: normal;
-    margin-bottom: 30px;
-    color: #1a1a1a;
-    letter-spacing: 1px;
-}
-
-.process-intro, .contact-intro {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
-    max-width: 800px;
-    margin-bottom: 40px;
-}
-
+/* PÁGINA SOBRE MÍ */
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
 }
 
-.about-text {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
+.about-image-container {
+    flex: 1;
 }
 
 .about-image {
@@ -217,58 +146,44 @@ p, .process-intro, .contact-intro, .about-text, .work-info {
     display: block;
 }
 
-.contact-info-box {
-    margin-top: 30px;
-    font-size: 16px;
-    line-height: 2;
+.about-text {
+    flex: 1;
+}
+
+/* PÁGINA CONTACTO */
+.contact-container {
+    max-width: 600px;
+}
+
+.contact-intro {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-info-box p {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .contact-info-box a {
-    color: #1a1a1a;
+    color: inherit;
     text-decoration: underline;
 }
 
-/* ADAPTACIÓN MÓVIL Y PANTALLAS PEQUEÑAS */
-@media (max-width: 900px) {
-    .works-grid {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        row-gap: 35px;
-    }
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .site-container {
-        padding: 0 15px;
-    }
+/* DISEÑO RESPONSIVO BÁSICO */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
+        gap: 20px;
     }
-    .nav-left {
-        justify-content: center;
-    }
-    .nav-logo {
-        height: 50px;
-    }
+    
     .nav-right {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 16px;
-        width: 100%;
-        margin-left: 0;
+        gap: 20px;
     }
-    .lang-selector {
-        margin-left: 0;
-    }
-    .works-grid {
-        grid-template-columns: 1fr;
-        row-gap: 40px;
+
+    .about-container {
+        flex-direction: column;
     }
 }
