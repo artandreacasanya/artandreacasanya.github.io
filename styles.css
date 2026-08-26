@@ -33,7 +33,7 @@ body {
 }
 
 .nav-logo {
-    height: 60px;
+    height: 66px;
     width: auto;
     display: block;
 }
@@ -52,19 +52,19 @@ body {
 
 /* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA */
 .nav-item-obras {
-    height: 22px;
+    height: 24px;
 }
 
 .nav-item-proceso {
-    height: 22px;
+    height: 24px;
 }
 
 .nav-item-sobre-mi {
-    height: 22px; /* Subido para igualar el trazo fino */
+    height: 24px; /* Subido para igualar el trazo fino */
 }
 
 .nav-item-contacto {
-    height: 22px; /* Bajado para no verse gigante */
+    height: 24px; /* Bajado para no verse gigante */
 }
 
 .nav-item-img:hover {
@@ -132,7 +132,7 @@ body {
 }
 
 .title-serie-img {
-    height: 31px;
+    height: 30px;
     width: auto;
 }
 
