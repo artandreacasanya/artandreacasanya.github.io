@@ -188,7 +188,7 @@ p {
 
 .about-left-column {
     flex: 1.2; /* Espacio para el título y los textos a la izquierda */
-   margin-top: 40px;
+   margin-top: 70px;
 }
 
 .about-image-container {
