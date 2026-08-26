@@ -3,18 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Casanya — Artista</title>
+    <title>Casanya — Artista</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes elegantes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <h1>Andrea Casanya</h1>
+    <!-- CABECERA CON NAVEGACIÓN -->
+    <header class="header">
+        <div class="logo">Casanya</div>
+        <nav class="nav">
+            <a href="#obras">OBRAS</a>
+            <a href="#proceso">PROCESO</a>
+            <a href="#sobre-mi">SOBRE MÍ</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
 
-    <p>Artista</p>
+    <!-- PÁGINA 1: PORTADA -->
+    <section class="hero-section">
+        <div class="hero-image-container">
+            <!-- Cambia esta URL por la foto real de Andrea cuando la subas a GitHub -->
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1200" alt="Andrea Casanya pintando en París" class="hero-img">
+        </div>
+    </section>
 
-    <h2>Obras</h2>
+    <!-- PÁGINA 2: OBRAS -->
+    <section id="obras" class="portfolio-section">
+        <h2 class="section-title">OBRAS — SERIE PARÍS 2025</h2>
+        
+        <div class="gallery-grid">
+            <!-- Obra 1 -->
+            <article class="art-card">
+                <div class="canvas-frame">
+                    <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=600" alt="Parc Montsouris">
+                </div>
+                <div class="art-info">
+                    <h3>Título: Parc Montsouris</h3>
+                    <p>Técnica: Óleo sobre tabla</p>
+                    <p>Dimensiones: 34 x 24 cm</p>
+                    <p>Año: 2025</p>
+                    <p class="price">Precio: 250€</p>
+                </div>
+            </article>
 
-    <p>Mi portfolio artístico estará aquí.</p>
+            <!-- Obra 2 -->
+            <article class="art-card">
+                <div class="canvas-frame">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=600" alt="Parc Monceau">
+                </div>
+                <div class="art-info">
+                    <h3>Título: Parc Monceau</h3>
+                    <p>Técnica: Óleo sobre tabla</p>
+                    <p>Dimensiones: 34 x 24 cm</p>
+                    <p>Año: 2025</p>
+                    <p class="price">Precio: 250€</p>
+                </div>
+            </article>
+
+            <!-- Obra 3 -->
+            <article class="art-card">
+                <div class="canvas-frame">
+                    <img src="https://images.unsplash.com/photo-1582561817333-670782a1738d?q=80&w=600" alt="Parc Monceau 2">
+                </div>
+                <div class="art-info">
+                    <h3>Título: Parc Monceau</h3>
+                    <p>Técnica: Óleo sobre tabla</p>
+                    <p>Dimensiones: 34 x 24 cm</p>
+                    <p>Año: 2025</p>
+                    <p class="price">Precio: 250€</p>
+                </div>
+            </article>
+        </div>
+    </section>
 
 </body>
 </html>
