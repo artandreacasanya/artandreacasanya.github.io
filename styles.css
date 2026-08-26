@@ -101,7 +101,7 @@ body {
 /* PORTADA */
 .hero-section {
     width: 100%;
-    margin-bottom: 90px; /* Separación amplia entre foto de portada y título */
+    margin-bottom: 85px; /* Separación amplia entre foto de portada y título */
 }
 
 .hero-image {
@@ -120,7 +120,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .title-obras-img {
