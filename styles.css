@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FFFEFC; /* Fondo prácticamente blanco puro */
+    background-color: #FFFEFC;
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
@@ -18,7 +18,7 @@ body {
     padding: 0 40px;
 }
 
-/* CABECERA Y MENÚ */
+/* CABECERA Y MENÚ FIJO A LA DERECHA */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,6 @@ body {
 .nav-left {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .nav-logo {
@@ -42,8 +41,9 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 28px;
-    flex-shrink: 0;
+    margin-left: auto;
 }
 
 .nav-item-img {
@@ -54,7 +54,7 @@ body {
 
 /* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA DEL MENÚ */
 .nav-item-obras {
-    height: 23px;
+    height: 22px;
 }
 
 .nav-item-proceso {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-item-sobre-mi {
-    height: 23px; 
+    height: 20px; 
 }
 
 .nav-item-contacto {
@@ -77,12 +77,12 @@ body {
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 2px;
     margin-left: 12px;
 }
 
 .lang-img {
-    height: 14px;
+    height: 15px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -93,7 +93,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 13px;
+    height: 14px;
     width: auto;
     display: block;
 }
@@ -101,7 +101,7 @@ body {
 /* PORTADA */
 .hero-section {
     width: 100%;
-    margin-bottom: 85px; /* Separación amplia entre foto de portada y título */
+    margin-bottom: 90px;
 }
 
 .hero-image {
@@ -113,14 +113,14 @@ body {
 /* TÍTULO OBRAS - SERIE PARÍS */
 .obras-section {
     width: 100%;
-    padding-bottom: 85px;
+    padding-bottom: 80px;
 }
 
 .section-title-container {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .title-obras-img {
@@ -256,6 +256,7 @@ body {
         justify-content: center;
         gap: 16px;
         width: 100%;
+        margin-left: 0;
     }
     .lang-selector {
         margin-left: 0;
