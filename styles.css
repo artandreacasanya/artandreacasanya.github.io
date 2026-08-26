@@ -1,14 +1,28 @@
 /* ==========================================================
-   PANEL DE CONTROL DE TAMAÑOS (MODIFICA AQUÍ LO QUE QUIERAS)
+   PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
-    --tamano-logo: 68px;         /* Tamaño del logo principal (Casanya) */
-    --tamano-menu: 23px;         /* Tamaño de las opciones del menú superior */
-    --tamano-idioma: 22px;       /* Tamaño de ES / EN */
-    --tamano-titulos-paginas: 50px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
-    --tamano-obras-palabra: 50px;   /* Tamaño de la palabra "Obras" */
-    --tamano-obras-guion: 30px;     /* Tamaño del guion "-" */
-    --tamano-obras-serie: 35px;     /* Tamaño de "Serie París 2025" */
+    /* Logo principal de la web */
+    --tamano-logo: 68px;         
+
+    /* Menú superior (cada enlace por separado) */
+    --tamano-menu-obras: 23px;
+    --tamano-menu-proceso: 23px;
+    --tamano-menu-sobremi: 23px;
+    --tamano-menu-contacto: 23px;
+
+    /* Selector de idioma */
+    --tamano-idioma: 22px;       
+
+    /* Títulos principales de las páginas interiores (cada uno por separado) */
+    --tamano-titulo-proceso: 50px;
+    --tamano-titulo-sobremi: 50px;
+    --tamano-titulo-contacto: 50px;
+
+    /* Título compuesto de la sección de Obras en el inicio */
+    --tamano-obras-palabra: 50px;   
+    --tamano-obras-guion: 30px;     
+    --tamano-obras-serie: 35px;     
 }
 
 /* CONFIGURACIÓN GLOBAL */
@@ -55,14 +69,39 @@ body {
     align-items: center;
 }
 
-.nav-item-img {
-    height: var(--tamano-menu);
+/* Elementos del menú individualizados */
+.nav-item-obras {
+    height: var(--tamano-menu-obras);
     width: auto;
     opacity: 0.75;
     transition: opacity 0.3s ease;
 }
 
-.nav-item-img:hover {
+.nav-item-proceso {
+    height: var(--tamano-menu-proceso);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-sobre-mi {
+    height: var(--tamano-menu-sobremi);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-contacto {
+    height: var(--tamano-menu-contacto);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-obras:hover,
+.nav-item-proceso:hover,
+.nav-item-sobre-mi:hover,
+.nav-item-contacto:hover {
     opacity: 1;
 }
 
@@ -107,9 +146,23 @@ p {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINAS INTERIORES */
-.page-title-img {
-    height: var(--tamano-titulos-paginas);
+/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
+.title-proceso-img {
+    height: var(--tamano-titulo-proceso);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-contacto-img {
+    height: var(--tamano-titulo-contacto);
     width: auto;
     display: block;
     margin-bottom: 25px;
@@ -182,22 +235,22 @@ p {
 .about-grid-wrapper {
     display: flex;
     gap: 60px;
-    align-items: flex-start; /* Alinea perfectamente el contenido arriba */
+    align-items: flex-start; 
     margin-top: 20px;
 }
 
 .about-left-column {
-    flex: 1.2; /* Espacio para el título y los textos a la izquierda */
+    flex: 1.2; 
 }
 
-/* Control para bajar SOLO el texto respecto al título */
+/* Control para bajar el texto respecto al título en Sobre Mí */
 .about-text {
-    margin-top: 80px; /* <--- Sube o baja este número (ej: 20px o 60px) para ajustar la altura del texto */
+    margin-top: 40px; 
 }
 
 .about-image-container {
-    flex: 1; /* Espacio para la foto a la derecha */
-    max-width: 420px; /* Controla el tamaño máximo para que quede elegante */
+    flex: 1; 
+    max-width: 420px; 
 }
 
 .about-image {
@@ -230,7 +283,7 @@ p {
     }
 
     .about-grid-wrapper {
-        flex-direction: column; /* En móviles se apila verticalmente */
+        flex-direction: column; 
         gap: 30px;
     }
 }
