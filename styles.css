@@ -6,9 +6,15 @@
 
 body {
     background-color: #FFFEFC;
-    font-family: Georgia, serif;
+    font-family: Garamond, Georgia, serif;
     color: #1a1a1a;
     width: 100%;
+}
+
+/* TEXTOS JUSTIFICADOS Y ELEGANTES */
+p, .process-intro, .contact-intro, .about-text, .work-info {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* ENCUADRE GENERAL */
@@ -54,7 +60,7 @@ body {
 
 /* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA DEL MENÚ */
 .nav-item-obras {
-    height: 23px;
+    height: 22px;
 }
 
 .nav-item-proceso {
@@ -62,7 +68,7 @@ body {
 }
 
 .nav-item-sobre-mi {
-    height: 23px; 
+    height: 20px; 
 }
 
 .nav-item-contacto {
