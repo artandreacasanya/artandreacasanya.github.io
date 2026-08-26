@@ -18,7 +18,7 @@ body {
     padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ (MÁS GRANDES Y MÁS CERCA DE LA FOTO) */
+/* CABECERA Y MENÚ (LOGO IZQUIERDA, MENÚ CENTRO, IDIOMA DERECHA) */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ body {
 }
 
 .nav-left .nav-logo {
-    height: 65px; /* Logo bastante más grande */
+    height: 65px;
     width: auto;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-item-img {
-    height: 22px; /* Letras del menú significativamente más grandes */
+    height: 22px;
     width: auto;
     opacity: 0.75;
     transition: opacity 0.3s ease;
@@ -67,7 +67,7 @@ body {
 }
 
 .lang-img {
-    height: 20px; /* ES/EN más grandes */
+    height: 20px;
     width: auto;
     opacity: 0.65;
     transition: opacity 0.3s ease;
@@ -94,15 +94,16 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA (REDUCIDO A 25PX PARA QUE NO SEA GIGANTE) */
+/* TÍTULOS DE PÁGINA (FORZADO A TAMAÑO PEQUEÑO Y PROPORCIONADO) */
 .section-title-container {
     margin-bottom: 35px;
 }
 
 .title-obras-img-grande {
-    height: 25px !important;
+    max-height: 35px !important;
+    height: auto !important;
     width: auto !important;
-    max-width: 100%;
+    display: block !important;
 }
 
 /* PORTADA Y CUADRÍCULA DE OBRAS */
