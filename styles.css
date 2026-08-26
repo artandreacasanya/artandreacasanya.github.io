@@ -1,3 +1,16 @@
+/* ==========================================================
+   PANEL DE CONTROL DE TAMAÑOS (MODIFICA AQUÍ LO QUE QUIERAS)
+   ========================================================== */
+:root {
+    --tamano-logo: 65px;         /* Tamaño del logo principal (Casanya) */
+    --tamano-menu: 22px;         /* Tamaño de las opciones del menú superior */
+    --tamano-idioma: 20px;       /* Tamaño de ES / EN */
+    --tamano-titulos-paginas: 55px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
+    --tamano-obras-palabra: 28px;   /* Tamaño de la palabra "Obras" */
+    --tamano-obras-guion: 18px;     /* Tamaño del guion "-" */
+    --tamano-obras-serie: 28px;     /* Tamaño de "Serie París 2025" */
+}
+
 /* CONFIGURACIÓN GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
 
@@ -27,7 +40,7 @@ body {
 }
 
 .nav-left .nav-logo {
-    height: 65px;
+    height: var(--tamano-logo);
     width: auto;
 }
 
@@ -43,7 +56,7 @@ body {
 }
 
 .nav-item-img {
-    height: 22px;
+    height: var(--tamano-menu);
     width: auto;
     opacity: 0.75;
     transition: opacity 0.3s ease;
@@ -67,7 +80,7 @@ body {
 }
 
 .lang-img {
-    height: 20px;
+    height: var(--tamano-idioma);
     width: auto;
     opacity: 0.65;
     transition: opacity 0.3s ease;
@@ -78,7 +91,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 20px;
+    height: var(--tamano-idioma);
     width: auto;
     opacity: 0.4;
 }
@@ -94,19 +107,15 @@ body {
     text-justify: inter-word;
 }
 
-/* ==========================================
-   TÍTULOS DE PÁGINA Y SECCIONES
-   ========================================== */
-
-/* 1. Títulos principales en páginas interiores (Proceso, Sobre Mí, Contacto) */
+/* TÍTULOS DE PÁGINAS INTERIORES */
 .page-title-img {
-    height: 55px; /* <--- Cambia este número si quieres el título más grande o pequeño */
+    height: var(--tamano-titulos-paginas);
     width: auto;
     display: block;
     margin-bottom: 35px;
 }
 
-/* 2. Título compuesto de la sección de Obras en el inicio */
+/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS */
 .section-title-container {
     margin-bottom: 35px;
     display: flex;
@@ -116,17 +125,17 @@ body {
 }
 
 .title-obras-img {
-    height: 28px; /* <--- Tamaño de la palabra Obras */
+    height: var(--tamano-obras-palabra);
     width: auto;
 }
 
 .title-guion-img {
-    height: 18px; /* <--- Tamaño del guion */
+    height: var(--tamano-obras-guion);
     width: auto;
 }
 
 .title-serie-img {
-    height: 28px; /* <--- Tamaño de Serie París 2025 */
+    height: var(--tamano-obras-serie);
     width: auto;
 }
 
@@ -167,6 +176,29 @@ body {
     font-size: 0.95rem;
 }
 
+/* PÁGINA SOBRE MÍ (TEXTO IZQUIERDA, FOTO DERECHA Y CONTROLADA) */
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-direction: row-reverse; /* Invierte el orden: texto a la izquierda, foto a la derecha */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image-container {
+    flex: 1;
+    max-width: 450px; /* Evita que la foto se dispare y se vea gigante */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* RESPONSIVO */
 @media (max-width: 1024px) {
     .works-grid {
@@ -188,5 +220,9 @@ body {
 
     .works-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column; /* En móviles vuelve a apilarse de forma natural */
     }
 }
