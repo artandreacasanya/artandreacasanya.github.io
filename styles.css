@@ -100,9 +100,9 @@ body {
 }
 
 .title-obras-img-grande {
-    height: 20px; 
-    width: auto;
-    display: block;
+    height: 25px !important;
+    width: auto !important;
+    max-width: 100%;
 }
 
 /* PORTADA Y CUADRÍCULA DE OBRAS */
