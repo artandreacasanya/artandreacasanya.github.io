@@ -89,7 +89,7 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA UNIFICADOS (TAMAÑO INTERMEDIO PARA TODOS) */
+/* TÍTULOS DE PÁGINA UNIFICADOS */
 .section-title-container {
     margin-bottom: 35px;
 }
@@ -100,7 +100,7 @@ body {
     display: block;
 }
 
-/* PÁGINA PROCESO */
+/* PÁGINA PROCESO Y OBRAS (SEPARACIÓN Y FICHA TÉCNICA) */
 .process-intro {
     margin-bottom: 40px;
     font-size: 1.2rem;
@@ -109,7 +109,7 @@ body {
 .works-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 60px; /* Mayor separación vertical entre las filas/tarjetas de obras */
 }
 
 .work-card {
@@ -127,6 +127,7 @@ body {
 .work-info p {
     text-align: justify;
     margin: 0;
+    line-height: 1.8; /* Interlineado ligeramente mayor para dimensiones y técnica */
 }
 
 /* PÁGINA SOBRE MÍ */
