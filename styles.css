@@ -82,7 +82,7 @@ body {
 }
 
 .lang-img {
-    height: 12px;
+    height: 14px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -93,7 +93,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 11px;
+    height: 13px;
     width: auto;
     display: block;
 }
