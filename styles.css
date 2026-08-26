@@ -60,11 +60,11 @@ body {
 }
 
 .nav-item-sobre-mi {
-    height: 38px; /* Subido para igualar el trazo fino */
+    height: 22px; /* Subido para igualar el trazo fino */
 }
 
 .nav-item-contacto {
-    height: 18px; /* Bajado para no verse gigante */
+    height: 22px; /* Bajado para no verse gigante */
 }
 
 .nav-item-img:hover {
