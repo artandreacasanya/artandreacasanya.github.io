@@ -5,10 +5,10 @@
     --tamano-logo: 68px;         /* Tamaño del logo principal (Casanya) */
     --tamano-menu: 23px;         /* Tamaño de las opciones del menú superior */
     --tamano-idioma: 22px;       /* Tamaño de ES / EN */
-    --tamano-titulos-paginas: 40px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
-    --tamano-obras-palabra: 40px;   /* Tamaño de la palabra "Obras" */
-    --tamano-obras-guion: 25px;     /* Tamaño del guion "-" */
-    --tamano-obras-serie: 32px;     /* Tamaño de "Serie París 2025" */
+    --tamano-titulos-paginas: 50px; /* Tamaño de Proceso Creativo, Sobre Mí, Contacto */
+    --tamano-obras-palabra: 50px;   /* Tamaño de la palabra "Obras" */
+    --tamano-obras-guion: 30px;     /* Tamaño del guion "-" */
+    --tamano-obras-serie: 35px;     /* Tamaño de "Serie París 2025" */
 }
 
 /* CONFIGURACIÓN GLOBAL */
