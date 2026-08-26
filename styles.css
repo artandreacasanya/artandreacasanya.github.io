@@ -5,20 +5,20 @@
 }
 
 body {
-    background-color: #F7F5F0;
+    background-color: #FCFBF9;
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
 }
 
-/* ENCUADRE DE LA WEB */
+/* ENCUADRE GENERAL */
 .site-container {
     max-width: 1350px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-/* NAVBAR */
+/* CABECERA Y MENÚ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,56 +32,40 @@ body {
     align-items: center;
 }
 
-/* FIRMA CASANYA (AGRANDADA) */
 .nav-logo {
     height: 65px;
     width: auto;
     display: block;
 }
 
-/* MENÚ Y BOTONES */
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 28px;
 }
 
+/* MENÚ PRINCIPAL (OBRAS, PROCESO, SOBRE MI, CONTACTO) */
 .nav-item-img {
+    height: 22px; /* Equivale a la altura base ajustada para tus exports a 200px */
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
-}
-
-.nav-item-obras {
-    height: 22px;
-}
-
-.nav-item-proceso {
-    height: 22px;
-}
-
-.nav-item-sobre-mi {
-    height: 16px;
-}
-
-.nav-item-contacto {
-    height: 22px;
 }
 
 .nav-item-img:hover {
     opacity: 0.5;
 }
 
-/* SELECTOR ES / EN */
+/* SELECTOR ES / EN (MÁS PEQUEÑO Y PEGADO A LA DERECHA) */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 1px;
-    margin-left: 15px;
+    gap: 0px;
+    margin-left: 12px;
 }
 
 .lang-img {
-    height: 14px;
+    height: 12px; /* Más pequeño para marcar jerarquía secundaria */
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -92,12 +76,12 @@ body {
 }
 
 .lang-img-divider {
-    height: 13px;
+    height: 11px;
     width: auto;
     display: block;
 }
 
-/* PORTADA PRINCIPAL */
+/* PORTADA */
 .hero-section {
     width: 100%;
     margin-bottom: 50px;
@@ -109,7 +93,7 @@ body {
     display: block;
 }
 
-/* TÍTULO DE OBRAS (AGRANDADO) */
+/* TÍTULO OBRAS - SERIE PARÍS (AJUSTADO A 260PX) */
 .obras-section {
     width: 100%;
     padding-bottom: 80px;
@@ -118,26 +102,26 @@ body {
 .section-title-container {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     margin-bottom: 40px;
 }
 
 .title-obras-img {
-    height: 34px;
+    height: 30px; /* Escalado a la nueva proporción de 260px */
     width: auto;
 }
 
 .title-guion-img {
-    height: 11px;
+    height: 10px;
     width: auto;
 }
 
 .title-serie-img {
-    height: 35px;
+    height: 31px; /* Escalado a la nueva proporción de 260px */
     width: auto;
 }
 
-/* PARRILLA DE OBRAS (3 POR FILA) */
+/* GALERÍA DE OBRAS (3 COLUMNAS) */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +142,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* FICHA FORMATO ILLUSTRATOR */
 .work-info {
     text-align: center;
     font-size: 14px;
@@ -179,7 +162,7 @@ body {
     color: #000;
 }
 
-/* ADAPTACIÓN MÓVIL */
+/* ADAPTACIÓN PARA PANTALLAS PEQUEÑAS */
 @media (max-width: 900px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -198,7 +181,7 @@ body {
     .nav-right {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 18px;
     }
     .works-grid {
         grid-template-columns: 1fr;
