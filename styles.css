@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F7F5F0;
+    background-color: #F7F5F0; /* Fondo crudo/lino cálido */
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
@@ -43,7 +43,7 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 26px;
+    gap: 32px; /* Un poco más de espacio entre cada palabra del menú */
 }
 
 .nav-item-img {
@@ -52,37 +52,37 @@ body {
     transition: opacity 0.2s ease;
 }
 
-/* COMPENSACIÓN INDIVIDUAL DE TAMAÑOS EN EL MENÚ */
+/* TAMAÑOS MÁS GRANDES Y EQUILIBRADOS PARA EL MENÚ */
 .nav-item-obras {
-    height: 15px;
+    height: 22px;
 }
 
 .nav-item-proceso {
-    height: 15px;
+    height: 22px;
 }
 
 .nav-item-sobre-mi {
-    height: 11px; /* Reducido para equilibrar las letras altas */
+    height: 16px; /* Ajustado proporcionalmente para equilibrar la altura de las letras */
 }
 
 .nav-item-contacto {
-    height: 15px;
+    height: 22px;
 }
 
 .nav-item-img:hover {
     opacity: 0.5;
 }
 
-/* SELECTOR ES / EN */
+/* SELECTOR ES / EN (MÁS COMPACTO Y SECUNDARIO) */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 3px;
-    margin-left: 10px;
+    gap: 1px; /* Letras y barra muy pegaditas */
+    margin-left: 15px;
 }
 
 .lang-img {
-    height: 13px;
+    height: 14px; /* Más pequeño en comparación con el menú principal */
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -93,7 +93,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 12px;
+    height: 13px;
     width: auto;
     display: block;
 }
@@ -171,7 +171,7 @@ body {
     font-size: 13px;
     margin-bottom: 10px;
     color: #444;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #dcd8d0;
     padding-bottom: 4px;
 }
 
@@ -199,7 +199,7 @@ body {
     .nav-right {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 16px;
+        gap: 20px;
     }
     .works-grid {
         grid-template-columns: 1fr;
