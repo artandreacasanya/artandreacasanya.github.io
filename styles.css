@@ -54,7 +54,7 @@ body {
 
 /* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA DEL MENÚ */
 .nav-item-obras {
-    height: 22px;
+    height: 23px;
 }
 
 .nav-item-proceso {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-item-sobre-mi {
-    height: 20px; 
+    height: 23px; 
 }
 
 .nav-item-contacto {
