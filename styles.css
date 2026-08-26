@@ -97,12 +97,12 @@ body {
 }
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
-.page-content {
-    max-width: 900px;
+.page-content, .site-content {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.page-content p {
+p {
     text-align: justify;
     text-justify: inter-word;
 }
@@ -112,7 +112,7 @@ body {
     height: var(--tamano-titulos-paginas);
     width: auto;
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 /* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS */
@@ -176,21 +176,23 @@ body {
     font-size: 0.95rem;
 }
 
-/* PÁGINA SOBRE MÍ (TEXTO IZQUIERDA, FOTO DERECHA Y CONTROLADA) */
-.about-container {
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (INTEGRADA)
+   ========================================================== */
+.about-grid-wrapper {
     display: flex;
-    gap: 50px;
-    align-items: flex-start;
-    flex-direction: row-reverse; /* Invierte el orden: texto a la izquierda, foto a la derecha */
+    gap: 60px;
+    align-items: flex-start; /* Alinea perfectamente el contenido arriba */
+    margin-top: 20px;
 }
 
-.about-text {
-    flex: 1;
+.about-left-column {
+    flex: 1.2; /* Espacio para el título y los textos a la izquierda */
 }
 
 .about-image-container {
-    flex: 1;
-    max-width: 450px; /* Evita que la foto se dispare y se vea gigante */
+    flex: 1; /* Espacio para la foto a la derecha */
+    max-width: 420px; /* Controla el tamaño máximo para que quede elegante */
 }
 
 .about-image {
@@ -222,7 +224,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .about-container {
-        flex-direction: column; /* En móviles vuelve a apilarse de forma natural */
+    .about-grid-wrapper {
+        flex-direction: column; /* En móviles se apila verticalmente */
+        gap: 30px;
     }
 }
