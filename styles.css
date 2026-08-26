@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FCFBF9;
+    background-color: #FDFDFB; /* Blanco hueso ultra claro */
     font-family: Georgia, serif;
     color: #1a1a1a;
     width: 100%;
@@ -44,19 +44,34 @@ body {
     gap: 28px;
 }
 
-/* MENÚ PRINCIPAL (OBRAS, PROCESO, SOBRE MI, CONTACTO) */
 .nav-item-img {
-    height: 22px; /* Equivale a la altura base ajustada para tus exports a 200px */
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
+}
+
+/* AJUSTES DE ALTURA INDIVIDUALES DEL MENÚ */
+.nav-item-obras {
+    height: 17px;
+}
+
+.nav-item-proceso {
+    height: 18px;
+}
+
+.nav-item-sobre-mi {
+    height: 27px;
+}
+
+.nav-item-contacto {
+    height: 16px;
 }
 
 .nav-item-img:hover {
     opacity: 0.5;
 }
 
-/* SELECTOR ES / EN (MÁS PEQUEÑO Y PEGADO A LA DERECHA) */
+/* SELECTOR ES / EN */
 .lang-selector {
     display: flex;
     align-items: center;
@@ -65,7 +80,7 @@ body {
 }
 
 .lang-img {
-    height: 12px; /* Más pequeño para marcar jerarquía secundaria */
+    height: 12px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -93,7 +108,7 @@ body {
     display: block;
 }
 
-/* TÍTULO OBRAS - SERIE PARÍS (AJUSTADO A 260PX) */
+/* TÍTULO OBRAS - SERIE PARÍS */
 .obras-section {
     width: 100%;
     padding-bottom: 80px;
@@ -107,7 +122,7 @@ body {
 }
 
 .title-obras-img {
-    height: 30px; /* Escalado a la nueva proporción de 260px */
+    height: 30px;
     width: auto;
 }
 
@@ -117,7 +132,7 @@ body {
 }
 
 .title-serie-img {
-    height: 31px; /* Escalado a la nueva proporción de 260px */
+    height: 31px;
     width: auto;
 }
 
