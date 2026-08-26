@@ -60,11 +60,11 @@ p, .process-intro, .contact-intro, .about-text, .work-info {
 
 /* COMPENSACIÓN EXACTA DE TAMAÑO PARA CADA PALABRA DEL MENÚ */
 .nav-item-obras {
-    height: 22px;
+    height: 23px;
 }
 
 .nav-item-proceso {
-    height: 22px;
+    height: 23px;
 }
 
 .nav-item-sobre-mi {
