@@ -43,19 +43,30 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 26px;
 }
 
 .nav-item-img {
-    height: 16px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
 }
 
-/* AJUSTE ESPECÍFICO SOBRE MÍ */
+/* COMPENSACIÓN INDIVIDUAL DE TAMAÑOS EN EL MENÚ */
+.nav-item-obras {
+    height: 15px;
+}
+
+.nav-item-proceso {
+    height: 15px;
+}
+
 .nav-item-sobre-mi {
-    height: 14px;
+    height: 11px; /* Reducido para equilibrar las letras altas */
+}
+
+.nav-item-contacto {
+    height: 15px;
 }
 
 .nav-item-img:hover {
@@ -71,7 +82,7 @@ body {
 }
 
 .lang-img {
-    height: 14px;
+    height: 13px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
@@ -127,7 +138,7 @@ body {
     width: auto;
 }
 
-/* PARRILLA DE OBRAS */
+/* PARRILLA DE OBRAS (3 POR FILA) */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
