@@ -190,6 +190,11 @@ p {
     flex: 1.2; /* Espacio para el título y los textos a la izquierda */
 }
 
+/* Control para bajar SOLO el texto respecto al título */
+.about-text {
+    margin-top: 40px; /* <--- Sube o baja este número (ej: 20px o 60px) para ajustar la altura del texto */
+}
+
 .about-image-container {
     flex: 1; /* Espacio para la foto a la derecha */
     max-width: 420px; /* Controla el tamaño máximo para que quede elegante */
