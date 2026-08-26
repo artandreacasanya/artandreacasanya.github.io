@@ -18,7 +18,7 @@ body {
     padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ (LOGO IZQUIERDA, MENÚ CENTRO, IDIOMA DERECHA) */
+/* CABECERA Y MENÚ */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -94,20 +94,32 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA (FORZADO A TAMAÑO PEQUEÑO Y PROPORCIONADO) */
+/* TÍTULOS DE SECCIÓN DE OBRAS (AHORA SÍ, PEQUEÑOS Y FINOS) */
 .section-title-container {
     margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-.title-obras-img-grande {
-    max-height: 35px !important;
-    height: auto !important;
-    width: auto !important;
-    display: block !important;
+.title-obras-img {
+    height: 24px;
+    width: auto;
 }
 
-/* PORTADA Y CUADRÍCULA DE OBRAS */
-.hero-image-container {
+.title-guion-img {
+    height: 18px;
+    width: auto;
+}
+
+.title-serie-img {
+    height: 24px;
+    width: auto;
+}
+
+/* PORTADA Y CUADRÍCULA DE OBRAS (3 POR FILA) */
+.hero-section {
     margin-bottom: 40px;
     text-align: center;
 }
@@ -143,53 +155,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* PÁGINA PROCESO */
-.process-intro {
-    margin-bottom: 40px;
-    font-size: 1.2rem;
-}
-
-/* PÁGINA SOBRE MÍ */
-.about-container {
-    display: flex;
-    gap: 50px;
-    align-items: flex-start;
-}
-
-.about-image-container {
-    flex: 1;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.about-text {
-    flex: 1;
-}
-
-/* PÁGINA CONTACTO */
-.contact-container {
-    max-width: 600px;
-}
-
-.contact-intro {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-}
-
-.contact-info-box p {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.contact-info-box a {
-    color: inherit;
-    text-decoration: underline;
-}
-
 /* RESPONSIVO */
 @media (max-width: 1024px) {
     .works-grid {
@@ -211,9 +176,5 @@ body {
 
     .works-grid {
         grid-template-columns: 1fr;
-    }
-
-    .about-container {
-        flex-direction: column;
     }
 }
