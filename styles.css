@@ -25,6 +25,7 @@ body {
     align-items: center;
     padding: 40px 0 25px 0;
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .nav-left {
@@ -42,6 +43,7 @@ body {
     display: flex;
     align-items: center;
     gap: 28px;
+    margin-left: auto;
 }
 
 .nav-item-img {
