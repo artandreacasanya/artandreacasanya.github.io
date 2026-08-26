@@ -6,23 +6,23 @@
     --tamano-logo: 68px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 24px;
-    --tamano-menu-proceso: 23px;
-    --tamano-menu-sobremi: 23px;
-    --tamano-menu-contacto: 23px;
+    --tamano-menu-obras: 22px;
+    --tamano-menu-proceso: 22px;
+    --tamano-menu-sobremi: 22px;
+    --tamano-menu-contacto: 22px;
 
     /* Selector de idioma */
-    --tamano-idioma: 22px;       
+    --tamano-idioma: 20px;       
 
-    /* Títulos principales de las páginas interiores (cada uno por separado) */
-    --tamano-titulo-proceso: 50px;
-    --tamano-titulo-sobremi: 50px;
-    --tamano-titulo-contacto: 50px;
+    /* Títulos principales de las páginas interiores (ajustados a un tamaño moderado) */
+    --tamano-titulo-proceso: 28px;
+    --tamano-titulo-sobremi: 28px;
+    --tamano-titulo-contacto: 28px;
 
     /* Título compuesto de la sección de Obras en el inicio */
-    --tamano-obras-palabra: 50px;   
-    --tamano-obras-guion: 40px;     
-    --tamano-obras-serie: 40px;     
+    --tamano-obras-palabra: 35px;   
+    --tamano-obras-guion: 20px;     
+    --tamano-obras-serie: 28px;     
 }
 
 /* CONFIGURACIÓN GLOBAL */
@@ -102,7 +102,7 @@ body {
 .nav-item-proceso:hover,
 .nav-item-sobre-mi:hover,
 .nav-item-contacto:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 /* SELECTOR DE IDIOMA */
@@ -126,7 +126,7 @@ body {
 }
 
 .lang-btn:hover .lang-img {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .lang-img-divider {
@@ -194,7 +194,7 @@ p {
 
 /* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -243,9 +243,8 @@ p {
     flex: 1.2; 
 }
 
-/* Control para bajar el texto respecto al título en Sobre Mí */
 .about-text {
-    margin-top: 80px; 
+    margin-top: 40px; 
 }
 
 .about-image-container {
