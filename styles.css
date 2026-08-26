@@ -56,7 +56,7 @@ body {
 }
 
 .nav-item-proceso {
-    height: 24px;
+    height: 23px;
 }
 
 .nav-item-sobre-mi {
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-item-contacto {
-    height: 24px; /* Bajado para no verse gigante */
+    height: 23px; /* Bajado para no verse gigante */
 }
 
 .nav-item-img:hover {
