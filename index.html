@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casanya — Artista</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- CABECERA CON NAVEGACIÓN -->
     <header class="header">
-        <div class="logo">Casanya</div>
+        <div class="logo">
+            <a href="#"><img src="casanya.png" alt="Casanya" class="nav-img-logo"></a>
+        </div>
         <nav class="nav">
-            <a href="#obras">OBRAS</a>
-            <a href="#proceso">PROCESO</a>
-            <a href="#sobre-mi">SOBRE MÍ</a>
-            <a href="#contacto">CONTACTO</a>
+            <a href="#obras"><img src="obras.png" alt="Obras" class="nav-img"></a>
+            <a href="#proceso"><img src="proceso.png" alt="Proceso" class="nav-img"></a>
+            <a href="#sobre-mi"><img src="sobre_mi.png" alt="Sobre mí" class="nav-img"></a>
+            <a href="#contacto"><img src="contacto.png" alt="Contacto" class="nav-img"></a>
         </nav>
     </header>
 
     <!-- PÁGINA 1: PORTADA -->
     <section class="hero-section">
         <div class="hero-image-container">
-            <!-- Cambia esta URL por la foto real de Andrea cuando la subas a GitHub -->
-            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1200" alt="Andrea Casanya pintando en París" class="hero-img">
+            <img src="foto_portada.jpg" alt="Andrea Casanya pintando en París" class="hero-img">
         </div>
     </section>
 
     <!-- PÁGINA 2: OBRAS -->
     <section id="obras" class="portfolio-section">
-        <h2 class="section-title">OBRAS — SERIE PARÍS 2025</h2>
+        <div class="section-title-container">
+            <img src="obras.png" alt="Obras" class="title-obras-img">
+            <img src="guion.png" alt="-" class="title-guion-img">
+            <img src="serie_parís.png" alt="Serie París 2025" class="title-serie-img">
+        </div>
         
         <div class="gallery-grid">
             <!-- Obra 1 -->
