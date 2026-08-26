@@ -18,16 +18,16 @@ body {
     padding: 40px 20px;
 }
 
-/* CABECERA Y MENÚ (LOGO IZQUIERDA, MENÚ CENTRO, IDIOMA DERECHA) */
+/* CABECERA Y MENÚ (MÁS GRANDES Y MÁS CERCA DE LA FOTO) */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px; /* Espacio reducido para acercarlo a la foto inferior */
+    margin-bottom: 10px; 
 }
 
 .nav-left .nav-logo {
-    height: 48px; /* Logo más grande y elegante */
+    height: 65px; /* Logo bastante más grande */
     width: auto;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-item-img {
-    height: 18px; /* Letras del menú más grandes */
+    height: 22px; /* Letras del menú significativamente más grandes */
     width: auto;
     opacity: 0.75;
     transition: opacity 0.3s ease;
@@ -53,7 +53,7 @@ body {
     opacity: 1;
 }
 
-/* SELECTOR DE IDIOMA A LA DERECHA */
+/* SELECTOR DE IDIOMA */
 .lang-selector {
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ body {
 }
 
 .lang-img {
-    height: 16px; /* ES/EN más grandes */
+    height: 20px; /* ES/EN más grandes */
     width: auto;
     opacity: 0.65;
     transition: opacity 0.3s ease;
@@ -78,7 +78,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 16px;
+    height: 20px;
     width: auto;
     opacity: 0.4;
 }
@@ -94,20 +94,20 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE PÁGINA */
+/* TÍTULOS DE PÁGINA (REDUCIDO A 25PX PARA QUE NO SEA GIGANTE) */
 .section-title-container {
     margin-bottom: 35px;
 }
 
 .title-obras-img-grande {
-    height: 45px;
+    height: 25px; 
     width: auto;
     display: block;
 }
 
 /* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-image-container {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -190,5 +190,29 @@ body {
 }
 
 /* RESPONSIVO */
-@media (max-width: 1
-        
+@media (max-width: 1024px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+}
