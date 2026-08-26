@@ -94,7 +94,19 @@ body {
     text-justify: inter-word;
 }
 
-/* TÍTULOS DE SECCIÓN DE OBRAS (AHORA SÍ, PEQUEÑOS Y FINOS) */
+/* ==========================================
+   TÍTULOS DE PÁGINA Y SECCIONES
+   ========================================== */
+
+/* 1. Títulos principales en páginas interiores (Proceso, Sobre Mí, Contacto) */
+.page-title-img {
+    height: 55px; /* <--- Cambia este número si quieres el título más grande o pequeño */
+    width: auto;
+    display: block;
+    margin-bottom: 35px;
+}
+
+/* 2. Título compuesto de la sección de Obras en el inicio */
 .section-title-container {
     margin-bottom: 35px;
     display: flex;
@@ -104,21 +116,21 @@ body {
 }
 
 .title-obras-img {
-    height: 24px;
+    height: 28px; /* <--- Tamaño de la palabra Obras */
     width: auto;
 }
 
 .title-guion-img {
-    height: 18px;
+    height: 18px; /* <--- Tamaño del guion */
     width: auto;
 }
 
 .title-serie-img {
-    height: 24px;
+    height: 28px; /* <--- Tamaño de Serie París 2025 */
     width: auto;
 }
 
-/* PORTADA Y CUADRÍCULA DE OBRAS (3 POR FILA) */
+/* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-section {
     margin-bottom: 40px;
     text-align: center;
