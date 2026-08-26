@@ -1,4 +1,4 @@
-/* RESET BÁSICO Y FUENTES */
+/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -6,132 +6,141 @@
 }
 
 body {
-    background-color: #fcfcfc;
-    color: #2b2b2b;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    padding: 0 40px;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    color: #1a1a1a;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-/* CABECERA Y NAVEGACIÓN CON IMÁGENES PROCREATE */
-.header {
+/* NAVBAR HEADER */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 25px 40px;
+    width: 100%;
+    background-color: #ffffff;
 }
 
-.nav-img-logo {
-    height: 45px;
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* FIRMA CASANYA LOGO */
+.nav-logo {
+    height: 38px;
     width: auto;
     display: block;
 }
 
-.nav {
+/* BOTONES DEL MENÚ */
+.nav-right {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.nav-img {
-    height: 18px;
+.nav-item-img {
+    height: 16px;
     width: auto;
     display: block;
     transition: opacity 0.2s ease;
 }
 
-.nav a:hover .nav-img {
+.nav-item-img:hover {
     opacity: 0.6;
 }
 
-/* PORTADA CON TU FOTO */
-.hero-section {
-    max-width: 1000px;
-    margin: 10px auto 80px auto;
+/* SELECTOR DE IDIOMA */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 15px;
 }
 
-.hero-img {
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
+.lang-img {
+    height: 14px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.lang-btn:hover .lang-img {
+    opacity: 0.6;
+}
+
+.lang-img-divider {
+    height: 14px;
+    width: auto;
     display: block;
 }
 
-/* SECCIÓN DE OBRAS Y TÍTULO COMPUESTO */
-.portfolio-section {
+/* SECCIÓN PRINCIPAL DE OBRAS */
+.section-container {
+    padding: 20px 40px 60px 40px;
     max-width: 1200px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
 }
 
+/* TÍTULO COMPUESTO (OBRAS - SERIE PARÍS) */
 .section-title-container {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
 .title-obras-img {
-    height: 35px;
+    height: 22px;
     width: auto;
 }
 
 .title-guion-img {
-    height: 15px;
+    height: 12px;
     width: auto;
 }
 
 .title-serie-img {
-    height: 35px;
+    height: 20px;
     width: auto;
 }
 
-/* REJILLA DE 3 COLUMNAS */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.art-card {
-    text-align: center;
-}
-
-.canvas-frame {
-    background-color: #e6e6e6;
-    height: 380px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.canvas-frame img {
+/* CONTENEDOR DE LA OBRA PRINCIPAL */
+.hero-image-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
 }
 
-.art-info h3 {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 4px;
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.art-info p {
-    font-size: 0.95rem;
-    color: #4a4a4a;
-    line-height: 1.4;
-}
-
-.art-info .price {
-    margin-top: 6px;
-}
-
-/* ADAPTACIÓN A MÓVILES */
+/* ADAPTACIÓN MÓVIL */
 @media (max-width: 768px) {
-    body { padding: 0 15px; }
-    .header { flex-direction: column; gap: 20px; }
-    .nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
-    .gallery-grid { grid-template-columns: 1fr; }
-    .hero-img { height: 300px; }
-    .section-title-container { flex-wrap: wrap; }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .section-container {
+        padding: 20px;
+    }
+
+    .section-title-container {
+        justify-content: center;
+    }
 }
