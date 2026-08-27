@@ -23,13 +23,18 @@
     --tamano-obras-palabra: 36px;   
     --tamano-obras-guion: 30px;     
     --tamano-obras-serie: 32px;     
+
+    /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
+    --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
+    --tamano-fuente-obras: 0.95rem;    /* Tamaño de la ficha técnica de obras */
+    --tamano-fuente-sobremi: 1.15rem;  /* Tamaño del texto en Sobre Mí */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-weight: 400; /* Regular */
-    font-size: 1.1rem;
+    font-size: var(--tamano-fuente-base);
     color: #222222;
     background-color: #ffffff;
     margin: 0;
@@ -133,8 +138,6 @@ body {
     opacity: 0.4;
     vertical-align: middle;
     margin: 0 2px;
-    position: relative;
-    top: -1px;
 }
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
@@ -210,14 +213,14 @@ p {
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px 40px; /* 50px de separación vertical entre filas */
+    gap: 50px 40px; /* Separación vertical y horizontal */
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 15px; /* Margen de resguardo adicional para la fila inferior */
+    margin-bottom: 15px;
 }
 
 .work-image {
@@ -230,18 +233,18 @@ p {
 .work-info p {
     text-align: left;
     margin: 2px 0;
-    font-size: 0.95rem;
+    font-size: var(--tamano-fuente-obras);
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 400; /* Regular para la etiqueta de la izquierda */
+    font-weight: 400; /* Regular a la izquierda */
 }
 
 .work-info p strong {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 600; /* SemiBold para el valor de la derecha */
+    font-weight: 600; /* SemiBold a la derecha */
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (AISLADA)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (CORREGIDA Y AISLADA)
    ========================================================== */
 .about-grid-wrapper {
     display: flex;
@@ -260,6 +263,9 @@ p {
 
 .about-text p {
     margin-bottom: 24px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.7;
+    text-align: justify;
 }
 
 .about-image-container {
