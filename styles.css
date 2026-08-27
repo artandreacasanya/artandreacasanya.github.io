@@ -3,13 +3,13 @@
    ========================================================== */
 :root {
     /* Logo principal de la web */
-    --tamano-logo: 90px;         
+    --tamano-logo: 80px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 23px;
-    --tamano-menu-proceso: 23px;
-    --tamano-menu-sobremi: 23px;
-    --tamano-menu-contacto: 23px;
+    --tamano-menu-obras: 22px;
+    --tamano-menu-proceso: 22px;
+    --tamano-menu-sobremi: 22px;
+    --tamano-menu-contacto: 22px;
 
     /* Selector de idioma */
     --tamano-idioma: 20px;        
@@ -24,10 +24,10 @@
     --tamano-obras-guion: 60px;     
     --tamano-obras-serie: 70px;     
 
-    /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
+    /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.9rem;    /* Texto un punto más pequeño (antes 1rem) */
+    --tamano-fuente-sobremi: 0.9rem;    /* Tamaño de texto en Sobre Mí (igual al ejemplo) */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -142,7 +142,7 @@ body {
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
 .page-content, .site-content {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -244,19 +244,19 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (LAYOUT REORDENADO)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (ESTILO SERGIU CIOCHINA)
    ========================================================== */
 .about-layout-3col {
     display: flex;
-    gap: 50px;
+    gap: 45px;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-/* Columna 1: Título */
+/* Columna 1: Título a la izquierda */
 .about-title-col {
     flex: 1;
-    min-width: 180px;
+    min-width: 160px;
     order: 1;
 }
 
@@ -266,31 +266,31 @@ p {
     display: block;
 }
 
-/* Columna 2: Texto en el centro */
-.about-text-col {
-    flex: 1.5;
-    order: 2;
-}
-
-.about-text-col p {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-size: var(--tamano-fuente-sobremi);
-    line-height: 1.7;
-    text-align: justify;
-}
-
-/* Columna 3: Imagen a la derecha */
+/* Columna 2: Imagen central (Vertical y de gran tamaño) */
 .about-image-col {
-    flex: 1.8;
-    max-width: 580px;
-    order: 3;
+    flex: 1.5;
+    max-width: 450px;
+    order: 2;
 }
 
 .about-image {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Columna 3: Texto a la derecha */
+.about-text-col {
+    flex: 1.6;
+    order: 3;
+}
+
+.about-text-col p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.6;
+    text-align: left; /* Alineado a la izquierda como la referencia */
 }
 
 /* RESPONSIVO */
