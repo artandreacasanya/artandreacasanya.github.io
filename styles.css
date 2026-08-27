@@ -14,15 +14,15 @@
     /* Selector de idioma */
     --tamano-idioma: 20px;        
 
-    /* Títulos principales de las páginas interiores (Fijados a 40px) */
-    --tamano-titulo-proceso: 40px;
-    --tamano-titulo-sobremi: 40px;
-    --tamano-titulo-contacto: 40px;
+    /* Títulos principales de las páginas interiores (Todos a 100px) */
+    --tamano-titulo-proceso: 100px;
+    --tamano-titulo-sobremi: 100px;
+    --tamano-titulo-contacto: 100px;
 
-    /* Título compuesto de la sección de Obras en el inicio (Ajustado a ~20px) */
-    --tamano-obras-palabra: 20px;   
-    --tamano-obras-guion: 16px;     
-    --tamano-obras-serie: 18px;     
+    /* Título compuesto de la sección de Obras en el inicio (Todos a 100px) */
+    --tamano-obras-palabra: 100px;   
+    --tamano-obras-guion: 80px;     
+    --tamano-obras-serie: 90px;     
 
     /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
