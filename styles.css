@@ -15,14 +15,14 @@
     --tamano-idioma: 20px;        
 
     /* Títulos principales de las páginas interiores (Todos a 100px) */
-    --tamano-titulo-proceso: 100px;
-    --tamano-titulo-sobremi: 100px;
-    --tamano-titulo-contacto: 100px;
+    --tamano-titulo-proceso: 80px;
+    --tamano-titulo-sobremi: 80px;
+    --tamano-titulo-contacto: 80px;
 
     /* Título compuesto de la sección de Obras en el inicio (Todos a 100px) */
-    --tamano-obras-palabra: 100px;   
-    --tamano-obras-guion: 80px;     
-    --tamano-obras-serie: 90px;     
+    --tamano-obras-palabra: 80px;   
+    --tamano-obras-guion: 60px;     
+    --tamano-obras-serie: 70px;     
 
     /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
