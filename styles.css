@@ -14,7 +14,7 @@
     /* Selector de idioma */
     --tamano-idioma: 20px;        
 
-    /* Títulos principales de las páginas interiores (ajustados a un tamaño moderado) */
+    /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 36px;
     --tamano-titulo-sobremi: 36px;
     --tamano-titulo-contacto: 36px;
@@ -25,12 +25,10 @@
     --tamano-obras-serie: 32px;     
 }
 
-/* CONFIGURACIÓN GLOBAL */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
-
+/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400; /* Regular */
     font-size: 1.1rem;
     color: #222222;
     background-color: #ffffff;
@@ -212,13 +210,14 @@ p {
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 50px 40px; /* 50px de separación vertical entre filas */
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 15px; /* Margen de resguardo adicional para la fila inferior */
 }
 
 .work-image {
@@ -227,10 +226,18 @@ p {
     display: block;
 }
 
+/* FICHA TÉCNICA DE LAS OBRAS (MINION VARIABLE CONCEPT) */
 .work-info p {
-    text-align: justify;
-    margin: 0;
+    text-align: left;
+    margin: 2px 0;
     font-size: 0.95rem;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400; /* Regular para la etiqueta de la izquierda */
+}
+
+.work-info p strong {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600; /* SemiBold para el valor de la derecha */
 }
 
 /* ==========================================================
@@ -240,7 +247,7 @@ p {
     display: flex;
     gap: 60px;
     align-items: flex-start; 
-    margin-top: 40px; /* Separación limpia respecto al título superior */
+    margin-top: 40px;
 }
 
 .about-left-column {
@@ -252,7 +259,7 @@ p {
 }
 
 .about-text p {
-    margin-bottom: 24px; /* Espaciado profesional entre párrafos */
+    margin-bottom: 24px;
 }
 
 .about-image-container {
