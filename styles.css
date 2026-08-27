@@ -14,12 +14,12 @@
     /* Selector de idioma */
     --tamano-idioma: 20px;        
 
-    /* Títulos principales de las páginas interiores (Todos a 100px) */
+    /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 80px;
     --tamano-titulo-sobremi: 80px;
     --tamano-titulo-contacto: 80px;
 
-    /* Título compuesto de la sección de Obras en el inicio (Todos a 100px) */
+    /* Título compuesto de la sección de Obras en el inicio */
     --tamano-obras-palabra: 80px;   
     --tamano-obras-guion: 60px;     
     --tamano-obras-serie: 70px;     
@@ -244,33 +244,31 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (CORREGIDA Y AISLADA)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (LAYOUT 3 COLUMNAS)
    ========================================================== */
-.about-grid-wrapper {
+.about-layout-3col {
     display: flex;
-    gap: 60px;
-    align-items: flex-start; 
-    margin-top: 40px;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
-.about-left-column {
-    flex: 1.2; 
+/* Columna 1: Título */
+.about-title-col {
+    flex: 1;
+    min-width: 180px;
 }
 
-.about-text {
-    margin-top: 0px; 
+.about-title-col .title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
 }
 
-.about-text p {
-    margin-bottom: 24px;
-    font-size: var(--tamano-fuente-sobremi);
-    line-height: 1.7;
-    text-align: justify;
-}
-
-.about-image-container {
-    flex: 1; 
-    max-width: 420px; 
+/* Columna 2: Imagen central */
+.about-image-col {
+    flex: 1.2;
+    max-width: 400px;
 }
 
 .about-image {
@@ -279,10 +277,34 @@ p {
     display: block;
 }
 
+/* Columna 3: Texto a la derecha */
+.about-text-col {
+    flex: 1.5;
+}
+
+.about-text-col p {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.7;
+    text-align: justify;
+}
+
 /* RESPONSIVO */
 @media (max-width: 1024px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-layout-3col {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image-col {
+        max-width: 100%;
     }
 }
 
@@ -300,10 +322,5 @@ p {
 
     .works-grid {
         grid-template-columns: 1fr;
-    }
-
-    .about-grid-wrapper {
-        flex-direction: column; 
-        gap: 30px;
     }
 }
