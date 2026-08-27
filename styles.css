@@ -6,13 +6,13 @@
     --tamano-logo: 80px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 22px;
-    --tamano-menu-proceso: 22px;
-    --tamano-menu-sobremi: 22px;
-    --tamano-menu-contacto: 22px;
+    --tamano-menu-obras: 24px;
+    --tamano-menu-proceso: 24px;
+    --tamano-menu-sobremi: 24px;
+    --tamano-menu-contacto: 24px;
 
     /* Selector de idioma (reducido para ser menor que el menú) */
-    --tamano-idioma: 14px;        
+    --tamano-idioma: 16px;        
 
     /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 80px;
@@ -22,12 +22,12 @@
     /* Título compuesto de la sección de Obras en el inicio */
     --tamano-obras-palabra: 80px;   
     --tamano-obras-guion: 60px;     
-    --tamano-obras-serie: 70px;     
+    --tamano-obras-serie: 80px;     
 
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.9rem;    /* Tamaño de texto en Sobre Mí */
+    --tamano-fuente-sobremi: 0.80rem;    /* Tamaño de texto en Sobre Mí */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
