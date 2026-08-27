@@ -11,7 +11,7 @@
     --tamano-menu-sobremi: 25px;
     --tamano-menu-contacto: 24px;
 
-    /* Selector de idioma (reducido para ser menor que el menú) */
+    /* Selector de idioma */
     --tamano-idioma: 16px;        
 
     /* Títulos principales de las páginas interiores */
@@ -27,9 +27,9 @@
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.80rem;  /* Tamaño de texto en Sobre Mí */
-    --tamano-fuente-proceso: 0.80rem;  /* Igualado a Sobre Mí */
-    --tamano-fuente-contacto: 0.80rem; /* Igualado a Sobre Mí */
+    --tamano-fuente-sobremi: 0.90rem;  /* Subido a 0.90rem (1 punto más grande) */
+    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  /* Sincronizado a 0.90rem */
+    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); /* Sincronizado a 0.90rem */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -246,18 +246,19 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (ESTILO SERGIU CIOCHINA)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (AJUSTADA Y AMPLIADA)
    ========================================================== */
 .about-layout-3col {
     display: flex;
-    gap: 45px;
+    gap: 35px; /* Reducido espacio para permitir que la foto crezca */
     align-items: flex-start;
     margin-top: 15px;
 }
 
+/* Columna 1: Título a la izquierda */
 .about-title-col {
-    flex: 1;
-    min-width: 160px;
+    flex: 0.8;
+    min-width: 130px;
 }
 
 .about-title-col .title-sobremi-img {
@@ -266,9 +267,11 @@ p {
     display: block;
 }
 
+/* Columna 2: Imagen central (FOTO MÁS GRANDE) */
 .about-image-col {
-    flex: 1.5;
-    max-width: 500px;
+    flex: 2.2; /* Aumentado peso visual de la columna */
+    max-width: 600px; /* Sube el tope máximo de la foto a 600px */
+    width: 100%;
 }
 
 .about-image {
@@ -277,16 +280,18 @@ p {
     display: block;
 }
 
+/* Columna 3: Texto a la derecha (TEXTO EN 0.90REM Y JUSTIFICADO) */
 .about-text-col {
-    flex: 1.6;
+    flex: 1.5;
 }
 
 .about-text-col p {
     margin-top: 0;
     margin-bottom: 22px;
-    font-size: var(--tamano-fuente-sobremi);
+    font-size: var(--tamano-fuente-sobremi); /* 0.90rem */
     line-height: 1.6;
-    text-align: left;
+    text-align: justify; /* Justificado */
+    text-justify: inter-word;
 }
 
 /* ==========================================================
@@ -316,9 +321,10 @@ p {
 }
 
 .proceso-text-wrapper p {
-    font-size: var(--tamano-fuente-proceso);
+    font-size: var(--tamano-fuente-proceso); /* 0.90rem */
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* ==========================================================
@@ -326,7 +332,7 @@ p {
    ========================================================== */
 .contacto-text-col p,
 .contacto-container p {
-    font-size: var(--tamano-fuente-contacto);
+    font-size: var(--tamano-fuente-contacto); /* 0.90rem */
     line-height: 1.6;
 }
 
