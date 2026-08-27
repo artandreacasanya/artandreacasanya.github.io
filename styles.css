@@ -3,13 +3,13 @@
    ========================================================== */
 :root {
     /* Logo principal de la web */
-    --tamano-logo: 80px;         
+    --tamano-logo: 90px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 22px;
-    --tamano-menu-proceso: 22px;
-    --tamano-menu-sobremi: 22px;
-    --tamano-menu-contacto: 22px;
+    --tamano-menu-obras: 23px;
+    --tamano-menu-proceso: 23px;
+    --tamano-menu-sobremi: 23px;
+    --tamano-menu-contacto: 23px;
 
     /* Selector de idioma */
     --tamano-idioma: 20px;        
