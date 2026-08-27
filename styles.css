@@ -153,21 +153,21 @@ p {
 
 /* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
 .title-proceso-img {
-    height: var(--tamano-titulo-proceso);
+    height: 40px(--tamano-titulo-proceso);
     width: auto;
     display: block;
     margin-bottom: 25px;
 }
 
 .title-sobremi-img {
-    height: var(--tamano-titulo-sobremi);
+    height: 40px(--tamano-titulo-sobremi);
     width: auto;
     display: block;
     margin-bottom: 25px;
 }
 
 .title-contacto-img {
-    height: var(--tamano-titulo-contacto);
+    height: 40px(--tamano-titulo-contacto);
     width: auto;
     display: block;
     margin-bottom: 25px;
@@ -183,7 +183,7 @@ p {
 }
 
 .title-obras-img {
-    height: var(--tamano-obras-palabra);
+    height: 40px(--tamano-obras-palabra);
     width: auto;
 }
 
