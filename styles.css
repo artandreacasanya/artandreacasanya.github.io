@@ -15,14 +15,14 @@
     --tamano-idioma: 20px;        
 
     /* Títulos principales de las páginas interiores (ajustados a un tamaño moderado) */
-    --tamano-titulo-proceso: 28px;
-    --tamano-titulo-sobremi: 28px;
-    --tamano-titulo-contacto: 28px;
+    --tamano-titulo-proceso: 36px;
+    --tamano-titulo-sobremi: 36px;
+    --tamano-titulo-contacto: 36px;
 
     /* Título compuesto de la sección de Obras en el inicio */
-    --tamano-obras-palabra: 35px;   
-    --tamano-obras-guion: 20px;     
-    --tamano-obras-serie: 28px;     
+    --tamano-obras-palabra: 36px;   
+    --tamano-obras-guion: 30px;     
+    --tamano-obras-serie: 32px;     
 }
 
 /* CONFIGURACIÓN GLOBAL */
@@ -130,9 +130,13 @@ body {
 }
 
 .lang-img-divider {
-    height: var(--tamano-idioma);
+    height: 12px;
     width: auto;
     opacity: 0.4;
+    vertical-align: middle;
+    margin: 0 2px;
+    position: relative;
+    top: -1px;
 }
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
@@ -230,13 +234,13 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (INTEGRADA)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (AISLADA)
    ========================================================== */
 .about-grid-wrapper {
     display: flex;
     gap: 60px;
     align-items: flex-start; 
-    margin-top: 20px;
+    margin-top: 40px; /* Separación limpia respecto al título superior */
 }
 
 .about-left-column {
@@ -244,7 +248,11 @@ p {
 }
 
 .about-text {
-    margin-top: 40px; 
+    margin-top: 0px; 
+}
+
+.about-text p {
+    margin-bottom: 24px; /* Espaciado profesional entre párrafos */
 }
 
 .about-image-container {
@@ -285,13 +293,4 @@ p {
         flex-direction: column; 
         gap: 30px;
     }
-   /* Ajuste perfecto para centrar la barra divisora de idiomas */
-.lang-img-divider {
-    height: 12px;
-    width: auto;
-    vertical-align: middle;
-    margin: 0 2px;
-    position: relative;
-    top: -1px;
-}
 }
