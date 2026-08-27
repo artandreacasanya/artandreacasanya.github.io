@@ -27,7 +27,9 @@
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.80rem;    /* Tamaño de texto en Sobre Mí */
+    --tamano-fuente-sobremi: 0.80rem;  /* Tamaño de texto en Sobre Mí */
+    --tamano-fuente-proceso: 0.80rem;  /* Igualado a Sobre Mí */
+    --tamano-fuente-contacto: 0.80rem; /* Igualado a Sobre Mí */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -53,7 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; /* Reducido el margen entre la cabecera y el contenido/foto */
+    margin-bottom: 20px;
 }
 
 .nav-left .nav-logo {
@@ -133,7 +135,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 10px; /* Ajustada la barra divisora proporcionalmente */
+    height: 10px;
     width: auto;
     opacity: 0.4;
     vertical-align: middle;
@@ -213,7 +215,7 @@ p {
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px 40px; /* Separación vertical y horizontal */
+    gap: 50px 40px;
 }
 
 .work-card {
@@ -235,12 +237,12 @@ p {
     margin: 2px 0;
     font-size: var(--tamano-fuente-obras);
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 400; /* Regular a la izquierda */
+    font-weight: 400;
 }
 
 .work-info p strong {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 600; /* SemiBold a la derecha */
+    font-weight: 600;
 }
 
 /* ==========================================================
@@ -253,7 +255,6 @@ p {
     margin-top: 15px;
 }
 
-/* Columna 1: Título a la izquierda */
 .about-title-col {
     flex: 1;
     min-width: 160px;
@@ -265,7 +266,6 @@ p {
     display: block;
 }
 
-/* Columna 2: Imagen central */
 .about-image-col {
     flex: 1.5;
     max-width: 450px;
@@ -277,7 +277,6 @@ p {
     display: block;
 }
 
-/* Columna 3: Texto a la derecha */
 .about-text-col {
     flex: 1.6;
 }
@@ -288,6 +287,47 @@ p {
     font-size: var(--tamano-fuente-sobremi);
     line-height: 1.6;
     text-align: left;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
+   ========================================================== */
+.proceso-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proceso-title-wrapper {
+    margin-bottom: 25px;
+}
+
+.proceso-images-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.proceso-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.proceso-text-wrapper p {
+    font-size: var(--tamano-fuente-proceso);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "CONTACTO"
+   ========================================================== */
+.contacto-text-col p,
+.contacto-container p {
+    font-size: var(--tamano-fuente-contacto);
+    line-height: 1.6;
 }
 
 /* RESPONSIVO */
@@ -322,5 +362,13 @@ p {
 
     .works-grid {
         grid-template-columns: 1fr;
+    }
+
+    .proceso-images-row {
+        flex-direction: column;
+    }
+
+    .proceso-image {
+        width: 100%;
     }
 }
