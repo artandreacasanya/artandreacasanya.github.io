@@ -27,7 +27,7 @@
     /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 1rem;     /* Tamaño del texto en Sobre Mí */
+    --tamano-fuente-sobremi: 0.9rem;    /* Texto un punto más pequeño (antes 1rem) */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -244,7 +244,7 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (LAYOUT 3 COLUMNAS)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (LAYOUT REORDENADO)
    ========================================================== */
 .about-layout-3col {
     display: flex;
@@ -257,6 +257,7 @@ p {
 .about-title-col {
     flex: 1;
     min-width: 180px;
+    order: 1;
 }
 
 .about-title-col .title-sobremi-img {
@@ -265,21 +266,10 @@ p {
     display: block;
 }
 
-/* Columna 2: Imagen central (Agrandada) */
-.about-image-col {
-    flex: 1.8;
-    max-width: 580px;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Columna 3: Texto a la derecha */
+/* Columna 2: Texto en el centro */
 .about-text-col {
     flex: 1.5;
+    order: 2;
 }
 
 .about-text-col p {
@@ -288,6 +278,19 @@ p {
     font-size: var(--tamano-fuente-sobremi);
     line-height: 1.7;
     text-align: justify;
+}
+
+/* Columna 3: Imagen a la derecha */
+.about-image-col {
+    flex: 1.8;
+    max-width: 580px;
+    order: 3;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* RESPONSIVO */
@@ -305,6 +308,11 @@ p {
 
     .about-image-col {
         max-width: 100%;
+        order: 2;
+    }
+
+    .about-text-col {
+        order: 3;
     }
 }
 
