@@ -14,20 +14,20 @@
     /* Selector de idioma */
     --tamano-idioma: 20px;        
 
-    /* Títulos principales de las páginas interiores */
-    --tamano-titulo-proceso: 36px;
-    --tamano-titulo-sobremi: 36px;
-    --tamano-titulo-contacto: 36px;
+    /* Títulos principales de las páginas interiores (Fijados a 40px) */
+    --tamano-titulo-proceso: 40px;
+    --tamano-titulo-sobremi: 40px;
+    --tamano-titulo-contacto: 40px;
 
-    /* Título compuesto de la sección de Obras en el inicio */
-    --tamano-obras-palabra: 36px;   
-    --tamano-obras-guion: 30px;     
-    --tamano-obras-serie: 32px;     
+    /* Título compuesto de la sección de Obras en el inicio (Ajustado a ~20px) */
+    --tamano-obras-palabra: 20px;   
+    --tamano-obras-guion: 16px;     
+    --tamano-obras-serie: 18px;     
 
     /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 1rem;  /* Tamaño del texto en Sobre Mí */
+    --tamano-fuente-sobremi: 1rem;     /* Tamaño del texto en Sobre Mí */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -183,7 +183,7 @@ p {
 }
 
 .title-obras-img {
-    height: 40px(--tamano-obras-palabra);
+    height: var(--tamano-obras-palabra);
     width: auto;
 }
 
