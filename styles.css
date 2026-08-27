@@ -265,10 +265,10 @@ p {
     display: block;
 }
 
-/* Columna 2: Imagen central */
+/* Columna 2: Imagen central (Agrandada) */
 .about-image-col {
-    flex: 1.2;
-    max-width: 400px;
+    flex: 1.8;
+    max-width: 580px;
 }
 
 .about-image {
