@@ -26,8 +26,8 @@
 
     /* TAMAÑOS DE TIPOGRAFÍA (AJUSTA AQUÍ LOS TAMAÑOS DE TEXTO) */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
-    --tamano-fuente-obras: 0.95rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 1.15rem;  /* Tamaño del texto en Sobre Mí */
+    --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
+    --tamano-fuente-sobremi: 1rem;  /* Tamaño del texto en Sobre Mí */
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
