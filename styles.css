@@ -320,37 +320,29 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
+   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO" (LADO A LADO)
    ========================================================== */
 .proceso-container {
-    max-width: 680px;
+    max-width: 950px; /* Ampliado para que las 2 fotos respiren en paralelo */
     margin: 0 auto;
     padding: 30px 20px 80px 20px;
 }
 
-.proceso-block {
-    margin: 45px 0;
+.proceso-grid {
+    display: flex;
+    gap: 40px; /* Separación entre las dos columnas */
+    align-items: flex-start;
 }
 
-.proceso-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #111;
-    margin-bottom: 14px;
-}
-
-.proceso-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-proceso);
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 24px;
+.proceso-card {
+    flex: 1; /* Ocupan exactamente el mismo 50% cada una */
+    display: flex;
+    flex-direction: column;
 }
 
 .proceso-image-container {
     width: 100%;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .proceso-image {
@@ -360,11 +352,22 @@ p {
     object-fit: cover;
 }
 
-.proceso-divider {
-    border: none;
-    height: 1px;
-    background-color: #eaeaea;
-    margin: 50px 0;
+.proceso-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.proceso-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-proceso);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* ==========================================================
@@ -452,11 +455,9 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .proceso-images-row {
+    /* En móviles las fotos de proceso se colocan una debajo de otra */
+    .proceso-grid {
         flex-direction: column;
-    }
-
-    .proceso-image {
-        width: 100%;
+        gap: 40px;
     }
 }
