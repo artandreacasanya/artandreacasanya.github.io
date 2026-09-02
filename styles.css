@@ -405,55 +405,57 @@ p {
     .proceso-image {
         width: 100%;
     }
-      /* --- PAGINA CONTACTO --- */
+       /* --- PÁGINA CONTACTO --- */
    .contacto-container {
-       max-width: 600px;
+       max-width: 580px;
        margin: 0 auto;
-       padding: 40px 20px;
+       padding: 20px 20px 60px 20px;
    }
 
    .contacto-intro {
-       font-size: 0.80rem;
-       line-height: 1.6;
+       font-size: 0.85rem;
+       line-height: 1.7;
        margin-bottom: 40px;
-       color: #333;
-   }
-
-   .contacto-block {
-       margin: 30px 0;
-   }
-
-   .contacto-label {
-       font-size: 0.75rem;
-       text-transform: uppercase;
-       letter-spacing: 1.5px;
-       color: #777;
-       margin-bottom: 8px;
-   }
-
-   .contacto-email, .contacto-link {
-       font-size: 0.95rem;
-       color: #111;
-       text-decoration: none;
-       border-bottom: 1px solid transparent;
-       transition: border-color 0.2s ease;
-   }
-
-   .contacto-email:hover, .contacto-link:hover {
-       border-bottom-color: #111;
-   }
-
-   .contacto-text {
-       font-size: 0.80rem;
-       line-height: 1.6;
        color: #444;
    }
 
+   .contacto-block {
+       margin: 25px 0;
+   }
+
+   .contacto-heading {
+       font-size: 0.70rem;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       color: #888;
+       margin-bottom: 12px;
+       font-weight: 500;
+   }
+
+   .contacto-value a {
+       font-size: 0.95rem;
+       color: #111;
+       text-decoration: none;
+       border-bottom: 1px solid #111;
+       padding-bottom: 2px;
+       transition: opacity 0.2s ease;
+   }
+
+   .contacto-value a:hover {
+       opacity: 0.6;
+   }
+   
+   .contacto-text {
+       font-size: 0.80rem;
+       line-height: 1.6;
+       color: #555;
+   }
+   
    /* Línea divisoria muy fina */
    .contacto-divider {
        border: none;
        height: 1px;
-       background-color: #e5e5e5;
-       margin: 30px 0;
+       background-color: #eee;
+       margin: 25px 0;
    }
 }
