@@ -110,16 +110,17 @@ body {
     opacity: 1;
 }
 
-/* SELECTOR DE IDIOMA */
+/* SELECTOR DE IDIOMA (ALINEACIÓN FIJA Y ESTABLE) */
 .lang-selector {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     margin-left: 20px;
+    height: var(--tamano-idioma); /* Fija la altura del contenedor al tamaño del texto/icono */
 }
 
 .lang-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -128,18 +129,24 @@ body {
     width: auto;
     opacity: 0.65;
     transition: opacity 0.3s ease;
+    display: block;
 }
 
 .lang-btn:hover .lang-img {
     opacity: 1;
 }
 
+.lang-divider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .lang-img-divider {
-    height: 10px;
+    height: 10px; /* O el tamaño de la barra que uses */
     width: auto;
     opacity: 0.4;
-    vertical-align: middle;
-    margin: 0 2px;
+    display: block;
 }
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
