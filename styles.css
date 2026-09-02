@@ -27,7 +27,7 @@
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.90rem;  /* Subido a 0.90rem (1 punto más grande) */
+    --tamano-fuente-sobremi: 0.90rem;  /* Subido a 0.90rem */
     --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  /* Sincronizado a 0.90rem */
     --tamano-fuente-contacto: var(--tamano-fuente-sobremi); /* Sincronizado a 0.90rem */
 }
@@ -110,13 +110,13 @@ body {
     opacity: 1;
 }
 
-/* SELECTOR DE IDIOMA (ALINEACIÓN FIJA Y ESTABLE) */
+/* SELECTOR DE IDIOMA */
 .lang-selector {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     margin-left: 20px;
-    height: var(--tamano-idioma); /* Fija la altura del contenedor al tamaño del texto/icono */
+    height: var(--tamano-idioma);
 }
 
 .lang-btn {
@@ -143,7 +143,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 10px; /* O el tamaño de la barra que uses */
+    height: 10px;
     width: auto;
     opacity: 0.4;
     display: block;
@@ -238,7 +238,7 @@ p {
     display: block;
 }
 
-/* FICHA TÉCNICA DE LAS OBRAS (MINION VARIABLE CONCEPT) */
+/* FICHA TÉCNICA DE LAS OBRAS */
 .work-info p {
     text-align: left;
     margin: 2px 0;
@@ -274,16 +274,15 @@ p {
 }
 
 /* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (AJUSTADA Y AMPLIADA)
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ"
    ========================================================== */
 .about-layout-3col {
     display: flex;
-    gap: 35px; /* Reducido espacio para permitir que la foto crezca */
+    gap: 35px;
     align-items: flex-start;
     margin-top: 15px;
 }
 
-/* Columna 1: Título a la izquierda */
 .about-title-col {
     flex: 0.8;
     min-width: 130px;
@@ -295,10 +294,9 @@ p {
     display: block;
 }
 
-/* Columna 2: Imagen central (FOTO MÁS GRANDE) */
 .about-image-col {
-    flex: 2.2; /* Aumentado peso visual de la columna */
-    max-width: 600px; /* Sube el tope máximo de la foto a 600px */
+    flex: 2.2;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -308,7 +306,6 @@ p {
     display: block;
 }
 
-/* Columna 3: Texto a la derecha (TEXTO EN 0.90REM Y JUSTIFICADO) */
 .about-text-col {
     flex: 1.5;
 }
@@ -316,16 +313,15 @@ p {
 .about-text-col p {
     margin-top: 0;
     margin-bottom: 22px;
-    font-size: var(--tamano-fuente-sobremi); /* 0.90rem */
+    font-size: var(--tamano-fuente-sobremi);
     line-height: 1.6;
-    text-align: justify; /* Justificado */
+    text-align: justify;
     text-justify: inter-word;
 }
 
 /* ==========================================================
    ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
    ========================================================== */
-/* --- PÁGINA PROCESO --- */
 .proceso-container {
     max-width: 680px;
     margin: 0 auto;
@@ -337,18 +333,18 @@ p {
 }
 
 .proceso-heading {
-    font-family: "Garamond", "Minion Pro", "Georgia", serif;
-    font-size: 1.1rem;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 1.05rem;
     font-weight: 600;
     color: #111;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .proceso-text {
-    font-family: "Garamond", "Minion Pro", "Georgia", serif;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: #444;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-proceso);
+    line-height: 1.6;
+    color: #333;
     margin-bottom: 24px;
 }
 
@@ -364,7 +360,6 @@ p {
     object-fit: cover;
 }
 
-/* Línea divisoria entre bloques */
 .proceso-divider {
     border: none;
     height: 1px;
@@ -375,13 +370,55 @@ p {
 /* ==========================================================
    ESTRUCTURA DE LA PÁGINA "CONTACTO"
    ========================================================== */
-.contacto-text-col p,
-.contacto-container p {
-    font-size: var(--tamano-fuente-contacto); /* 0.90rem */
-    line-height: 1.6;
+.contacto-container {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 30px 20px 80px 20px;
 }
 
-/* RESPONSIVO */
+.contacto-block {
+    margin: 45px 0;
+}
+
+.contacto-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 14px;
+}
+
+.contacto-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.contacto-value a {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+}
+
+.contacto-value a:hover {
+    opacity: 0.6;
+}
+
+.contacto-divider {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 45px 0;
+}
+
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
 @media (max-width: 1024px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -422,54 +459,4 @@ p {
     .proceso-image {
         width: 100%;
     }
-         /* --- PÁGINA CONTACTO --- */
-   .contacto-container {
-       max-width: 580px;
-       margin: 0 auto;
-       padding: 30px 20px 80px 20px;
-   }
-   
-   .contacto-block {
-       margin: 45px 0; /* Espaciado amplio entre bloques */
-   }
-   
-   .contacto-heading {
-       font-family: "Garamond", "Minion Pro", "Georgia", serif;
-       font-size: 1.1rem;
-       font-weight: 600;
-       color: #111;
-       margin-bottom: 16px;
-       letter-spacing: normal;
-       text-transform: none;
-   }
-   
-   .contacto-text {
-       font-family: "Garamond", "Minion Pro", "Georgia", serif;
-       font-size: 0.95rem;
-       line-height: 1.6;
-       color: #444;
-       margin-bottom: 16px;
-   }
-   
-   .contacto-value a {
-       font-family: "Garamond", "Minion Pro", "Georgia", serif;
-       font-size: 1rem;
-       color: #111;
-       text-decoration: none;
-       border-bottom: 1px solid #111;
-       padding-bottom: 2px;
-       transition: opacity 0.2s ease;
-   }
-   
-   .contacto-value a:hover {
-       opacity: 0.5;
-   }
-   
-   /* Línea divisoria suave y más distanciada */
-   .contacto-divider {
-       border: none;
-       height: 1px;
-       background-color: #eaeaea;
-       margin: 45px 0;
-   }
 }
