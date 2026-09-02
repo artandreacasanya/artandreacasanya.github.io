@@ -325,34 +325,51 @@ p {
 /* ==========================================================
    ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
    ========================================================== */
+/* --- PÁGINA PROCESO --- */
 .proceso-container {
-    max-width: 900px;
+    max-width: 680px;
     margin: 0 auto;
+    padding: 30px 20px 80px 20px;
 }
 
-.proceso-title-wrapper {
-    margin-bottom: 25px;
+.proceso-block {
+    margin: 45px 0;
 }
 
-.proceso-images-row {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-    justify-content: center;
+.proceso-heading {
+    font-family: "Garamond", "Minion Pro", "Georgia", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.proceso-text {
+    font-family: "Garamond", "Minion Pro", "Georgia", serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 24px;
+}
+
+.proceso-image-container {
+    width: 100%;
+    overflow: hidden;
 }
 
 .proceso-image {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.proceso-text-wrapper p {
-    font-size: var(--tamano-fuente-proceso); /* 0.90rem */
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
+/* Línea divisoria entre bloques */
+.proceso-divider {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 50px 0;
 }
 
 /* ==========================================================
