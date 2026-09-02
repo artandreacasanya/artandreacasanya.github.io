@@ -405,7 +405,7 @@ p {
     .proceso-image {
         width: 100%;
     }
-       /* --- PÁGINA CONTACTO --- */
+         /* --- PÁGINA CONTACTO --- */
    .contacto-container {
        max-width: 580px;
        margin: 0 auto;
@@ -413,27 +413,30 @@ p {
    }
    
    .contacto-block {
-       margin: 45px 0; /* Mayor espacio entre bloques */
+       margin: 45px 0; /* Espaciado amplio entre bloques */
    }
    
    .contacto-heading {
-       font-size: 0.80rem;
-       text-transform: uppercase;
-       letter-spacing: 2px;
+       font-family: "Garamond", "Minion Pro", "Georgia", serif;
+       font-size: 1.1rem;
+       font-weight: 600;
        color: #111;
        margin-bottom: 16px;
-       font-weight: 600;
+       letter-spacing: normal;
+       text-transform: none;
    }
    
    .contacto-text {
-       font-size: 0.85rem;
-       line-height: 1.7;
-       color: #555;
+       font-family: "Garamond", "Minion Pro", "Georgia", serif;
+       font-size: 0.95rem;
+       line-height: 1.6;
+       color: #444;
        margin-bottom: 16px;
    }
    
    .contacto-value a {
-       font-size: 0.95rem;
+       font-family: "Garamond", "Minion Pro", "Georgia", serif;
+       font-size: 1rem;
        color: #111;
        text-decoration: none;
        border-bottom: 1px solid #111;
