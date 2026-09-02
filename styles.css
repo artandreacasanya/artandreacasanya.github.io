@@ -1,70 +1,461 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto — Casanya</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="icon.png">
-</head>
-<body>
+/* ==========================================================
+   PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
+   ========================================================== */
+:root {
+    /* Logo principal de la web */
+    --tamano-logo: 80px;         
 
-    <div class="site-container">
-        <!-- CABECERA -->
-        <header class="navbar">
-            <div class="nav-left">
-                <a href="index.html">
-                    <img src="casanya.png" alt="Casanya" class="nav-logo">
-                </a>
-            </div>
-            
-            <nav class="nav-right">
-                <a href="index.html#obras"><img src="obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="proceso.html"><img src="proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="sobre-mi.html"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="contacto.html"><img src="contacto.png" alt="Contacto" class="nav-item-contacto"></a>
-                
-                <div class="lang-selector">
-                    <a href="contacto.html" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="contact.html" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
-                </div>
-            </nav>
-        </header>
+    /* Menú superior (cada enlace por separado) */
+    --tamano-menu-obras: 25px;
+    --tamano-menu-proceso: 25px;
+    --tamano-menu-sobremi: 25px;
+    --tamano-menu-contacto: 24px;
 
-        <!-- SECCIÓN CONTACTO -->
-        <main class="page-content">
-            <div class="contacto-container">
-                <div class="section-title-container">
-                    <img src="contacto.png" alt="Contacto" class="title-contacto-img">
-                </div>
-                
-                <p class="contacto-intro">Para consultas sobre disponibilidad de obras, encargos o proyectos, puedes escribir a través del correo electrónico o seguir el proceso en redes sociales.</p>
-                
-                <!-- BLOQUE 1: EMAIL -->
-                <div class="contacto-block">
-                    <h2 class="contacto-heading">Adquisiciones & Consultas</h2>
-                    <p class="contacto-value"><a href="mailto:art.andreacasanya@gmail.com">art.andreacasanya@gmail.com</a></p>
-                </div>
+    /* Selector de idioma */
+    --tamano-idioma: 16px;        
 
-                <hr class="contacto-divider">
+    /* Títulos principales de las páginas interiores */
+    --tamano-titulo-proceso: 65px;
+    --tamano-titulo-sobremi: 65px;
+    --tamano-titulo-contacto: 65px;
 
-                <!-- BLOQUE 2: INSTAGRAM -->
-                <div class="contacto-block">
-                    <h2 class="contacto-heading">Instagram</h2>
-                    <p class="contacto-value"><a href="https://instagram.com/andreacasanya_art" target="_blank" rel="noopener">@andreacasanya_art</a></p>
-                </div>
+    /* Título compuesto de la sección de Obras en el inicio */
+    --tamano-obras-palabra: 65px;   
+    --tamano-obras-guion: 50px;     
+    --tamano-obras-serie: 70px;     
 
-                <hr class="contacto-divider">
+    /* TAMAÑOS DE TIPOGRAFÍA */
+    --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
+    --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
+    --tamano-fuente-sobremi: 0.90rem;  /* Subido a 0.90rem (1 punto más grande) */
+    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  /* Sincronizado a 0.90rem */
+    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); /* Sincronizado a 0.90rem */
+}
 
-                <!-- BLOQUE 3: ENVÍOS -->
-                <div class="contacto-block">
-                    <h2 class="contacto-heading">Envíos</h2>
-                    <p class="contacto-text">Todas las obras se envían embaladas de forma especializada con protección para piezas de arte y número de seguimiento. Envíos nacionales e internacionales.</p>
-                </div>
-            </div>
-        </main>
-    </div>
+/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
+body {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400; /* Regular */
+    font-size: var(--tamano-fuente-base);
+    color: #222222;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-</body>
-</html>
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* CABECERA Y MENÚ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-left .nav-logo {
+    height: var(--tamano-logo);
+    width: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-right > a {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Elementos del menú individualizados */
+.nav-item-obras {
+    height: var(--tamano-menu-obras);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-proceso {
+    height: var(--tamano-menu-proceso);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-sobre-mi {
+    height: var(--tamano-menu-sobremi);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-contacto {
+    height: var(--tamano-menu-contacto);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item-obras:hover,
+.nav-item-proceso:hover,
+.nav-item-sobre-mi:hover,
+.nav-item-contacto:hover {
+    opacity: 1;
+}
+
+/* SELECTOR DE IDIOMA (ALINEACIÓN FIJA Y ESTABLE) */
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+    height: var(--tamano-idioma); /* Fija la altura del contenedor al tamaño del texto/icono */
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.lang-img {
+    height: var(--tamano-idioma);
+    width: auto;
+    opacity: 0.65;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.lang-btn:hover .lang-img {
+    opacity: 1;
+}
+
+.lang-divider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-img-divider {
+    height: 10px; /* O el tamaño de la barra que uses */
+    width: auto;
+    opacity: 0.4;
+    display: block;
+}
+
+/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
+.page-content, .site-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
+.title-proceso-img {
+    height: var(--tamano-titulo-proceso);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-contacto-img {
+    height: var(--tamano-titulo-contacto);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS */
+.section-title-container {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.title-obras-img {
+    height: var(--tamano-obras-palabra);
+    width: auto;
+}
+
+.title-guion-img {
+    height: var(--tamano-obras-guion);
+    width: auto;
+}
+
+.title-serie-img {
+    height: var(--tamano-obras-serie);
+    width: auto;
+}
+
+/* PORTADA Y CUADRÍCULA DE OBRAS */
+.hero-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.work-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FICHA TÉCNICA DE LAS OBRAS (MINION VARIABLE CONCEPT) */
+.work-info p {
+    text-align: left;
+    margin: 2px 0;
+    font-size: var(--tamano-fuente-obras);
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400;
+}
+
+.work-info p strong {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
+}
+
+/* BOTÓN DE CONSULTA DE OBRAS */
+.btn-inquire {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 0.72rem;
+    color: #222222;
+    background-color: transparent;
+    border: 1px solid #222222;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-inquire:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ" (AJUSTADA Y AMPLIADA)
+   ========================================================== */
+.about-layout-3col {
+    display: flex;
+    gap: 35px; /* Reducido espacio para permitir que la foto crezca */
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+/* Columna 1: Título a la izquierda */
+.about-title-col {
+    flex: 0.8;
+    min-width: 130px;
+}
+
+.about-title-col .title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+}
+
+/* Columna 2: Imagen central (FOTO MÁS GRANDE) */
+.about-image-col {
+    flex: 2.2; /* Aumentado peso visual de la columna */
+    max-width: 600px; /* Sube el tope máximo de la foto a 600px */
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Columna 3: Texto a la derecha (TEXTO EN 0.90REM Y JUSTIFICADO) */
+.about-text-col {
+    flex: 1.5;
+}
+
+.about-text-col p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: var(--tamano-fuente-sobremi); /* 0.90rem */
+    line-height: 1.6;
+    text-align: justify; /* Justificado */
+    text-justify: inter-word;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
+   ========================================================== */
+.proceso-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proceso-title-wrapper {
+    margin-bottom: 25px;
+}
+
+.proceso-images-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.proceso-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.proceso-text-wrapper p {
+    font-size: var(--tamano-fuente-proceso); /* 0.90rem */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "CONTACTO"
+   ========================================================== */
+.contacto-text-col p,
+.contacto-container p {
+    font-size: var(--tamano-fuente-contacto); /* 0.90rem */
+    line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-layout-3col {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image-col {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proceso-images-row {
+        flex-direction: column;
+    }
+
+    .proceso-image {
+        width: 100%;
+    }
+           /* --- PÁGINA CONTACTO --- */
+    .contacto-container {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 20px 20px 60px 20px;
+    }
+    
+    .contacto-intro {
+        font-size: 0.85rem;
+        line-height: 1.7;
+        margin-bottom: 35px;
+        color: #444;
+    }
+    
+    .contacto-block {
+        margin: 25px 0;
+    }
+    
+    .contacto-heading {
+        font-size: 0.70rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #888;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .contacto-value a {
+        font-size: 0.95rem;
+        color: #111;
+        text-decoration: none;
+        border-bottom: 1px solid #111;
+        padding-bottom: 2px;
+        transition: opacity 0.2s ease;
+    }
+    
+    .contacto-value a:hover {
+        opacity: 0.6;
+    }
+    
+    .contacto-text {
+        font-size: 0.80rem;
+        line-height: 1.6;
+        color: #555;
+    }
+    
+    /* Línea divisoria sutil */
+    .contacto-divider {
+        border: none;
+        height: 1px;
+        background-color: #eee;
+        margin: 25px 0;
+    }
+}
