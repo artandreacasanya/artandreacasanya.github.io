@@ -27,15 +27,15 @@
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
     --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.90rem;  /* Subido a 0.90rem */
-    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  /* Sincronizado a 0.90rem */
-    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); /* Sincronizado a 0.90rem */
+    --tamano-fuente-sobremi: 0.90rem;  
+    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
+    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
     font-size: var(--tamano-fuente-base);
     color: #222222;
     background-color: #ffffff;
@@ -323,19 +323,19 @@ p {
    ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO" (LADO A LADO)
    ========================================================== */
 .proceso-container {
-    max-width: 950px; /* Ampliado para que las 2 fotos respiren en paralelo */
+    max-width: 950px;
     margin: 0 auto;
     padding: 30px 20px 80px 20px;
 }
 
 .proceso-grid {
     display: flex;
-    gap: 40px; /* Separación entre las dos columnas */
+    gap: 40px;
     align-items: flex-start;
 }
 
 .proceso-card {
-    flex: 1; /* Ocupan exactamente el mismo 50% cada una */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -455,7 +455,6 @@ p {
         grid-template-columns: 1fr;
     }
 
-    /* En móviles las fotos de proceso se colocan una debajo de otra */
     .proceso-grid {
         flex-direction: column;
         gap: 40px;
