@@ -6,13 +6,13 @@
     --tamano-logo: 80px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 25px;
-    --tamano-menu-proceso: 25px;
-    --tamano-menu-sobremi: 25px;
-    --tamano-menu-contacto: 24px;
+    --tamano-menu-obras: 30px;
+    --tamano-menu-proceso: 30px;
+    --tamano-menu-sobremi: 30px;
+    --tamano-menu-contacto: 30px;
 
     /* Selector de idioma */
-    --tamano-idioma: 16px;        
+    --tamano-idioma: 20px;        
 
     /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 65px;
