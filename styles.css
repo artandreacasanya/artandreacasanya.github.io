@@ -2,17 +2,17 @@
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
-    /* Logo principal de la web */
-    --tamano-logo: 80px;         
+    /* Logo principal de la web (Ampliado) */
+    --tamano-logo: 100px;         
 
-    /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 30px;
-    --tamano-menu-proceso: 30px;
-    --tamano-menu-sobremi: 30px;
-    --tamano-menu-contacto: 30px;
+    /* Menú superior (cada enlace por separado - Ampliado) */
+    --tamano-menu-obras: 36px;
+    --tamano-menu-proceso: 36px;
+    --tamano-menu-sobremi: 36px;
+    --tamano-menu-contacto: 36px;
 
     /* Selector de idioma */
-    --tamano-idioma: 20px;        
+    --tamano-idioma: 22px;        
 
     /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 65px;
@@ -47,15 +47,16 @@ body {
 .site-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
-/* CABECERA Y MENÚ */
+/* CABECERA Y MENÚ (Con margen superior para bajarlo del todo) */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 .nav-left .nav-logo {
@@ -143,7 +144,7 @@ body {
 }
 
 .lang-img-divider {
-    height: 10px;
+    height: 12px;
     width: auto;
     opacity: 0.4;
     display: block;
