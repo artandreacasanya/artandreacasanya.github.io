@@ -1,47 +1,13 @@
-/* ==========================================================
-   PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
-   ========================================================== */
 :root {
-    /* Logo principal de la web */
-    --tamano-logo: 80px;         
-
-    /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 25px;
-    --tamano-menu-proceso: 25px;
-    --tamano-menu-sobremi: 25px;
-    --tamano-menu-contacto: 24px;
-
-    /* Selector de idioma */
-    --tamano-idioma: 16px;        
-
-    /* Títulos principales de las páginas interiores */
-    --tamano-titulo-proceso: 65px;
-    --tamano-titulo-sobremi: 65px;
-    --tamano-titulo-contacto: 65px;
-
-    /* Título compuesto de la sección de Obras en el inicio */
-    --tamano-obras-palabra: 65px;   
-    --tamano-obras-guion: 50px;     
-    --tamano-obras-serie: 70px;     
-
-    /* TAMAÑOS DE TIPOGRAFÍA */
-    --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
-    --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.90rem;  
-    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
-    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
+    --tamano-logo: 45px;
 }
 
-/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 400;
-    font-size: var(--tamano-fuente-base);
-    color: #222222;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .site-container {
@@ -55,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -69,213 +36,133 @@ body {
     gap: 35px;
 }
 
-.nav-right > a {
-    display: inline-flex;
-    align-items: center;
-}
-
-/* Elementos del menú individualizados */
-.nav-item-obras {
-    height: var(--tamano-menu-obras);
+.nav-right a img {
+    height: 18px;
     width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-proceso {
-    height: var(--tamano-menu-proceso);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-sobre-mi {
-    height: var(--tamano-menu-sobremi);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-contacto {
-    height: var(--tamano-menu-contacto);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-obras:hover,
-.nav-item-proceso:hover,
-.nav-item-sobre-mi:hover,
-.nav-item-contacto:hover {
-    opacity: 1;
+    display: block;
 }
 
 /* SELECTOR DE IDIOMA */
 .lang-selector {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 6px;
-    margin-left: 20px;
-    height: var(--tamano-idioma);
 }
 
 .lang-btn {
-    display: inline-flex;
-    align-items: center;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
 }
 
-.lang-img {
-    height: var(--tamano-idioma);
-    width: auto;
-    opacity: 0.65;
-    transition: opacity 0.3s ease;
-    display: block;
-}
-
-.lang-btn:hover .lang-img {
+.lang-btn.active {
     opacity: 1;
 }
 
+.lang-img {
+    height: 14px;
+    width: auto;
+    display: block;
+}
+
 .lang-divider {
-    display: inline-flex;
+    opacity: 0.4;
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .lang-img-divider {
-    height: 10px;
-    width: auto;
-    opacity: 0.4;
-    display: block;
-}
-
-/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
-.page-content, .site-content {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
-.title-proceso-img {
-    height: var(--tamano-titulo-proceso);
+    height: 12px;
     width: auto;
     display: block;
-    margin-bottom: 25px;
 }
 
-.title-sobremi-img {
-    height: var(--tamano-titulo-sobremi);
-    width: auto;
-    display: block;
-    margin-bottom: 25px;
-}
-
-.title-contacto-img {
-    height: var(--tamano-titulo-contacto);
-    width: auto;
-    display: block;
-    margin-bottom: 25px;
-}
-
-/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS */
-.section-title-container {
-    margin-bottom: 35px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.title-obras-img {
-    height: var(--tamano-obras-palabra);
-    width: auto;
-}
-
-.title-guion-img {
-    height: var(--tamano-obras-guion);
-    width: auto;
-}
-
-.title-serie-img {
-    height: var(--tamano-obras-serie);
-    width: auto;
-}
-
-/* PORTADA Y CUADRÍCULA DE OBRAS */
+/* PORTADA */
 .hero-section {
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .hero-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
+/* SECCIÓN DE OBRAS */
+.obras-section {
+    margin-top: 60px;
+}
+
+.section-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.title-obras-img {
+    height: 22px;
+    width: auto;
+    display: block;
+}
+
+.title-guion-img {
+    height: 12px;
+    width: auto;
+    display: block;
+    opacity: 0.6;
+}
+
+.title-serie-img {
+    height: 20px;
+    width: auto;
+    display: block;
+}
+
+/* GALERÍA DE OBRAS */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px 40px;
+    gap: 40px 30px;
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 15px;
 }
 
 .work-image {
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 15px;
 }
 
-/* FICHA TÉCNICA DE LAS OBRAS */
 .work-info p {
-    text-align: left;
-    margin: 2px 0;
-    font-size: var(--tamano-fuente-obras);
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 400;
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
-.work-info p strong {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 600;
-}
-
-/* BOTÓN DE ADQUIRIR OBRA */
+/* BOTÓN ADQUIRIR OBRA */
 .btn-inquire {
     display: inline-block;
     margin-top: 10px;
-    padding: 6px 12px;
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.72rem;
-    color: #222222;
-    background-color: transparent;
-    border: 1px solid #222222;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
 }
 
 .btn-inquire:hover {
-    background-color: #222222;
-    color: #ffffff;
+    background-color: #444444;
 }
 
-/* ESTADO OBRA VENDIDA (PUNTO ROJO) */
+/* ESTADO VENDIDO */
 .status-sold {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 10px;
@@ -284,216 +171,75 @@ p {
 .red-dot {
     width: 8px;
     height: 8px;
-    background-color: #c0392b;
+    background-color: #ff0000;
     border-radius: 50%;
     display: inline-block;
 }
 
 .status-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.75rem;
-    color: #777777;
-    letter-spacing: 0.05em;
-    font-style: italic;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ff0000;
 }
 
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ"
-   ========================================================== */
-.about-layout-3col {
-    display: flex;
-    gap: 35px;
-    align-items: flex-start;
-    margin-top: 15px;
+/* PÁGINA DE CONTACTO */
+.contacto-container {
+    max-width: 800px;
+    margin-top: 40px;
 }
 
-.about-title-col {
-    flex: 0.8;
-    min-width: 130px;
-}
-
-.about-title-col .title-sobremi-img {
-    height: var(--tamano-titulo-sobremi);
+.title-contacto-img {
+    height: 22px;
     width: auto;
     display: block;
 }
 
-.about-image-col {
-    flex: 2.2;
-    max-width: 600px;
-    width: 100%;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.about-text-col {
-    flex: 1.5;
-}
-
-.about-text-col p {
-    margin-top: 0;
-    margin-bottom: 22px;
-    font-size: var(--tamano-fuente-sobremi);
-    line-height: 1.6;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
-   ========================================================== */
-.proceso-container {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 30px 20px 80px 20px;
-}
-
-.proceso-grid {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-.proceso-card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.proceso-image-container {
-    width: 100%;
-    height: 380px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.proceso-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.proceso-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #111;
-    margin-bottom: 12px;
-}
-
-.proceso-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-proceso);
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "CONTACTO" (ALINEADA A LA IZQUIERDA)
-   ========================================================== */
-.contacto-container {
-    max-width: 580px;
-    margin: 0;
-    padding: 30px 20px 80px 20px;
-    text-align: left;
-}
-
 .contacto-block {
-    margin: 45px 0;
+    margin-bottom: 30px;
 }
 
 .contacto-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #111;
-    margin-bottom: 14px;
-    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .contacto-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-contacto);
+    font-size: 14px;
     line-height: 1.6;
-    color: #333;
-    margin-bottom: 16px;
-    text-align: left;
+    margin-bottom: 8px;
 }
 
 .contacto-value {
-    text-align: left;
+    font-size: 14px;
+    margin: 0;
 }
 
 .contacto-value a {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-contacto);
-    color: #111;
+    color: #000000;
     text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: opacity 0.2s ease;
-}
-
-.contacto-value a:hover {
-    opacity: 0.6;
 }
 
 .contacto-divider {
     border: none;
-    height: 1px;
-    background-color: #eaeaea;
-    margin: 45px 0;
+    border-top: 1px solid #eaeaea;
+    margin: 30px 0;
 }
 
-/* ==========================================================
-   RESPONSIVO
-   ========================================================== */
-@media (max-width: 1024px) {
+/* RESPONSIVE BÁSICO */
+@media (max-width: 900px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 900px) {
-    .about-layout-3col {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .about-image-col {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .nav-right {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
+@media (max-width: 600px) {
     .works-grid {
         grid-template-columns: 1fr;
     }
-
-    .proceso-grid {
+    
+    .navbar {
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .proceso-image-container {
-        height: 280px;
+        gap: 20px;
     }
 }
