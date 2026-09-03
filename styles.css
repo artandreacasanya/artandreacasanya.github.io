@@ -3,7 +3,7 @@
    ========================================================== */
 :root {
     /* Logo principal de la web (Ampliado) */
-    --tamano-logo: 105;         
+    --tamano-logo: 105px;         
 
     /* Menú superior (cada enlace por separado - Ampliado) */
     --tamano-menu-obras: 36px;
