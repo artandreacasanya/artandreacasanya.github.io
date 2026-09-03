@@ -2,10 +2,10 @@
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
-    /* Logo principal de la web (Ampliado) */
+    /* Logo principal de la web */
     --tamano-logo: 105px;         
 
-    /* Menú superior (cada enlace por separado - Ampliado) */
+    /* Menú superior (cada enlace por separado) */
     --tamano-menu-obras: 36px;
     --tamano-menu-proceso: 36px;
     --tamano-menu-sobremi: 36px;
@@ -50,13 +50,18 @@ body {
     padding: 20px;
 }
 
-/* CABECERA Y MENÚ (Con margen superior para bajarlo del todo) */
+/* CABECERA Y MENÚ INDEPENDIENTES */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 40px;
     margin-bottom: 35px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: flex-start;
 }
 
 .nav-left .nav-logo {
