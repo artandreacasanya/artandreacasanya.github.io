@@ -54,7 +54,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Modificado a center para equilibrar verticalmente el bloque */
     margin-top: 40px;
     margin-bottom: 28px;
 }
@@ -73,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
-    margin-top: 10px; /* Sube o baja este número a tu gusto para colocar el menú en la altura perfecta */
+    margin-top: 15px; /* Sube o baja este número para colocar el menú en la altura perfecta */
 }
 
 .nav-right > a {
