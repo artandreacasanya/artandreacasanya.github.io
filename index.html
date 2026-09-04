@@ -1,231 +1,506 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casanya — Artista</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="icon.png">
-</head>
-<body>
+/* ==========================================================
+   PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
+   ========================================================== */
+:root {
+    /* Logo principal de la web */
+    --tamano-logo: 105px;         
 
-    <div class="site-container">
-        <!-- CABECERA -->
-        <header class="navbar">
-            <div class="nav-left">
-                <a href="index.html">
-                    <img src="casanya.png" alt="Casanya" class="nav-logo">
-                </a>
-            </div>
-            
-            <nav class="nav-right">
-                <a href="index.html#obras"><img src="obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="proceso.html"><img src="proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="sobre-mi.html"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="contacto.html"><img src="contacto.png" alt="Contacto" class="nav-item-contacto"></a>
-                
-                <div class="lang-selector">
-                    <a href="index.html" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="index_en.html" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
-                </div>
-            </nav>
-        </header>
+    /* Menú superior (cada enlace por separado) */
+    --tamano-menu-obras: 35px;
+    --tamano-menu-proceso: 35px;
+    --tamano-menu-sobremi: 35px;
+    --tamano-menu-contacto: 35px;
 
-        <!-- PORTADA -->
-        <section class="hero-section">
-            <img src="foto_portada.jpg" alt="Portada Casanya" class="hero-image">
-        </section>
+    /* Selector de idioma */
+    --tamano-idioma: 20px;        
 
-        <!-- SECCIÓN DE OBRAS -->
-        <section id="obras" class="obras-section">
-            <div class="section-title-container">
-                <img src="obras.png" alt="Obras" class="title-obras-img">
-                <img src="guion.png" alt="-" class="title-guion-img">
-                <img src="serie_paris.png" alt="Serie París 2025" class="title-serie-img">
-            </div>
+    /* Títulos principales de las páginas interiores */
+    --tamano-titulo-proceso: 65px;
+    --tamano-titulo-sobremi: 65px;
+    --tamano-titulo-contacto: 65px;
 
-            <!-- GALERÍA DE OBRAS -->
-            <div class="works-grid">
-                
-                <article class="work-card">
-                    <img src="parc_montsouris.jpg" alt="Parc Montsouris" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Parc Montsouris</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Parc%20Montsouris&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Parc%20Montsouris%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+    /* Título compuesto de la sección de Obras en el inicio */
+    --tamano-obras-palabra: 65px;   
+    --tamano-obras-guion: 40px;     
+    --tamano-obras-serie: 70px;     
 
-                <article class="work-card">
-                    <img src="parc_monceau.jpg" alt="Parc Monceau" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Parc Monceau</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Parc%20Monceau&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Parc%20Monceau%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+    /* TAMAÑOS DE TIPOGRAFÍA */
+    --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
+    --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
+    --tamano-fuente-sobremi: 0.90rem;  
+    --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
+    --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
+}
 
-                <article class="work-card">
-                    <img src="jardin_du_luxembourg_fontaine_medicis.jpg" alt="Jardin du Luxembourg - Fontaine Médicis" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Jardin du Luxembourg - Fontaine Médicis</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>270 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Jardin%20du%20Luxembourg%20-%20Fontaine%20M%C3%A9dicis&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Jardin%20du%20Luxembourg%20-%20Fontaine%20M%C3%A9dicis%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
+body {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400;
+    font-size: var(--tamano-fuente-base);
+    color: #222222;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-                <article class="work-card">
-                    <img src="jardin_du_luxembourg.jpg" alt="Jardin du Luxembourg" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Jardin du Luxembourg</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Jardin%20du%20Luxembourg&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Jardin%20du%20Luxembourg%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-                <article class="work-card">
-                    <img src="maison_du_14e.jpg" alt="Maison du 14e" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Maison du 14e</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Maison%20du%2014e&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Maison%20du%2014e%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+/* CABECERA Y MENÚ INDEPENDIENTES */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
 
-                <article class="work-card">
-                    <img src="maison_a_montmartre.jpg" alt="Maison à Montmartre" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Maison à Montmartre</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Maison%20%C3%A0%20Montmartre&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Maison%20%C3%A0%20Montmartre%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-left {
+    display: flex;
+    align-items: flex-start;
+}
 
-                <article class="work-card">
-                    <img src="pont_neuf.jpg" alt="Pont Neuf" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Pont Neuf</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Pont%20Neuf&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Pont%20Neuf%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-left .nav-logo {
+    height: var(--tamano-logo);
+    width: auto;
+}
 
-                <article class="work-card">
-                    <img src="pont_alexandre_iii.jpg" alt="Pont Alexandre III" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Pont Alexandre III</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Pont%20Alexandre%20III&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Pont%20Alexandre%20III%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px; /* <--- Sube o baja este número para colocar el menú a la altura exacta que quieras */
+}
 
-                <article class="work-card">
-                    <img src="canal_saint_martin.jpg" alt="Canal Saint-Martin" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Canal Saint-Martin</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Canal%20Saint-Martin&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Canal%20Saint-Martin%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-right > a {
+    display: inline-flex;
+    align-items: center;
+}
 
-                <article class="work-card">
-                    <img src="parc_florale_champ_de_dahlias.jpg" alt="Parc Florale - Champ de Dahlias" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Parc Florale - Champ de Dahlias</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>300 €</strong></p>
-                        <div class="status-sold">
-                            <span class="red-dot"></span>
-                            <span class="status-text">Adquirido</span>
-                        </div>
-                    </div>
-                </article>
+/* Elementos del menú individualizados */
+.nav-item-obras {
+    height: var(--tamano-menu-obras);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
 
-                <article class="work-card">
-                    <img src="parc_florale_jardin_bonsais.jpg" alt="Parc Florale - Jardin Bonsaïs" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Parc Florale - Jardin Bonsaïs</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Parc%20Florale%20-%20Jardin%20Bonsa%C3%AFs&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Parc%20Florale%20-%20Jardin%20Bonsa%C3%AFs%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-item-proceso {
+    height: var(--tamano-menu-proceso);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
 
-                <article class="work-card">
-                    <img src="parc_florale.jpg" alt="Parc Florale" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Parc Florale</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Parc%20Florale&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Parc%20Florale%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-item-sobre-mi {
+    height: var(--tamano-menu-sobremi);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
 
-                <article class="work-card">
-                    <img src="jardin_des_tuileries.jpg" alt="Jardin des Tuileries" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Jardin des Tuileries</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Jardin%20des%20Tuileries&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Jardin%20des%20Tuileries%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-item-contacto {
+    height: var(--tamano-menu-contacto);
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
 
-                <article class="work-card">
-                    <img src="avenue_des_champs_elysees.jpg" alt="Avenue des Champs-Élysées" class="work-image">
-                    <div class="work-info">
-                        <p>Título: <strong>Avenue des Champs-Élysées</strong></p>
-                        <p>Técnica: <strong>Óleo sobre tabla</strong></p>
-                        <p>Dimensiones: <strong>34 x 24 cm</strong></p>
-                        <p>Año: <strong>2025</strong></p>
-                        <p>Precio: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n%20%E2%80%94%20Avenue%20des%20Champs-%C3%89lys%C3%A9es&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20adquirir%20la%20obra%20%22Avenue%20des%20Champs-%C3%89lys%C3%A9es%22.%0D%0A%0D%0AQuedo%20a%20la%20espera%20de%20tu%20respuesta.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Adquirir obra</a>
-                    </div>
-                </article>
+.nav-item-obras:hover,
+.nav-item-proceso:hover,
+.nav-item-sobre-mi:hover,
+.nav-item-contacto:hover {
+    opacity: 1;
+}
 
-            </div>
-        </section>
+/* SELECTOR DE IDIOMA */
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+    height: var(--tamano-idioma);
+}
 
-        <section id="proceso" class="info-section"></section>
-        <section id="sobre-mi" class="info-section"></section>
-        <section id="contacto" class="info-section"></section>
-    </div>
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+}
 
-</body>
-</html>
+.lang-img {
+    height: var(--tamano-idioma);
+    width: auto;
+    opacity: 0.65;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.lang-btn:hover .lang-img {
+    opacity: 1;
+}
+
+.lang-divider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-img-divider {
+    height: 12px;
+    width: auto;
+    opacity: 0.4;
+    display: block;
+}
+
+/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
+.page-content, .site-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
+.title-proceso-img {
+    height: var(--tamano-titulo-proceso);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.title-contacto-img {
+    height: var(--tamano-titulo-contacto);
+    width: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS */
+.section-title-container {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.title-obras-img {
+    height: var(--tamano-obras-palabra);
+    width: auto;
+}
+
+.title-guion-img {
+    height: var(--tamano-obras-guion);
+    width: auto;
+}
+
+.title-serie-img {
+    height: var(--tamano-obras-serie);
+    width: auto;
+}
+
+/* PORTADA Y CUADRÍCULA DE OBRAS */
+.hero-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.work-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FICHA TÉCNICA DE LAS OBRAS */
+.work-info p {
+    text-align: left;
+    margin: 2px 0;
+    font-size: var(--tamano-fuente-obras);
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400;
+}
+
+.work-info p strong {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
+}
+
+/* BOTÓN DE ADQUIRIR OBRA */
+.btn-inquire {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 0.72rem;
+    color: #222222;
+    background-color: transparent;
+    border: 1px solid #222222;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-inquire:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* ESTADO OBRA VENDIDA (PUNTO ROJO) */
+.status-sold {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.red-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #c0392b;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 0.75rem;
+    color: #777777;
+    letter-spacing: 0.05em;
+    font-style: italic;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ"
+   ========================================================== */
+.about-layout-3col {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.about-title-col {
+    flex: 0.8;
+    min-width: 130px;
+}
+
+.about-title-col .title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+}
+
+.about-image-col {
+    flex: 2.2;
+    max-width: 600px;
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text-col {
+    flex: 1.5;
+}
+
+.about-text-col p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
+   ========================================================== */
+.proceso-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px 80px 20px;
+}
+
+.proceso-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.proceso-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.proceso-image-container {
+    width: 100%;
+    height: 380px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.proceso-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.proceso-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.proceso-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-proceso);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "CONTACTO" (ALINEADA A LA IZQUIERDA)
+   ========================================================== */
+.contacto-container {
+    max-width: 580px;
+    margin: 0;
+    padding: 30px 20px 80px 20px;
+    text-align: left;
+}
+
+.contacto-block {
+    margin: 45px 0;
+}
+
+.contacto-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.contacto-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.contacto-value {
+    text-align: left;
+}
+
+.contacto-value a {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+}
+
+.contacto-value a:hover {
+    opacity: 0.6;
+}
+
+.contacto-divider {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 45px 0;
+}
+
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
+@media (max-width: 1024px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-layout-3col {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image-col {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proceso-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .proceso-image-container {
+        height: 280px;
+    }
+}
