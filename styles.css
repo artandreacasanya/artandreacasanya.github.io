@@ -20,9 +20,9 @@
     --tamano-titulo-contacto: 65px;
 
     /* Título compuesto de la sección de Obras en el inicio */
-    --tamano-obras-palabra: 65px;   
-    --tamano-obras-guion: 40px;     
-    --tamano-obras-serie: 70px;     
+    --tamano-obras-palabra: 65px;    
+    --tamano-obras-guion: 40px;      
+    --tamano-obras-serie: 70px;      
 
     /* TAMAÑOS DE TIPOGRAFÍA */
     --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
@@ -54,7 +54,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Modificado a center para equilibrar verticalmente el bloque */
+    align-items: center;
     margin-top: 40px;
     margin-bottom: 28px;
 }
@@ -73,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
-    margin-top: 15px; /* Sube o baja este número para colocar el menú en la altura perfecta */
+    padding-top: 25px; /* Modificado a padding-top para forzar el descenso limpio del menú */
 }
 
 .nav-right > a {
@@ -489,6 +489,7 @@ p {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+        padding-top: 0;
     }
 
     .works-grid {
