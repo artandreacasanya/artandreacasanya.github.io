@@ -73,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
-    margin-top: 5px; /* <--- Sube o baja este número para colocar el menú a la altura exacta que quieras */
+    margin-top: 10px; /* Sube o baja este número a tu gusto para colocar el menú en la altura perfecta */
 }
 
 .nav-right > a {
