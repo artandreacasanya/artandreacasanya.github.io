@@ -6,13 +6,13 @@
     --tamano-logo: 105px;         
 
     /* Menú superior (cada enlace por separado) */
-    --tamano-menu-obras: 36px;
-    --tamano-menu-proceso: 36px;
-    --tamano-menu-sobremi: 36px;
-    --tamano-menu-contacto: 36px;
+    --tamano-menu-obras: 35px;
+    --tamano-menu-proceso: 35px;
+    --tamano-menu-sobremi: 35px;
+    --tamano-menu-contacto: 35px;
 
     /* Selector de idioma */
-    --tamano-idioma: 22px;        
+    --tamano-idioma: 20px;        
 
     /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 65px;
@@ -21,7 +21,7 @@
 
     /* Título compuesto de la sección de Obras en el inicio */
     --tamano-obras-palabra: 65px;   
-    --tamano-obras-guion: 50px;     
+    --tamano-obras-guion: 40px;     
     --tamano-obras-serie: 70px;     
 
     /* TAMAÑOS DE TIPOGRAFÍA */
