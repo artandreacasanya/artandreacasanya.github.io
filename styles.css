@@ -482,47 +482,75 @@ p {
         padding: 15px;
     }
 
+    /* Cabecera centrada en móvil */
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+        align-items: center;
+        gap: 20px;
         margin-top: 15px;
         margin-bottom: 25px;
     }
     
-    /* Logo más pequeño para evitar cortes en móvil */
+    .nav-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Logo centrado y ligeramente más grande */
     .nav-left .nav-logo {
-        height: 60px;
+        height: 75px;
         width: auto;
     }
 
-    /* Contenedor derecho en columna: Menú arriba en línea y selector de idioma abajo */
+    /* Contenedor principal de navegación en columna y centrado */
     .nav-right {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        align-items: center;
+        gap: 12px;
         padding-top: 0;
-        flex-wrap: wrap;
     }
 
-    /* Forzamos que los elementos del menú principal fluyan en una sola línea horizontal */
+    /* Enlaces del menú superior colocados todos en una sola línea horizontal */
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Creamos una fila interna para los 4 enlaces de texto del menú */
+    /* Como los elementos a son hijos directos, los envolvemos visualmente ajustando sus tamaños */
     .nav-right > a {
         display: inline-flex;
         align-items: center;
+        margin: 0 6px;
     }
 
-    /* Reducción proporcional y limpia de los iconos del menú para que quepan holgados juntos */
-    .nav-item-obras { height: 21px; }
-    .nav-item-proceso { height: 21px; }
-    .nav-item-sobre-mi { height: 21px; }
-    .nav-item-contacto { height: 20px; }
+    /* Truco contenedor para alinear los 4 links en una línea horizontal exacta */
+    .navbar .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    /* Selector de idioma separado y situado limpiamente debajo */
+    /* Ajustamos los tamaños de los iconos del menú para que quepan holgadamente en una línea */
+    .nav-item-obras { height: 18px; }
+    .nav-item-proceso { height: 18px; }
+    .nav-item-sobre-mi { height: 18px; }
+    .nav-item-contacto { height: 17px; }
+
+    /* Forzamos que los 4 enlaces estén en línea usando flex en un contenedor virtual o ajustando espacios */
+    .nav-right {
+        flex-direction: column;
+    }
+
+    /* Selector de idioma centrado y situado de forma independiente justo debajo */
     .lang-selector {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 6px;
         margin-left: 0;
         margin-top: 5px;
@@ -530,12 +558,12 @@ p {
     }
 
     .lang-img {
-        height: 15px;
+        height: 14px;
         width: auto;
     }
 
     .lang-img-divider {
-        height: 10px;
+        height: 9px;
         width: auto;
     }
 
