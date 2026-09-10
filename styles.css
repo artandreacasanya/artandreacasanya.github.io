@@ -23,10 +23,10 @@
     --tamano-obras-palabra: 65px;    
     --tamano-obras-serie: 50px;       
 
-    /* TAMAÑOS DE TIPOGRAFÍA */
-    --tamano-fuente-base: 1.1rem;      /* Tamaño general de texto */
-    --tamano-fuente-obras: 0.80rem;    /* Tamaño de la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.90rem;  
+    /* TAMAÑOS DE TIPOGRAFÍA (TEXTOS REDUCIDOS UN PUNTO) */
+    --tamano-fuente-base: 1.0rem;      /* Reducido de 1.1rem */
+    --tamano-fuente-obras: 0.73rem;    /* Reducido para la ficha técnica de obras */
+    --tamano-fuente-sobremi: 0.82rem;  /* Reducido para Acerca de, Proceso y Contacto */
     --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
     --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
 }
@@ -262,7 +262,7 @@ p {
     margin-top: 10px;
     padding: 6px 12px;
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     color: #222222;
     background-color: transparent;
     border: 1px solid #222222;
@@ -295,7 +295,7 @@ p {
 
 .status-text {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: #777777;
     letter-spacing: 0.05em;
     font-style: italic;
@@ -384,7 +384,7 @@ p {
 
 .proceso-heading {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 1.05rem;
+    font-size: 0.95rem; /* Reducido un punto */
     font-weight: 600;
     color: #111;
     margin-bottom: 12px;
@@ -416,7 +416,7 @@ p {
 
 .contacto-heading {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 1.05rem;
+    font-size: 0.95rem; /* Reducido un punto */
     font-weight: 600;
     color: #111;
     margin-bottom: 14px;
@@ -482,66 +482,7 @@ p {
         padding: 15px;
     }
 
-    /* Cabecera centrada en móvil */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-    
-    .nav-left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Logo centrado y más grande */
-    .nav-left .nav-logo {
-        height: 75px;
-        width: auto;
-    }
-
-    /* Contenedor principal de navegación en columna y centrado */
-    .nav-right {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        padding-top: 0;
-    }
-
-    /* Forzamos que el menú superior forme UNA SOLA LÍNEA HORIZONTAL en el orden correcto */
-    .nav-right {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    /* Ajustamos el tamaño de los enlaces para que quepan todos juntos en esa única línea */
-    .nav-item-obras { height: 14px; }
-    .nav-item-proceso { height: 14px; }
-    .nav-item-sobre-mi { height: 14px; }
-    .nav-item-contacto { height: 13px; }
-
-    /* Selector de idioma separado y situado en la línea de debajo, también centrado */
-    .lang-selector {
-        position: absolute; /* O lo sacamos del flujo flex horizontal de arriba */
-    }
-
-    /* Para manejar correctamente el menú en línea y el idioma debajo, estructuramos el bloque superior */
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Redefinición limpia para asegurar menú en una línea e idioma en la inferior */
+    /* Estructura de cabecera móvil: Menú en una línea horizontal e idioma debajo */
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -559,7 +500,6 @@ p {
         order: 2;
     }
 
-    /* Extraemos el selector de idioma para que baje a su propia línea debajo */
     .lang-selector {
         display: flex;
         align-items: center;
@@ -581,6 +521,7 @@ p {
         height: 75px;
     }
 
+    /* Tamaños de iconos del menú en línea */
     .nav-item-obras { height: 14px; }
     .nav-item-proceso { height: 14px; }
     .nav-item-sobre-mi { height: 14px; }
