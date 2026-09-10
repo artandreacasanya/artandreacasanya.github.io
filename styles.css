@@ -497,7 +497,7 @@ p {
         justify-content: center;
     }
 
-    /* Logo centrado y ligeramente más grande */
+    /* Logo centrado y optimizado */
     .nav-left .nav-logo {
         height: 75px;
         width: auto;
@@ -513,40 +513,20 @@ p {
         padding-top: 0;
     }
 
-    /* Enlaces del menú superior colocados todos en una sola línea horizontal */
-    .nav-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Creamos una fila interna para los 4 enlaces de texto del menú */
-    /* Como los elementos a son hijos directos, los envolvemos visualmente ajustando sus tamaños */
+    /* Enlaces del menú superior en una sola línea horizontal */
     .nav-right > a {
         display: inline-flex;
         align-items: center;
-        margin: 0 6px;
+        margin: 0 5px;
     }
 
-    /* Truco contenedor para alinear los 4 links en una línea horizontal exacta */
-    .navbar .nav-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Ajustamos los tamaños de los iconos del menú para que quepan holgadamente en una línea */
+    /* Iconos del menú con tamaño equilibrado para móvil */
     .nav-item-obras { height: 18px; }
     .nav-item-proceso { height: 18px; }
     .nav-item-sobre-mi { height: 18px; }
     .nav-item-contacto { height: 17px; }
 
-    /* Forzamos que los 4 enlaces estén en línea usando flex en un contenedor virtual o ajustando espacios */
-    .nav-right {
-        flex-direction: column;
-    }
-
-    /* Selector de idioma centrado y situado de forma independiente justo debajo */
+    /* Selector de idioma centrado justo debajo del menú */
     .lang-selector {
         display: flex;
         align-items: center;
@@ -567,7 +547,28 @@ p {
         width: auto;
     }
 
-    /* Cuadrículas y contenedores adaptados para móvil */
+    /* ==========================================================
+       REDUCCIÓN DE TAMAÑOS DE TÍTULOS EN MÓVIL
+       ========================================================== */
+    
+    /* Título principal de Obras y Serie París en la página de inicio */
+    .title-obras-img {
+        height: 38px; /* Reducido de 65px */
+    }
+
+    .title-serie-img {
+        height: 28px; /* Reducido de 50px */
+    }
+
+    /* Títulos de páginas interiores (Proceso creativo, Acerca de, Contacto) */
+    .title-proceso-img,
+    .title-sobremi-img,
+    .title-contacto-img {
+        height: 38px; /* Reducido de 65px */
+        margin-bottom: 18px;
+    }
+
+    /* Ajustes generales de cuadrículas para móvil */
     .works-grid {
         grid-template-columns: 1fr;
     }
