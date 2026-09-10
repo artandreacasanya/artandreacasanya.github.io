@@ -192,9 +192,9 @@ p {
 .section-title-container {
     margin-bottom: 40px;
     display: flex;
-    flex-direction: column; /* Apila Obras y la Serie en vertical */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 15px; /* Margen de separación entre Obras y Serie París */
+    gap: 15px;
 }
 
 .title-obras-img {
@@ -428,7 +428,8 @@ p {
     line-height: 1.6;
     color: #333;
     margin-bottom: 16px;
-    text-align: left;
+    text-align: justify;       /* Textos justificados */
+    text-justify: inter-word;  /* Justificación limpia */
 }
 
 .contacto-value {
