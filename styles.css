@@ -23,10 +23,10 @@
     --tamano-obras-palabra: 65px;    
     --tamano-obras-serie: 50px;       
 
-    /* TAMAÑOS DE TIPOGRAFÍA (TEXTOS REDUCIDOS UN PUNTO) */
-    --tamano-fuente-base: 1.0rem;      /* Reducido de 1.1rem */
-    --tamano-fuente-obras: 0.73rem;    /* Reducido para la ficha técnica de obras */
-    --tamano-fuente-sobremi: 0.82rem;  /* Reducido para Acerca de, Proceso y Contacto */
+    /* TAMAÑOS DE TIPOGRAFÍA */
+    --tamano-fuente-base: 1.0rem;      
+    --tamano-fuente-obras: 0.73rem;    
+    --tamano-fuente-sobremi: 0.82rem;  
     --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
     --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
 }
@@ -384,7 +384,7 @@ p {
 
 .proceso-heading {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.95rem; /* Reducido un punto */
+    font-size: 0.95rem;
     font-weight: 600;
     color: #111;
     margin-bottom: 12px;
@@ -416,7 +416,7 @@ p {
 
 .contacto-heading {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.95rem; /* Reducido un punto */
+    font-size: 0.95rem;
     font-weight: 600;
     color: #111;
     margin-bottom: 14px;
@@ -482,57 +482,66 @@ p {
         padding: 15px;
     }
 
-    /* Estructura de cabecera móvil: Menú en una línea horizontal e idioma debajo */
+    /* CONTENEDOR PRINCIPAL DE LA CABECERA MÓVIL */
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 16px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
-
-    .nav-right {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-        order: 2;
-    }
-
-    .lang-selector {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        margin: 5px 0 0 0;
-        width: 100%;
-        order: 3;
-    }
-
+    
+    /* 1. Logo centrado arriba y más grande */
     .nav-left {
-        order: 1;
-        justify-content: center;
-        display: flex;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-left .nav-logo {
-        height: 75px;
+        height: 85px; /* Ligeramente más grande como pediste al principio */
+        width: auto;
     }
 
-    /* Tamaños de iconos del menú en línea */
-    .nav-item-obras { height: 14px; }
-    .nav-item-proceso { height: 14px; }
-    .nav-item-sobre-mi { height: 14px; }
-    .nav-item-contacto { height: 13px; }
+    /* 2. Menú de texto en una sola línea horizontal, estirado al ancho de la foto */
+    .nav-right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between; /* Distribuye Obras, Proceso, Acerca de y Contacto de extremo a extremo */
+        align-items: center;
+        gap: 0;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+    /* Tamaño de los textos del menú ampliado para que llenen bien la línea horizontal */
+    .nav-item-obras { height: 21px; }
+    .nav-item-proceso { height: 21px; }
+    .nav-item-sobre-mi { height: 21px; }
+    .nav-item-contacto { height: 20px; }
+
+    /* 3. Selector de idioma (lo dejamos con su comportamiento original abajo, sin alterar tu estructura de idioma) */
+    .lang-selector {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+        margin-left: 0;
+        margin-top: 2px;
+        width: 100%;
+    }
 
     .lang-img {
-        height: 13px;
+        height: 14px;
+        width: auto;
     }
 
     .lang-img-divider {
-        height: 8px;
+        height: 9px;
+        width: auto;
     }
 
     /* Títulos compactos para móvil */
