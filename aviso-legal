@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal — Casanya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+
+    <div class="site-container">
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
+            </div>
+            
+            <nav class="nav-right">
+                <a href="index.html#obras"><img src="obras.png" alt="Obras" class="nav-item-obras"></a>
+                <a href="proceso.html"><img src="proceso.png" alt="Proceso" class="nav-item-proceso"></a>
+                <a href="sobre-mi.html"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
+                <a href="contacto.html"><img src="contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                
+                <div class="lang-selector">
+                    <a href="aviso-legal.html" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <div class="contacto-container" style="max-width: 800px; text-align: left;">
+                <div class="section-title-container" style="text-align: center; margin-bottom: 40px;">
+                    <h1 style="font-size: 24px; font-weight: normal; letter-spacing: 1px;">Aviso Legal</h1>
+                </div>
+                
+                <div class="contacto-block" style="margin-bottom: 30px;">
+                    <h2 class="contacto-heading" style="font-size: 16px; margin-bottom: 10px;">1. Datos Identificativos</h2>
+                    <p class="contacto-text">En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se informa que este sitio web pertenece a Andrea Casanya. Puedes contactar a través del correo electrónico: art.andreacasanya@gmail.com.</p>
+                </div>
+
+                <div class="contacto-block" style="margin-bottom: 30px;">
+                    <h2 class="contacto-heading" style="font-size: 16px; margin-bottom: 10px;">2. Propiedad Intelectual e Industrial</h2>
+                    <p class="contacto-text">Todos los contenidos de este sitio web (incluyendo, sin carácter limitativo, obras pictóricas, fotografías de las obras, textos, diseño gráfico y código fuente) están protegidos por la normativa de propiedad intelectual e industrial. Queda expresamente prohibida la reproducción, distribución, comunicación pública o transformación de cualquiera de los contenidos sin la autorización expresa de la autora.</p>
+                </div>
+
+                <div class="contacto-block" style="margin-bottom: 30px;">
+                    <h2 class="contacto-heading" style="font-size: 16px; margin-bottom: 10px;">3. Protección de Datos y Privacidad</h2>
+                    <p class="contacto-text">Este sitio web no utiliza formularios de recogida de datos automatizados ni cookies de seguimiento publicitario. Las comunicaciones realizadas a través de correo electrónico para la adquisición de obras o solicitudes de acceso anticipado se emplean única y exclusivamente para gestionar la relación comercial o informativa entre el interesado y la artista, sin ser cedidos a terceros.</p>
+                </div>
+
+                <div class="contacto-block" style="margin-bottom: 30px;">
+                    <h2 class="contacto-heading" style="font-size: 16px; margin-bottom: 10px;">4. Condiciones de Uso y Responsabilidad</h2>
+                    <p class="contacto-text">El acceso a la web es libre y gratuito. La artista no se hace responsables de los daños informáticos que puedan derivarse de visitas al sitio ni de la veracidad de los contenidos de enlaces externos que puedan encontrarse en la web.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer style="text-align: center; padding: 40px 0; font-size: 13px; opacity: 0.7;">
+            <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
