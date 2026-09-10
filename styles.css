@@ -486,7 +486,7 @@ p {
     .navbar {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
         margin-top: 15px;
         margin-bottom: 25px;
     }
@@ -497,7 +497,7 @@ p {
         justify-content: center;
     }
 
-    /* Logo centrado y optimizado */
+    /* Logo centrado y más grande */
     .nav-left .nav-logo {
         height: 75px;
         width: auto;
@@ -509,66 +509,101 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
         padding-top: 0;
     }
 
-    /* Enlaces del menú superior en una sola línea horizontal */
-    .nav-right > a {
-        display: inline-flex;
-        align-items: center;
-        margin: 0 5px;
+    /* Forzamos que el menú superior forme UNA SOLA LÍNEA HORIZONTAL en el orden correcto */
+    .nav-right {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 12px;
     }
 
-    /* Iconos del menú con tamaño equilibrado para móvil */
-    .nav-item-obras { height: 18px; }
-    .nav-item-proceso { height: 18px; }
-    .nav-item-sobre-mi { height: 18px; }
-    .nav-item-contacto { height: 17px; }
+    /* Ajustamos el tamaño de los enlaces para que quepan todos juntos en esa única línea */
+    .nav-item-obras { height: 14px; }
+    .nav-item-proceso { height: 14px; }
+    .nav-item-sobre-mi { height: 14px; }
+    .nav-item-contacto { height: 13px; }
 
-    /* Selector de idioma centrado justo debajo del menú */
+    /* Selector de idioma separado y situado en la línea de debajo, también centrado */
+    .lang-selector {
+        position: absolute; /* O lo sacamos del flujo flex horizontal de arriba */
+    }
+
+    /* Para manejar correctamente el menú en línea y el idioma debajo, estructuramos el bloque superior */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Redefinición limpia para asegurar menú en una línea e idioma en la inferior */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        order: 2;
+    }
+
+    /* Extraemos el selector de idioma para que baje a su propia línea debajo */
     .lang-selector {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 6px;
-        margin-left: 0;
-        margin-top: 5px;
-        height: 18px;
+        margin: 5px 0 0 0;
+        width: 100%;
+        order: 3;
     }
 
+    .nav-left {
+        order: 1;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-left .nav-logo {
+        height: 75px;
+    }
+
+    .nav-item-obras { height: 14px; }
+    .nav-item-proceso { height: 14px; }
+    .nav-item-sobre-mi { height: 14px; }
+    .nav-item-contacto { height: 13px; }
+
     .lang-img {
-        height: 14px;
-        width: auto;
+        height: 13px;
     }
 
     .lang-img-divider {
-        height: 9px;
-        width: auto;
+        height: 8px;
     }
 
-    /* ==========================================================
-       REDUCCIÓN DE TAMAÑOS DE TÍTULOS EN MÓVIL
-       ========================================================== */
-    
-    /* Título principal de Obras y Serie París en la página de inicio */
-    .title-obras-img {
-        height: 38px; /* Reducido de 65px */
-    }
-
-    .title-serie-img {
-        height: 28px; /* Reducido de 50px */
-    }
-
-    /* Títulos de páginas interiores (Proceso creativo, Acerca de, Contacto) */
+    /* Títulos compactos para móvil */
+    .title-obras-img { height: 38px; }
+    .title-serie-img { height: 28px; }
     .title-proceso-img,
     .title-sobremi-img,
     .title-contacto-img {
-        height: 38px; /* Reducido de 65px */
+        height: 38px;
         margin-bottom: 18px;
     }
 
-    /* Ajustes generales de cuadrículas para móvil */
     .works-grid {
         grid-template-columns: 1fr;
     }
