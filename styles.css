@@ -458,7 +458,7 @@ p {
 }
 
 /* ==========================================================
-   RESPONSIVO
+   RESPONSIVO (MÓVIL)
    ========================================================== */
 @media (max-width: 1024px) {
     .works-grid {
@@ -482,12 +482,12 @@ p {
         padding: 15px;
     }
 
-    /* CONTENEDOR PRINCIPAL DE LA CABECERA MÓVIL */
+    /* CONTENEDOR DE LA CABECERA */
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 12px;
         margin-top: 15px;
         margin-bottom: 25px;
     }
@@ -500,37 +500,36 @@ p {
     }
 
     .nav-left .nav-logo {
-        height: 85px; /* Ligeramente más grande como pediste al principio */
+        height: 80px;
         width: auto;
     }
 
-    /* 2. Menú de texto en una sola línea horizontal, estirado al ancho de la foto */
+    /* 2. Menú de texto en una sola línea horizontal, estirado de extremo a extremo abarcando el ancho de la foto */
     .nav-right {
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between; /* Distribuye Obras, Proceso, Acerca de y Contacto de extremo a extremo */
+        justify-content: space-between;
         align-items: center;
         gap: 0;
         padding-top: 0;
         box-sizing: border-box;
     }
 
-    /* Tamaño de los textos del menú ampliado para que llenen bien la línea horizontal */
+    /* Tamaño de los textos del menú ampliado para ocupar todo el ancho */
     .nav-item-obras { height: 21px; }
     .nav-item-proceso { height: 21px; }
     .nav-item-sobre-mi { height: 21px; }
     .nav-item-contacto { height: 20px; }
 
-    /* 3. Selector de idioma (lo dejamos con su comportamiento original abajo, sin alterar tu estructura de idioma) */
+    /* 3. Selector de idioma abajo, independiente y sin solaparse con el menú */
     .lang-selector {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center; /* Centrado debajo del menú */
         gap: 6px;
-        margin-left: 0;
-        margin-top: 2px;
+        margin: 8px 0 0 0;
         width: 100%;
     }
 
@@ -542,6 +541,11 @@ p {
     .lang-img-divider {
         height: 9px;
         width: auto;
+    }
+
+    /* 4. Aviso legal más pequeño en el móvil (asumiendo que usa esta clase o etiqueta) */
+    .legal-notice, .aviso-legal, footer p, .site-footer {
+        font-size: 0.75rem !important;
     }
 
     /* Títulos compactos para móvil */
