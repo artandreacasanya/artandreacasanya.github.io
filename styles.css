@@ -1,4 +1,9 @@
 /* ==========================================================
+   IMPORTACIÓN DE TIPOGRAFÍA EXTERNA (BEBAS NEUE)
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
@@ -383,9 +388,10 @@ p {
 }
 
 .proceso-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: #111;
     margin-bottom: 12px;
 }
@@ -415,9 +421,10 @@ p {
 }
 
 .contacto-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: #111;
     margin-bottom: 14px;
     text-align: left;
