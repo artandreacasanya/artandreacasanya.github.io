@@ -1,7 +1,7 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (CINZEL)
+   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (PLAYFAIR DISPLAY)
    ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 /* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
@@ -17,7 +17,7 @@
     --tamano-titulo-sobremi: 65px;
     --tamano-titulo-contacto: 65px;
     --tamano-obras-palabra: 65px;    
-    --tamano-obras-serie: 50px;        
+    --tamano-obras-serie: 50px;       
 
     --tamano-fuente-base: 1.05rem;      
     --tamano-fuente-obras: 0.77rem;    
@@ -27,7 +27,6 @@
     --tamano-fuente-legal: 0.72rem;
 }
 
-/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-weight: 400;
@@ -46,7 +45,6 @@ body {
     padding: 20px;
 }
 
-/* CABECERA Y MENÚ INDEPENDIENTES */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -98,7 +96,6 @@ body {
     opacity: 1;
 }
 
-/* SELECTOR DE IDIOMA */
 .lang-selector {
     display: inline-flex;
     align-items: center;
@@ -137,7 +134,6 @@ body {
     display: block;
 }
 
-/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
 .page-content, .site-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -148,7 +144,6 @@ p {
     text-justify: inter-word;
 }
 
-/* PIE DE PÁGINA Y AVISO LEGAL */
 footer,
 .site-footer,
 .legal-notice,
@@ -162,7 +157,6 @@ footer p,
     text-align: center;
 }
 
-/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
 .title-proceso-img,
 .title-sobremi-img,
 .title-contacto-img {
@@ -174,7 +168,6 @@ footer p,
 .title-sobremi-img { height: var(--tamano-titulo-sobremi); }
 .title-contacto-img { height: var(--tamano-titulo-contacto); }
 
-/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS (EN DOS PISOS) */
 .section-title-container {
     margin-bottom: 40px;
     display: flex;
@@ -195,7 +188,6 @@ footer p,
     display: block;
 }
 
-/* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-section {
     margin-bottom: 30px;
     text-align: center;
@@ -227,7 +219,6 @@ footer p,
     display: block;
 }
 
-/* FICHA TÉCNICA DE LAS OBRAS */
 .work-info p {
     text-align: left;
     margin: 2px 0;
@@ -241,7 +232,6 @@ footer p,
     font-weight: 600;
 }
 
-/* BOTÓN DE ADQUIRIR OBRA */
 .btn-inquire {
     display: inline-block;
     margin-top: 10px;
@@ -262,7 +252,6 @@ footer p,
     color: #ffffff;
 }
 
-/* ESTADO OBRA VENDIDA (PUNTO ROJO) */
 .status-sold {
     display: inline-flex;
     align-items: center;
@@ -286,168 +275,14 @@ footer p,
     font-style: italic;
 }
 
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ"
-   ========================================================== */
-.about-layout-3col {
-    display: flex;
-    gap: 35px;
-    align-items: flex-start;
-    margin-top: 15px;
-}
-
-.about-title-col {
-    flex: 0.8;
-    min-width: 130px;
-}
-
-.about-title-col .title-sobremi-img {
-    height: var(--tamano-titulo-sobremi);
-    width: auto;
-    display: block;
-}
-
-.about-image-col {
-    flex: 2.2;
-    max-width: 600px;
-    width: 100%;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.about-text-col {
-    flex: 1.5;
-}
-
-.about-text-col p {
-    margin-top: 0;
-    margin-bottom: 22px;
-    font-size: var(--tamano-fuente-sobremi);
-    line-height: 1.6;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
-   ========================================================== */
-.proceso-container {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 30px 20px 80px 20px;
-}
-
-.proceso-grid {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-.proceso-card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.proceso-image-container {
-    width: 100%;
-    height: 520px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.proceso-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.proceso-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 600;
-    font-size: 1.35rem;
-    letter-spacing: 0.02em;
-    color: #111;
-    margin-bottom: 10px;
-    padding-bottom: 0px;
-    border-bottom: 2px solid #222222;
-    display: inline-block;
-}
-
-.proceso-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-proceso);
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/* ==========================================================
-   ESTRUCTURA DE LA PÁGINA "CONTACTO"
-   ========================================================== */
-.contacto-container {
-    max-width: 580px;
-    margin: 0;
-    padding: 30px 20px 80px 20px;
-    text-align: left;
-}
-
-.contacto-block {
-    margin: 45px 0;
-}
-
+.proceso-heading,
 .contacto-heading {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-weight: 600;
-    font-size: 1.35rem;
-    letter-spacing: 0.02em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
     color: #111;
-    margin-bottom: 10px;
-    padding-bottom: 0px;
-    border-bottom: 2px solid #222222;
-    text-align: left;
-    display: inline-block;
-}
-
-.contacto-text {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-contacto);
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 16px;
-    text-align: justify;        
-    text-justify: inter-word;   
-}
-
-.contacto-value {
-    text-align: left;
-}
-
-.contacto-value a {
-    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: var(--tamano-fuente-contacto);
-    color: #111;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: opacity 0.2s ease;
-}
-
-.contacto-value a:hover {
-    opacity: 0.6;
-}
-
-.contacto-divider {
-    border: none;
-    height: 1px;
-    background-color: #eaeaea;
-    margin: 45px 0;
+    margin-bottom: 12px;
 }
 
 @media (max-width: 768px) {
@@ -475,7 +310,6 @@ footer p,
         width: auto;
     }
 
-    /* Menú principal de lado a lado ocupando el 100% */
     .nav-right {
         width: 100%;
         display: flex;
@@ -491,7 +325,6 @@ footer p,
     .nav-item-sobre-mi { height: 19px; }
     .nav-item-contacto { height: 18px; }
 
-    /* Selector de idioma separado en su propia línea debajo del menú */
     .lang-selector {
         display: flex;
         align-items: center;
@@ -510,39 +343,5 @@ footer p,
     .lang-img-divider {
         height: 9px;
         width: auto;
-    }
-
-    footer,
-    .site-footer,
-    .legal-notice,
-    .aviso-legal,
-    footer p,
-    .site-footer p {
-        font-size: 0.40rem !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .title-obras-img { height: 38px; }
-    .title-serie-img { height: 28px; }
-    .title-proceso-img,
-    .title-sobremi-img,
-    .title-contacto-img {
-        height: 38px;
-        margin-bottom: 18px;
-    }
-
-    .works-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .proceso-grid {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .proceso-image-container {
-        height: 280px;
     }
 }
