@@ -498,27 +498,18 @@ footer p,
     .nav-right {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 10px;
         padding-top: 0;
         box-sizing: border-box;
     }
 
-    /* Contenedor de enlaces principales en fila */
     .nav-right > a {
         display: inline-flex;
         align-items: center;
-    }
-
-    /* Convertimos los enlaces de navegación en una sub-fila centroma */
-    .nav-right {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px 20px;
     }
 
     .nav-item-obras,
@@ -528,19 +519,19 @@ footer p,
         opacity: 0.95;
     }
 
-    .nav-item-obras { height: 24px; }
-    .nav-item-proceso { height: 24px; }
-    .nav-item-sobre-mi { height: 24px; }
-    .nav-item-contacto { height: 23px; }
+    .nav-item-obras { height: 21px; width: auto; }
+    .nav-item-proceso { height: 21px; width: auto; }
+    .nav-item-sobre-mi { height: 21px; width: auto; }
+    .nav-item-contacto { height: 20px; width: auto; }
 
-    /* Selector de idioma alineado como línea inferior independiente */
+    /* Selector de idioma alineado exactamente debajo de la fila única del menú */
     .lang-selector {
         flex-basis: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
-        margin-top: 4px;
+        margin-top: 8px;
         margin-left: 0;
     }
 
