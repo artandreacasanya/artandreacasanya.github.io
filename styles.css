@@ -338,7 +338,7 @@ footer p,
 .proceso-container {
     max-width: 950px;
     margin: 0 auto;
-    padding: 10px 20px 80px 20px;
+    padding: 30px 20px 80px 20px;
 }
 
 .proceso-grid {
@@ -374,7 +374,7 @@ footer p,
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 3px;
     border-bottom: 2px solid #222222;
     display: inline-block;
 }
@@ -395,7 +395,7 @@ footer p,
 .contacto-container {
     max-width: 580px;
     margin: 0;
-    padding: 10px 20px 80px 20px;
+    padding: 30px 20px 80px 20px;
     text-align: left;
 }
 
@@ -410,7 +410,7 @@ footer p,
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 3px;
     border-bottom: 2px solid #222222;
     text-align: left;
     display: inline-block;
