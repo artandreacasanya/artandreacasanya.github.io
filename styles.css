@@ -8,7 +8,7 @@
    ========================================================== */
 :root {
     /* Logo principal de la web */
-    --tamano-logo: 105px;         
+    --tamano-logo: 105px;          
 
     /* Menú superior (cada enlace por separado) */
     --tamano-menu-obras: 35px;
@@ -28,10 +28,10 @@
     --tamano-obras-palabra: 65px;    
     --tamano-obras-serie: 50px;       
 
-    /* TAMAÑOS DE TIPOGRAFÍA */
-    --tamano-fuente-base: 1.0rem;      
-    --tamano-fuente-obras: 0.73rem;    
-    --tamano-fuente-sobremi: 0.82rem;  
+    /* TAMAÑOS DE TIPOGRAFÍA (+0.5pt / escalado equivalente aplicado) */
+    --tamano-fuente-base: 1.05rem;      
+    --tamano-fuente-obras: 0.77rem;    
+    --tamano-fuente-sobremi: 0.86rem;  
     --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
     --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
 }
@@ -267,7 +267,7 @@ p {
     margin-top: 10px;
     padding: 6px 12px;
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     color: #222222;
     background-color: transparent;
     border: 1px solid #222222;
@@ -300,7 +300,7 @@ p {
 
 .status-text {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
-    font-size: 0.7rem;
+    font-size: 0.74rem;
     color: #777777;
     letter-spacing: 0.05em;
     font-style: italic;
@@ -434,8 +434,8 @@ p {
     line-height: 1.6;
     color: #333;
     margin-bottom: 16px;
-    text-align: justify;       
-    text-justify: inter-word;  
+    text-align: justify;        
+    text-justify: inter-word;   
 }
 
 .contacto-value {
@@ -548,7 +548,7 @@ p {
         width: auto;
     }
 
-    /* 4. Aviso legal más pequeño en el móvil (asumiendo que usa esta clase o etiqueta) */
+    /* 4. Aviso legal más pequeño en el móvil */
     .legal-notice, .aviso-legal, footer p, .site-footer {
         font-size: 0.75rem !important;
     }
