@@ -24,6 +24,7 @@
     --tamano-fuente-sobremi: 0.86rem;  
     --tamano-fuente-proceso: var(--tamano-fuente-sobremi);  
     --tamano-fuente-contacto: var(--tamano-fuente-sobremi); 
+    --tamano-fuente-legal: 0.72rem;
 }
 
 /* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
@@ -145,6 +146,20 @@ body {
 p {
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* PIE DE PÁGINA Y AVISO LEGAL */
+footer,
+.site-footer,
+.legal-notice,
+.aviso-legal {
+    font-size: var(--tamano-fuente-legal) !important;
+}
+
+footer p,
+.site-footer p {
+    font-size: var(--tamano-fuente-legal) !important;
+    text-align: center;
 }
 
 /* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
@@ -359,7 +374,7 @@ p {
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 1px;
+    padding-bottom: 0px;
     border-bottom: 2px solid #222222;
     display: inline-block;
 }
@@ -395,7 +410,7 @@ p {
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 1px;
+    padding-bottom: 0px;
     border-bottom: 2px solid #222222;
     text-align: left;
     display: inline-block;
@@ -516,8 +531,13 @@ p {
         width: auto;
     }
 
-    .legal-notice, .aviso-legal, footer p, .site-footer {
-        font-size: 0.75rem !important;
+    footer,
+    .site-footer,
+    .legal-notice,
+    .aviso-legal,
+    footer p,
+    .site-footer p {
+        font-size: calc(var(--tamano-fuente-legal) * 0.9) !important;
     }
 
     .title-obras-img { height: 38px; }
