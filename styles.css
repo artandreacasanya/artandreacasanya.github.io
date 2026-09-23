@@ -17,7 +17,7 @@
     --tamano-titulo-sobremi: 65px;
     --tamano-titulo-contacto: 65px;
     --tamano-obras-palabra: 65px;    
-    --tamano-obras-serie: 50px;       
+    --tamano-obras-serie: 50px;        
 
     --tamano-fuente-base: 1.05rem;      
     --tamano-fuente-obras: 0.77rem;    
@@ -353,8 +353,8 @@ p {
 }
 
 .proceso-heading {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
     font-size: 1.35rem;
     letter-spacing: 0.08em;
     color: #111;
@@ -386,8 +386,8 @@ p {
 }
 
 .contacto-heading {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
     font-size: 1.35rem;
     letter-spacing: 0.08em;
     color: #111;
