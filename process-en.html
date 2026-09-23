@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process — Andrea Casanya</title>
+    <title>Creative Process — Casanya</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <a href="index-en.html" class="logo">Andrea Casanya</a>
-            <ul>
-                <li><a href="index-en.html">Gallery</a></li>
-                <li><a href="process-en.html" class="active">Process</a></li>
-                <li><a href="about-en.html">About</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <a href="proceso.html">ES</a> | <span class="current">EN</span>
+
+    <div class="site-container">
+        <!-- CABECERA -->
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index-en.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
             </div>
-        </nav>
-    </header>
+            
+            <nav class="nav-right">
+                <a href="index-en.html#obras"><img src="obras.png" alt="Works" class="nav-item-obras"></a>
+                <a href="process-en.html"><img src="proceso.png" alt="Process" class="nav-item-proceso"></a>
+                <a href="about-en.html"><img src="sobre_mi.png" alt="About me" class="nav-item-sobre-mi"></a>
+                <a href="contact-en.html"><img src="contacto.png" alt="Contact" class="nav-item-contacto"></a>
+                
+                <div class="lang-selector">
+                    <a href="proceso.html" class="lang-btn"><img src="es.png" alt="ES" class="lang-img"></a>
+                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                    <a href="process-en.html" class="lang-btn active"><img src="en.png" alt="EN" class="lang-img"></a>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <div class="process-grid">
-            <article class="process-card">
-                <h2><em>Plein air</em></h2>
-                <p>My process begins outside the studio. Working outdoors allows me to capture the real light, the atmosphere of the place, and the immediate energy of the surroundings. At the easel, I record the first strokes, the live color, and the essential structure of the scene.</p>
-            </article>
+        <!-- SECCIÓN PROCESO CREATIVO -->
+        <main class="page-content">
+            <div class="proceso-container">
+                <div class="section-title-container">
+                    <img src="proceso_creativo.png" alt="Creative Process" class="title-proceso-img">
+                </div>
 
-            <article class="process-card">
-                <h2>The Studio</h2>
-                <p>Back in the studio, the process shifts gears. It is a space for pause, reflection, and technical development. In the studio, I resume the work I began outdoors to refine the composition and work on the material and layers more calmly, until I find the piece’s final balance.</p>
-            </article>
-        </div>
-    </main>
+                <!-- CONTENEDOR DE DOS COLUMNAS DE FOTOS Y TEXTOS -->
+                <div class="proceso-grid">
+                    
+                    <!-- COLUMNA 1: EXTERIOR -->
+                    <article class="proceso-card">
+                        <div class="proceso-image-container">
+                            <img src="proceso_exterior.jpg" alt="Painting outdoors" class="proceso-image">
+                        </div>
+                        <h2 class="proceso-heading"><em>Plein air</em></h2>
+                        <p class="proceso-text">My process begins outside the studio. Working outdoors allows me to capture the real light, the atmosphere of the place, and the immediate energy of the surroundings. At the easel, I record the first strokes, the live color, and the essential structure of the scene.</p>
+                    </article>
 
-    <footer>
-        <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="legal-notice-en.html">Legal Notice</a></p>
-    </footer>
+                    <!-- COLUMNA 2: INTERIOR -->
+                    <article class="proceso-card">
+                        <div class="proceso-image-container">
+                            <img src="proceso_interior.jpg" alt="Working in the studio" class="proceso-image">
+                        </div>
+                        <h2 class="proceso-heading">The Studio</h2>
+                        <p class="proceso-text">Back in the studio, the process shifts gears. It is a space for pause, reflection, and technical development. In the studio, I resume the work I began outdoors to refine the composition and work on the material and layers more calmly, until I find the piece's final balance.</p>
+                    </article>
+
+                </div>
+            </div>
+        </main>
+
+        <footer style="text-align: center; padding: 40px 0; font-size: 13px; opacity: 0.7;">
+            <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="legal-notice-en.html" style="color: inherit; text-decoration: underline;">Legal Notice</a></p>
+        </footer>
+    </div>
+
 </body>
 </html>
