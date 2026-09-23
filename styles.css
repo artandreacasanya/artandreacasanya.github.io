@@ -472,16 +472,16 @@ footer p,
 
 @media (max-width: 768px) {
     .site-container {
-        padding: 15px;
+        padding: 10px;
     }
 
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 14px;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        gap: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     
     .nav-left {
@@ -491,18 +491,18 @@ footer p,
     }
 
     .nav-left .nav-logo {
-        height: 75px;
+        height: 65px;
         width: auto;
     }
 
+    /* Forzamos línea única sin salto */
     .nav-right {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 6px;
         padding-top: 0;
         box-sizing: border-box;
     }
@@ -517,31 +517,33 @@ footer p,
     .nav-item-sobre-mi,
     .nav-item-contacto {
         opacity: 0.95;
+        width: auto;
     }
 
-    .nav-item-obras { height: 21px; width: auto; }
-    .nav-item-proceso { height: 21px; width: auto; }
-    .nav-item-sobre-mi { height: 21px; width: auto; }
-    .nav-item-contacto { height: 20px; width: auto; }
+    /* Alturas reducidas para garantizar 1 sola fila en móviles estrechos */
+    .nav-item-obras { height: 15px; }
+    .nav-item-proceso { height: 15px; }
+    .nav-item-sobre-mi { height: 15px; }
+    .nav-item-contacto { height: 15px; }
 
-    /* Selector de idioma alineado exactamente debajo de la fila única del menú */
+    /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
-        flex-basis: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        gap: 6px;
         margin-top: 8px;
         margin-left: 0;
     }
 
     .lang-img {
-        height: 14px;
+        height: 13px;
         width: auto;
     }
 
     .lang-img-divider {
-        height: 10px;
+        height: 9px;
         width: auto;
     }
 
@@ -554,13 +556,13 @@ footer p,
         font-size: calc(var(--tamano-fuente-legal) * 0.9) !important;
     }
 
-    .title-obras-img { height: 38px; }
-    .title-serie-img { height: 28px; }
+    .title-obras-img { height: 32px; }
+    .title-serie-img { height: 24px; }
     .title-proceso-img,
     .title-sobremi-img,
     .title-contacto-img {
-        height: 38px;
-        margin-bottom: 18px;
+        height: 32px;
+        margin-bottom: 15px;
     }
 
     .works-grid {
@@ -569,11 +571,11 @@ footer p,
 
     .proceso-grid {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
     }
 
     .proceso-image-container {
-        height: 280px;
+        height: 250px;
     }
 }
 }
