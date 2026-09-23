@@ -450,26 +450,6 @@ footer p,
     margin: 45px 0;
 }
 
-/* ==========================================================
-   RESPONSIVO (MÓVIL)
-   ========================================================== */
-@media (max-width: 1024px) {
-    .works-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .about-layout-3col {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .about-image-col {
-        max-width: 100%;
-    }
-}
-
 @media (max-width: 768px) {
     .site-container {
         padding: 15px;
@@ -495,30 +475,31 @@ footer p,
         width: auto;
     }
 
+    /* Menú principal de lado a lado ocupando el 100% */
     .nav-right {
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        gap: 0;
         padding-top: 0;
         box-sizing: border-box;
     }
 
-    .nav-item-obras { height: 21px; }
-    .nav-item-proceso { height: 21px; }
-    .nav-item-sobre-mi { height: 21px; }
-    .nav-item-contacto { height: 20px; }
+    .nav-item-obras { height: 19px; }
+    .nav-item-proceso { height: 19px; }
+    .nav-item-sobre-mi { height: 19px; }
+    .nav-item-contacto { height: 18px; }
 
+    /* Selector de idioma separado en su propia línea debajo del menú */
     .lang-selector {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 6px;
-        margin: 8px 0 0 0;
         width: 100%;
+        margin-top: 4px;
+        margin-bottom: 10px;
     }
 
     .lang-img {
