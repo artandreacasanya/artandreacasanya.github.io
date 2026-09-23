@@ -356,9 +356,12 @@ p {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-weight: 600;
     font-size: 1.35rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
     color: #111;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #222222;
+    display: inline-block;
 }
 
 .proceso-text {
@@ -389,10 +392,13 @@ p {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-weight: 600;
     font-size: 1.35rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
     color: #111;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #222222;
     text-align: left;
+    display: inline-block;
 }
 
 .contacto-text {
