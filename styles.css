@@ -1,7 +1,7 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (INSTRUMENT SERIF)
+   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (CINZEL)
    ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
 
 /* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
@@ -353,10 +353,10 @@ p {
 }
 
 .proceso-heading {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 600;
-    font-size: 1.85rem;
-    letter-spacing: 0.01em;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 0.08em;
     color: #111;
     margin-bottom: 8px;
 }
@@ -386,10 +386,10 @@ p {
 }
 
 .contacto-heading {
-    font-family: 'Instrument Serif', serif;
-    font-weight: 600;
-    font-size: 1.85rem;
-    letter-spacing: 0.01em;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 0.08em;
     color: #111;
     margin-bottom: 8px;
     text-align: left;
