@@ -1,34 +1,25 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (AMATIC SC)
+   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (AMATIC SC Y SYNE)
    ========================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
 
 /* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
-    /* Logo principal de la web */
     --tamano-logo: 105px;          
-
-    /* Menú superior (cada enlace por separado) */
     --tamano-menu-obras: 35px;
     --tamano-menu-proceso: 35px;
     --tamano-menu-sobremi: 35px;
     --tamano-menu-contacto: 33px;
-
-    /* Selector de idioma */
     --tamano-idioma: 20px;        
-
-    /* Títulos principales de las páginas interiores */
     --tamano-titulo-proceso: 65px;
     --tamano-titulo-sobremi: 65px;
     --tamano-titulo-contacto: 65px;
-
-    /* Título compuesto de la sección de Obras en el inicio */
     --tamano-obras-palabra: 65px;    
     --tamano-obras-serie: 50px;       
 
-    /* TAMAÑOS DE TIPOGRAFÍA (+0.5pt / escalado equivalente aplicado) */
     --tamano-fuente-base: 1.05rem;      
     --tamano-fuente-obras: 0.77rem;    
     --tamano-fuente-sobremi: 0.86rem;  
@@ -86,34 +77,19 @@ body {
     align-items: center;
 }
 
-/* Elementos del menú individualizados */
-.nav-item-obras {
-    height: var(--tamano-menu-obras);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-proceso {
-    height: var(--tamano-menu-proceso);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav-item-sobre-mi {
-    height: var(--tamano-menu-sobremi);
-    width: auto;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
+.nav-item-obras,
+.nav-item-proceso,
+.nav-item-sobre-mi,
 .nav-item-contacto {
-    height: var(--tamano-menu-contacto);
     width: auto;
     opacity: 0.75;
     transition: opacity 0.3s ease;
 }
+
+.nav-item-obras { height: var(--tamano-menu-obras); }
+.nav-item-proceso { height: var(--tamano-menu-proceso); }
+.nav-item-sobre-mi { height: var(--tamano-menu-sobremi); }
+.nav-item-contacto { height: var(--tamano-menu-contacto); }
 
 .nav-item-obras:hover,
 .nav-item-proceso:hover,
@@ -173,26 +149,16 @@ p {
 }
 
 /* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
-.title-proceso-img {
-    height: var(--tamano-titulo-proceso);
-    width: auto;
-    display: block;
-    margin-bottom: 25px;
-}
-
-.title-sobremi-img {
-    height: var(--tamano-titulo-sobremi);
-    width: auto;
-    display: block;
-    margin-bottom: 25px;
-}
-
+.title-proceso-img,
+.title-sobremi-img,
 .title-contacto-img {
-    height: var(--tamano-titulo-contacto);
     width: auto;
     display: block;
     margin-bottom: 25px;
 }
+.title-proceso-img { height: var(--tamano-titulo-proceso); }
+.title-sobremi-img { height: var(--tamano-titulo-sobremi); }
+.title-contacto-img { height: var(--tamano-titulo-contacto); }
 
 /* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS (EN DOS PISOS) */
 .section-title-container {
@@ -388,9 +354,10 @@ p {
 }
 
 .proceso-heading {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.2rem;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
     color: #111;
     margin-bottom: 8px;
 }
@@ -420,9 +387,10 @@ p {
 }
 
 .contacto-heading {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.2rem;
+    font-family: 'Syne', sans-serif;
     font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
     color: #111;
     margin-bottom: 8px;
     text-align: left;
@@ -487,7 +455,6 @@ p {
         padding: 15px;
     }
 
-    /* CONTENEDOR DE LA CABECERA */
     .navbar {
         display: flex;
         flex-direction: column;
@@ -497,7 +464,6 @@ p {
         margin-bottom: 25px;
     }
     
-    /* 1. Logo centrado arriba y más grande */
     .nav-left {
         width: 100%;
         display: flex;
@@ -509,7 +475,6 @@ p {
         width: auto;
     }
 
-    /* 2. Menú de texto en una sola línea horizontal, estirado de extremo a extremo abarcando el ancho de la foto */
     .nav-right {
         width: 100%;
         display: flex;
@@ -522,17 +487,15 @@ p {
         box-sizing: border-box;
     }
 
-    /* Tamaño de los textos del menú ampliado para ocupar todo el ancho */
     .nav-item-obras { height: 21px; }
     .nav-item-proceso { height: 21px; }
     .nav-item-sobre-mi { height: 21px; }
     .nav-item-contacto { height: 20px; }
 
-    /* 3. Selector de idioma abajo, independiente y sin solaparse con el menú */
     .lang-selector {
         display: flex;
         align-items: center;
-        justify-content: center; /* Centrado debajo del menú */
+        justify-content: center;
         gap: 6px;
         margin: 8px 0 0 0;
         width: 100%;
@@ -548,12 +511,10 @@ p {
         width: auto;
     }
 
-    /* 4. Aviso legal más pequeño en el móvil */
     .legal-notice, .aviso-legal, footer p, .site-footer {
         font-size: 0.75rem !important;
     }
 
-    /* Títulos compactos para móvil */
     .title-obras-img { height: 38px; }
     .title-serie-img { height: 28px; }
     .title-proceso-img,
