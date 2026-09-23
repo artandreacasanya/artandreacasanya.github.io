@@ -3,59 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery — Paris 2025 Series — Andrea Casanya</title>
+    <title>Casanya — Artist</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <a href="index-en.html" class="logo">Andrea Casanya</a>
-            <ul>
-                <li><a href="index-en.html" class="active">Gallery</a></li>
-                <li><a href="process-en.html">Process</a></li>
-                <li><a href="about-en.html">About</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <a href="index.html">ES</a> | <span class="current">EN</span>
+
+    <div class="site-container">
+        <!-- CABECERA -->
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index_en.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="gallery-section">
-            <h2>Paris 2025 Series</h2>
             
-            <!-- Obra 1 -->
-            <article class="artwork-item">
-                <h3>Title: Parc Monceau</h3>
-                <p><strong>Medium:</strong> Oil on panel</p>
-                <p><strong>Dimensions:</strong> 34 x 24 cm</p>
-                <p><strong>Year:</strong> 2025</p>
-                <p><strong>Price:</strong> 300 &euro;</p>
-                <div class="purchase-action">
-                    <a href="mailto:art.andreacasanya@gmail.com?subject=Inquiry%3A%20Parc%20Monceau" class="btn-purchase">Purchase artwork</a>
+            <nav class="nav-right">
+                <a href="index_en.html#obras"><img src="obras.png" alt="Works" class="nav-item-obras"></a>
+                <a href="proceso_en.html"><img src="proceso.png" alt="Process" class="nav-item-proceso"></a>
+                <a href="sobre-mi_en.html"><img src="sobre_mi.png" alt="About" class="nav-item-sobre-mi"></a>
+                <a href="contacto_en.html"><img src="contacto.png" alt="Contact" class="nav-item-contacto"></a>
+                
+                <div class="lang-selector">
+                    <a href="index.html" class="lang-btn"><img src="es.png" alt="ES" class="lang-img"></a>
+                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                    <a href="index_en.html" class="lang-btn active"><img src="en.png" alt="EN" class="lang-img"></a>
                 </div>
-            </article>
+            </nav>
+        </header>
 
-            <!-- Obra 2 -->
-            <article class="artwork-item">
-                <h3>Title: [Nombre de obra 2]</h3>
-                <p><strong>Medium:</strong> Oil on panel</p>
-                <p><strong>Dimensions:</strong> 34 x 24 cm</p>
-                <p><strong>Year:</strong> 2025</p>
-                <p><strong>Price:</strong> 280 &euro;</p>
-                <div class="purchase-action">
-                    <span class="status-sold"><span class="red-dot"></span> Purchased</span>
-                </div>
-            </article>
-
-            <!-- Repite o replica el bloque <article class="artwork-item"> 5 veces más para completar las 7 piezas -->
+        <!-- PORTADA -->
+        <section class="hero-section">
+            <img src="foto_portada.jpg" alt="Portada Casanya" class="hero-image">
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="legal-notice-en.html">Legal Notice</a></p>
-    </footer>
+        <!-- SECCIÓN DE OBRAS -->
+        <section id="obras" class="obras-section">
+            <div class="section-title-container">
+                <img src="obras.png" alt="Works" class="title-obras-img">
+                <img src="guion.png" alt="-" class="title-guion-img">
+                <img src="serie_paris.png" alt="Paris Series 2025" class="title-serie-img">
+            </div>
+
+            <!-- GALERÍA DE OBRAS -->
+            <div class="works-grid">
+                
+                <article class="work-card">
+                    <img src="parc_montsouris.png" alt="Parc Montsouris" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Parc Montsouris</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Parc%20Montsouris&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Parc%20Montsouris%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="parc_monceau.png" alt="Parc Monceau" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Parc Monceau</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>300 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Parc%20Monceau&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Parc%20Monceau%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="jardin_du_luxembourg_fontaine_medicis.png" alt="Jardin du Luxembourg - Fontaine Médicis" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Jardin du Luxembourg - Fontaine Médicis</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>270 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Jardin%20du%20Luxembourg%20-%20Fontaine%20M%C3%A9dicis&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Jardin%20du%20Luxembourg%20-%20Fontaine%20M%C3%A9dicis%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="jardin_du_luxembourg.png" alt="Jardin du Luxembourg" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Jardin du Luxembourg</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>300 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Jardin%20du%20Luxembourg&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Jardin%20du%20Luxembourg%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="maison_du_14e.png" alt="Maison du 14e" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Maison du 14e</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Maison%20du%2014e&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Maison%20du%2014e%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="maison_a_montmartre.png" alt="Maison à Montmartre" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Maison à Montmartre</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Maison%20%C3%A0%20Montmartre&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Maison%20%C3%A0%20Montmartre%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="pont_neuf.png" alt="Pont Neuf" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Pont Neuf</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Pont%20Neuf&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Pont%20Neuf%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="pont_alexandre_iii.png" alt="Pont Alexandre III" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Pont Alexandre III</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Pont%20Alexandre%20III&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Pont%20Alexandre%20III%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="canal_saint_martin.png" alt="Canal Saint-Martin" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Canal Saint-Martin</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>300 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Canal%20Saint-Martin&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Canal%20Saint-Martin%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="parc_florale_champ_de_dahlias.jpg" alt="Parc Florale - Champ de Dahlias" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Parc Florale - Champ de Dahlias</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>300 €</strong></p>
+                        <div class="status-sold">
+                            <span class="red-dot"></span>
+                            <span class="status-text">Sold</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="parc_florale_jardin_bonsais.png" alt="Parc Florale - Jardin Bonsaïs" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Parc Florale - Jardin Bonsaïs</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Parc%20Florale%20-%20Jardin%20Bonsa%C3%AFs&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Parc%20Florale%20-%20Jardin%20Bonsa%C3%AFs%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="parc_florale.png" alt="Parc Florale" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Parc Florale</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Parc%20Florale&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Parc%20Florale%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="jardin_des_tuileries.png" alt="Jardin des Tuileries" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Jardin des Tuileries</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>280 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Jardin%20des%20Tuileries&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Jardin%20des%20Tuileries%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="avenue_des_champs_elysees.png" alt="Avenue des Champs-Élysées" class="work-image">
+                    <div class="work-info">
+                        <p>Title: <strong>Avenue des Champs-Élysées</strong></p>
+                        <p>Medium: <strong>Oil on panel</strong></p>
+                        <p>Dimensions: <strong>34 x 24 cm</strong></p>
+                        <p>Year: <strong>2025</strong></p>
+                        <p>Price: <strong>300 €</strong></p>
+                        <a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry%20%E2%80%94%20Avenue%20des%20Champs-%C3%89lys%C3%A9es&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20acquire%20the%20artwork%20%22Avenue%20des%20Champs-%C3%89lys%C3%A9es%22.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Acquire artwork</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="proceso" class="info-section"></section>
+        <section id="sobre-mi" class="info-section"></section>
+        <section id="contacto" class="info-section"></section>
+    </div>
+
 </body>
 </html>
