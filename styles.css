@@ -359,8 +359,8 @@ p {
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #222222;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #222222;
     display: inline-block;
 }
 
@@ -395,8 +395,8 @@ p {
     letter-spacing: 0.02em;
     color: #111;
     margin-bottom: 10px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #222222;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #222222;
     text-align: left;
     display: inline-block;
 }
