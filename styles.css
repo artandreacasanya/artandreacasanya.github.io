@@ -1,18 +1,18 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (PLAYFAIR DISPLAY)
+   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (CINZEL)
    ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
 
 /* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
     --tamano-logo: 105px;          
-    --tamano-menu-obras: 42px;    
-    --tamano-menu-proceso: 42px;  
-    --tamano-menu-sobremi: 42px;  
-    --tamano-menu-contacto: 40px; 
-    --tamano-idioma: 22px;        
+    --tamano-menu-obras: 35px;
+    --tamano-menu-proceso: 35px;
+    --tamano-menu-sobremi: 35px;
+    --tamano-menu-contacto: 33px;
+    --tamano-idioma: 20px;        
     --tamano-titulo-proceso: 65px;
     --tamano-titulo-sobremi: 65px;
     --tamano-titulo-contacto: 65px;
@@ -27,6 +27,7 @@
     --tamano-fuente-legal: 0.72rem;
 }
 
+/* CONFIGURACIÓN GLOBAL CON MINION VARIABLE CONCEPT */
 body {
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-weight: 400;
@@ -45,16 +46,13 @@ body {
     padding: 20px;
 }
 
-/* CABECERA ENVOLVENTE */
-.navbar-wrapper {
-    margin-top: 40px;
-    margin-bottom: 28px;
-}
-
+/* CABECERA Y MENÚ INDEPENDIENTES */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 28px;
 }
 
 .nav-left {
@@ -100,17 +98,12 @@ body {
     opacity: 1;
 }
 
-/* FILA INFERIOR PARA EL IDIOMA (ALINEADO A LA DERECHA) */
-.nav-sub-row {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 14px;
-}
-
+/* SELECTOR DE IDIOMA */
 .lang-selector {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    margin-left: 20px;
     height: var(--tamano-idioma);
 }
 
@@ -144,6 +137,7 @@ body {
     display: block;
 }
 
+/* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
 .page-content, .site-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -154,19 +148,21 @@ p {
     text-justify: inter-word;
 }
 
+/* PIE DE PÁGINA Y AVISO LEGAL */
 footer,
 .site-footer,
 .legal-notice,
 .aviso-legal {
-    font-size: var(--tamano-fuente-legal);
+    font-size: var(--tamano-fuente-legal) !important;
 }
 
 footer p,
 .site-footer p {
-    font-size: var(--tamano-fuente-legal);
+    font-size: var(--tamano-fuente-legal) !important;
     text-align: center;
 }
 
+/* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
 .title-proceso-img,
 .title-sobremi-img,
 .title-contacto-img {
@@ -178,6 +174,7 @@ footer p,
 .title-sobremi-img { height: var(--tamano-titulo-sobremi); }
 .title-contacto-img { height: var(--tamano-titulo-contacto); }
 
+/* TÍTULO COMPUESTO DE LA SECCIÓN DE OBRAS (EN DOS PISOS) */
 .section-title-container {
     margin-bottom: 40px;
     display: flex;
@@ -198,6 +195,7 @@ footer p,
     display: block;
 }
 
+/* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-section {
     margin-bottom: 30px;
     text-align: center;
@@ -229,6 +227,7 @@ footer p,
     display: block;
 }
 
+/* FICHA TÉCNICA DE LAS OBRAS */
 .work-info p {
     text-align: left;
     margin: 2px 0;
@@ -242,6 +241,7 @@ footer p,
     font-weight: 600;
 }
 
+/* BOTÓN DE ADQUIRIR OBRA */
 .btn-inquire {
     display: inline-block;
     margin-top: 10px;
@@ -262,6 +262,7 @@ footer p,
     color: #ffffff;
 }
 
+/* ESTADO OBRA VENDIDA (PUNTO ROJO) */
 .status-sold {
     display: inline-flex;
     align-items: center;
@@ -285,14 +286,188 @@ footer p,
     font-style: italic;
 }
 
-.proceso-heading,
-.contacto-heading {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 0.01em;
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "SOBRE MÍ"
+   ========================================================== */
+.about-layout-3col {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.about-title-col {
+    flex: 0.8;
+    min-width: 130px;
+}
+
+.about-title-col .title-sobremi-img {
+    height: var(--tamano-titulo-sobremi);
+    width: auto;
+    display: block;
+}
+
+.about-image-col {
+    flex: 2.2;
+    max-width: 600px;
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text-col {
+    flex: 1.5;
+}
+
+.about-text-col p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "PROCESO CREATIVO"
+   ========================================================== */
+.proceso-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px 20px 80px 20px;
+}
+
+.proceso-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.proceso-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.proceso-image-container {
+    width: 100%;
+    height: 520px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.proceso-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.proceso-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
     color: #111;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #222222;
+    display: inline-block;
+}
+
+.proceso-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-proceso);
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ==========================================================
+   ESTRUCTURA DE LA PÁGINA "CONTACTO"
+   ========================================================== */
+.contacto-container {
+    max-width: 580px;
+    margin: 0;
+    padding: 10px 20px 80px 20px;
+    text-align: left;
+}
+
+.contacto-block {
+    margin: 45px 0;
+}
+
+.contacto-heading {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #222222;
+    text-align: left;
+    display: inline-block;
+}
+
+.contacto-text {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: justify;        
+    text-justify: inter-word;    
+}
+
+.contacto-value {
+    text-align: left;
+}
+
+.contacto-value a {
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+}
+
+.contacto-value a:hover {
+    opacity: 0.6;
+}
+
+.contacto-divider {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 45px 0;
+}
+
+/* ==========================================================
+   RESPONSIVO (MÓVIL)
+   ========================================================== */
+@media (max-width: 1024px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-layout-3col {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image-col {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -300,16 +475,13 @@ footer p,
         padding: 15px;
     }
 
-    .navbar-wrapper {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 12px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
     
     .nav-left {
@@ -326,32 +498,67 @@ footer p,
     .nav-right {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         align-items: center;
-        gap: 16px 20px;
+        gap: 0;
         padding-top: 0;
         box-sizing: border-box;
     }
 
-    .nav-item-obras { height: 24px; }
-    .nav-item-proceso { height: 24px; }
-    .nav-item-sobre-mi { height: 24px; }
-    .nav-item-contacto { height: 23px; }
+    .nav-item-obras { height: 21px; }
+    .nav-item-proceso { height: 21px; }
+    .nav-item-sobre-mi { height: 21px; }
+    .nav-item-contacto { height: 20px; }
 
-    /* En móvil, también se mantiene a la derecha debajo del menú centrando o a la derecha según prefieras; aquí alineado a la derecha */
-    .nav-sub-row {
-        justify-content: flex-end;
-        margin-top: 10px;
+    .lang-selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin: 8px 0 0 0;
+        width: 100%;
     }
 
     .lang-img {
-        height: 16px;
+        height: 14px;
         width: auto;
     }
 
     .lang-img-divider {
-        height: 10px;
+        height: 9px;
         width: auto;
+    }
+
+    footer,
+    .site-footer,
+    .legal-notice,
+    .aviso-legal,
+    footer p,
+    .site-footer p {
+        font-size: calc(var(--tamano-fuente-legal) * 0.9) !important;
+    }
+
+    .title-obras-img { height: 38px; }
+    .title-serie-img { height: 28px; }
+    .title-proceso-img,
+    .title-sobremi-img,
+    .title-contacto-img {
+        height: 38px;
+        margin-bottom: 18px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proceso-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .proceso-image-container {
+        height: 280px;
     }
 }
