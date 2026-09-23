@@ -1,8 +1,7 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (AMATIC SC Y SYNE)
+   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (PLAYFAIR DISPLAY)
    ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 /* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
@@ -354,10 +353,10 @@ p {
 }
 
 .proceso-heading {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.8rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     color: #111;
     margin-bottom: 8px;
 }
@@ -387,10 +386,10 @@ p {
 }
 
 .contacto-heading {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.8rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     color: #111;
     margin-bottom: 8px;
     text-align: left;
