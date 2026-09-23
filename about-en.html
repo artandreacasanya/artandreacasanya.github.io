@@ -5,29 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Andrea Casanya</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <a href="index-en.html" class="logo">Andrea Casanya</a>
-            <ul>
-                <li><a href="index-en.html">Gallery</a></li>
-                <li><a href="process-en.html">Process</a></li>
-                <li><a href="about-en.html" class="active">About</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <a href="sobre-mi.html">ES</a> | <span class="current">EN</span>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <article class="about-text">
-            <p>I see painting as a way to freeze time in the face of my surroundings, whether in the lushness of a garden or the architecture of the city. I usually work outdoors (<em>plein air</em>), moving my easel to capture the fleeting light and atmosphere of each place&mdash;a process that then continues in the calm of the studio.</p>
-            <p>Each oil brushstroke seeks to convey onto the canvas the real atmosphere and truth of what lies before me.</p>
-        </article>
-    </main>
+    <div class="site-container">
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index-en.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
+            </div>
+            
+            <nav class="nav-right">
+                <a href="index-en.html#obras"><img src="obras.png" alt="Works" class="nav-item-obras"></a>
+                <a href="process-en.html"><img src="proceso.png" alt="Process" class="nav-item-proceso"></a>
+                <a href="about-en.html"><img src="sobre_mi.png" alt="About me" class="nav-item-sobre-mi"></a>
+                <a href="contact-en.html"><img src="contacto.png" alt="Contact" class="nav-item-contacto"></a>
+                
+                <div class="lang-selector">
+                    <a href="sobre-mi.html" class="lang-btn"><img src="es.png" alt="ES" class="lang-img"></a>
+                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                    <a href="about-en.html" class="lang-btn active"><img src="en.png" alt="EN" class="lang-img"></a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <div class="about-layout-3col">
+                
+                <div class="about-title-col">
+                    <img src="sobre_mi.png" alt="About me" class="title-sobremi-img">
+                </div>
+                
+                <div class="about-image-col">
+                    <img src="imagen_sobre_mi.jpg" alt="Andrea Casanya" class="about-image">
+                </div>
+
+                <div class="about-text-col">
+                    <p>I see painting as a way to freeze time in the face of my surroundings, whether in the lushness of a garden or the architecture of the city. I usually work outdoors (<em>plein air</em>), moving my easel to capture the fleeting light and atmosphere of each place&mdash;a process that then continues in the calm of the studio.</p>
+                    
+                    <p>Each oil brushstroke seeks to convey onto the canvas the real atmosphere and truth of what lies before me.</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="legal-notice-en.html">Legal Notice</a></p>
