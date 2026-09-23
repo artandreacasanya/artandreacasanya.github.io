@@ -3,70 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Adquisiciones — Andrea Casanya</title>
+    <title>Contacto — Casanya</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="main-nav">
-            <a href="index.html" class="logo">Andrea Casanya</a>
-            <ul>
-                <li><a href="index.html">Obras</a></li>
-                <li><a href="proceso.html">Proceso</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-            </ul>
-            <div class="lang-switch">
-                <span class="current">ES</span> | <a href="contact-en.html">EN</a>
+
+    <div class="site-container">
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="casanya.png" alt="Casanya" class="nav-logo">
+                </a>
             </div>
-        </nav>
-    </header>
+            
+            <nav class="nav-right">
+                <a href="index.html#obras"><img src="obras.png" alt="Obras" class="nav-item-obras"></a>
+                <a href="proceso.html"><img src="proceso.png" alt="Proceso" class="nav-item-proceso"></a>
+                <a href="sobre-mi.html"><img src="sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
+                <a href="contacto.html"><img src="contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                
+                <div class="lang-selector">
+                    <a href="contacto.html" class="lang-btn active"><img src="es.png" alt="ES" class="lang-img"></a>
+                    <span class="lang-divider"><img src="barra.png" alt="/" class="lang-img-divider"></span>
+                    <a href="contact.html" class="lang-btn"><img src="en.png" alt="EN" class="lang-img"></a>
+                </div>
+            </nav>
+        </header>
 
-    <main class="contacto-container">
-        <!-- Bloque 1: Adquisiciones y Encargos -->
-        <div class="contacto-block">
-            <h2 class="contacto-heading">Adquisiciones y encargos</h2>
-            <p class="contacto-text">Para consultar la disponibilidad de obras originales o proponer una pieza por encargo, por favor contacta vía email:</p>
-            <div class="contacto-value">
-                <a href="mailto:art.andreacasanya@gmail.com" class="btn">Enviar email de consulta</a>
+        <main class="page-content">
+            <div class="contacto-container">
+                <div class="section-title-container">
+                    <img src="contacto.png" alt="Contacto" class="title-contacto-img">
+                </div>
+                
+                <div class="contacto-block">
+                    <h2 class="contacto-heading">Adquisiciones y Encargos</h2>
+                    <p class="contacto-text">Para consultar la disponibilidad de obras originales o proponer una pieza por encargo, ponte en contacto a través de correo electrónico:</p>
+                    <p class="contacto-value"><a href="mailto:art.andreacasanya@gmail.com?subject=Consulta%20de%20adquisici%C3%B3n&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20hacer%20una%20consulta%20sobre%20las%20obras.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Enviar correo de consulta</a></p>
+                </div>
+
+                <hr class="contacto-divider">
+
+                <div class="contacto-block">
+                    <h2 class="contacto-heading">Acceso Anticipado</h2>
+                    <p class="contacto-text">Si deseas recibir de forma anticipada las nuevas obras de la colección en tu correo electrónico antes de su publicación en la web y redes sociales, puedes solicitarlo aquí:</p>
+                    <p class="contacto-value"><a href="mailto:art.andreacasanya@gmail.com?subject=Acceso%20Anticipado&body=Hola%20Andrea,%0D%0A%0D%0AMe%20gustar%C3%ADa%20solicitar%20el%20acceso%20anticipado%20para%20las%20nuevas%20obras.%0D%0A%0D%0AUn%20saludo," class="btn-inquire">Solicitar acceso anticipado</a></p>
+                </div>
+
+                <hr class="contacto-divider">
+
+                <div class="contacto-block">
+                    <h2 class="contacto-heading">Sigue el trabajo</h2>
+                    <p class="contacto-text">Un vistazo al proceso pictórico, los avances de la colección y el desarrollo de cada pieza en tiempo real.</p>
+                    <div class="contacto-value" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px;">
+                        <a href="https://www.instagram.com/andreacasanya_art/" target="_blank" rel="noopener" class="btn-inquire">Instagram</a>
+                        <a href="https://www.tiktok.com/@casanya.art" target="_blank" rel="noopener" class="btn-inquire">TikTok</a>
+                        <a href="https://www.youtube.com/@andreacasanya" target="_blank" rel="noopener" class="btn-inquire">YouTube</a>
+                    </div>
+                </div>
+
+                <hr class="contacto-divider">
+
+                <div class="contacto-block">
+                    <h2 class="contacto-heading">Información sobre Envíos</h2>
+                    <p class="contacto-text">Cada obra se envía asegurada y embalada individualmente desde el taller. Los gastos de envío e impuestos aduaneros corren a cargo del comprador y se desglosarán en la propuesta final antes de formalizar la adquisición.</p>
+                </div>
             </div>
-        </div>
+        </main>
 
-        <hr class="contacto-divider">
+        <footer style="text-align: center; padding: 40px 0; font-size: 13px; opacity: 0.7;">
+            <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html" style="color: inherit; text-decoration: underline;">Aviso Legal</a></p>
+        </footer>
+    </div>
 
-        <!-- Bloque 2: Acceso Anticipado -->
-        <div class="contacto-block">
-            <h2 class="contacto-heading">Acceso anticipado</h2>
-            <p class="contacto-text">Si deseas recibir por correo electrónico las nuevas obras de la colección antes de su publicación en la web y redes sociales, puedes solicitarlo aquí:</p>
-            <div class="contacto-value">
-                <a href="mailto:art.andreacasanya@gmail.com?subject=Solicitud%20de%20Acceso%20Anticipado" class="btn">Solicitar acceso anticipado</a>
-            </div>
-        </div>
-
-        <hr class="contacto-divider">
-
-        <!-- Bloque 3: Sigue el trabajo -->
-        <div class="contacto-block">
-            <h2 class="contacto-heading">Sigue el trabajo</h2>
-            <p class="contacto-text">Un vistazo al proceso pictórico, actualizaciones de la colección y el desarrollo de cada pieza en tiempo real.</p>
-            <div class="contacto-value social-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <a href="https://www.instagram.com/andreacasanya_art/" target="_blank" rel="noopener" class="btn">Instagram</a>
-                <a href="https://www.tiktok.com/@casanya.art" target="_blank" rel="noopener" class="btn">TikTok</a>
-                <a href="https://www.youtube.com/@andreacasanya" target="_blank" rel="noopener" class="btn">YouTube</a>
-            </div>
-        </div>
-
-        <hr class="contacto-divider">
-
-        <!-- Bloque 4: Información de Envíos -->
-        <div class="contacto-block">
-            <h2 class="contacto-heading">Información de envíos</h2>
-            <p class="contacto-text">Cada obra se envía asegurada y empaquetada individualmente desde el estudio. Los gastos de envío y los aranceles de aduana corren por cuenta del comprador y se detallarán en el presupuesto final antes de formalizar la compra.</p>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados. — <a href="aviso-legal.html">Aviso Legal</a></p>
-    </footer>
 </body>
 </html>
