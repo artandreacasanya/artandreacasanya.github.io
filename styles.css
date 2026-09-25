@@ -506,7 +506,7 @@ footer p,
     .nav-right {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;   /* antes: center → ahora va a los bordes */
         align-items: center;
         gap: 6px;
@@ -528,10 +528,10 @@ footer p,
     }
 
     /* Menú más grande */
-    .nav-item-obras { height: 30px; }
-    .nav-item-proceso { height: 30px; }
-    .nav-item-sobre-mi { height: 30px; }
-    .nav-item-contacto { height: 27px; }
+    .nav-item-obras { height: 27px; }
+    .nav-item-proceso { height: 27px; }
+    .nav-item-sobre-mi { height: 27px; }
+    .nav-item-contacto { height: 26px; }
 
     /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
