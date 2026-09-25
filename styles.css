@@ -499,11 +499,11 @@ footer p,
     .nav-right {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;              /* antes: nowrap */
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;   /* antes: center → ahora va a los bordes */
         align-items: center;
         gap: 6px;
-        padding-top: 0;
+        padding: 0 12px;                  /* separación con el borde de la pantalla */
         box-sizing: border-box;
     }
 
@@ -521,30 +521,30 @@ footer p,
     }
 
     /* Menú más grande */
-    .nav-item-obras { height: 24px; }
-    .nav-item-proceso { height: 24px; }
-    .nav-item-sobre-mi { height: 24px; }
-    .nav-item-contacto { height: 22px; }
+    .nav-item-obras { height: 30px; }
+    .nav-item-proceso { height: 30px; }
+    .nav-item-sobre-mi { height: 30px; }
+    .nav-item-contacto { height: 27px; }
 
     /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
-        flex-basis: 100%;             /* nuevo: obliga el salto de línea */
+        flex-basis: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 6px;
+        gap: 8px;
         margin-top: 8px;
         margin-left: 0;
     }
 
     .lang-img {
-        height: 13px;
+        height: 20px;                     /* antes: 13px */
         width: auto;
     }
 
     .lang-img-divider {
-        height: 9px;
+        height: 13px;                     /* antes: 9px */
         width: auto;
     }
 
