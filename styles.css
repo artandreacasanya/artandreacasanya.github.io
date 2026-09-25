@@ -471,7 +471,14 @@ footer p,
 }
 
 @media (max-width: 768px) {
-    .site-container {
+
+       :root {
+        --tamano-fuente-base: 1.00rem;      /* antes 1.05rem */
+        --tamano-fuente-obras: 0.72rem;     /* antes 0.77rem */
+        --tamano-fuente-sobremi: 0.81rem;   /* antes 0.86rem */
+    }
+   
+   .site-container {
         padding: 10px;
     }
 
