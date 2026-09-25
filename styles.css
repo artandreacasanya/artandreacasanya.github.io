@@ -495,11 +495,11 @@ footer p,
         width: auto;
     }
 
-    /* Forzamos línea única sin salto */
+       /* Forzamos línea única sin salto */
     .nav-right {
         width: 100%;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;              /* antes: nowrap */
         justify-content: center;
         align-items: center;
         gap: 6px;
@@ -520,14 +520,15 @@ footer p,
         width: auto;
     }
 
-    /* Alturas reducidas para garantizar 1 sola fila en móviles estrechos */
-    .nav-item-obras { height: 15px; }
-    .nav-item-proceso { height: 15px; }
-    .nav-item-sobre-mi { height: 15px; }
-    .nav-item-contacto { height: 15px; }
+    /* Menú más grande */
+    .nav-item-obras { height: 24px; }
+    .nav-item-proceso { height: 24px; }
+    .nav-item-sobre-mi { height: 24px; }
+    .nav-item-contacto { height: 22px; }
 
     /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
+        flex-basis: 100%;             /* nuevo: obliga el salto de línea */
         width: 100%;
         display: flex;
         align-items: center;
