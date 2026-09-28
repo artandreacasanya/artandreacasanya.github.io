@@ -7,7 +7,7 @@
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
-    --tamano-logo: 105px;          
+    --tamano-logo: 105px;         
     --tamano-menu-obras: 35px;
     --tamano-menu-proceso: 35px;
     --tamano-menu-sobremi: 35px;
@@ -17,7 +17,7 @@
     --tamano-titulo-sobremi: 65px;
     --tamano-titulo-contacto: 65px;
     --tamano-obras-palabra: 65px;    
-    --tamano-obras-serie: 50px;       
+    --tamano-obras-serie: 50px;        
 
     --tamano-fuente-base: 1.05rem;      
     --tamano-fuente-obras: 0.77rem;    
@@ -221,10 +221,57 @@ footer p,
     margin-bottom: 15px;
 }
 
+/* CONTENEDOR DE LA IMAGEN DE LA OBRA CON EL BOTÓN FLOTANDO ABAJO A LA DERECHA */
+.work-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .work-image {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* ESTILOS DEL BOTÓN DE LIKE EN LA ESQUINA INFERIOR DERECHA */
+.btn-like {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    font-family: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+}
+
+.btn-like:hover {
+    background-color: #ffffff;
+    color: #b22222;
+    transform: scale(1.05);
+}
+
+.btn-like.liked {
+    background-color: #ffffff;
+    color: #b22222;
+}
+
+.btn-like .heart-icon {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.btn-like.liked .heart-icon {
+    color: #b22222;
 }
 
 /* FICHA TÉCNICA DE LAS OBRAS */
@@ -472,7 +519,6 @@ footer p,
 
 @media (max-width: 768px) {
 
-    /* Fuente medio punto más pequeña, solo en móvil */
     :root {
         --tamano-fuente-base: 1.00rem;
         --tamano-fuente-obras: 0.72rem;
@@ -503,7 +549,6 @@ footer p,
         width: auto;
     }
 
-    /* Menú en una línea (con wrap para que ES/EN baje a su propia fila) */
     .nav-right {
         width: 100%;
         display: flex;
@@ -529,13 +574,11 @@ footer p,
         width: auto;
     }
 
-    /* Menú: tamaño relativo al ancho de pantalla (baja a 4.5vw si va justo, sube a 5vw si sobra) */
     .nav-item-obras { height: 4.8vw; }
     .nav-item-proceso { height: 4.8vw; }
     .nav-item-sobre-mi { height: 4.8vw; }
     .nav-item-contacto { height: 4.6vw; }
 
-    /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
         flex-basis: 100%;
         width: 100%;
