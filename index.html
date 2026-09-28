@@ -50,8 +50,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="parc_monceau.png" alt="Parc Monceau" class="work-image">
-                        <button class="btn-like" data-work-id="parc-monceau" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="parc-monceau" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -67,8 +70,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="jardin_du_luxembourg.png" alt="Jardin du Luxembourg" class="work-image">
-                        <button class="btn-like" data-work-id="jardin-luxembourg" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="jardin-luxembourg" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -84,8 +90,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="maison_du_14e.png" alt="Maison du 14e" class="work-image">
-                        <button class="btn-like" data-work-id="maison-14e" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="maison-14e" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -101,8 +110,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="maison_a_montmartre.png" alt="Maison à Montmartre" class="work-image">
-                        <button class="btn-like" data-work-id="maison-montmartre" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="maison-montmartre" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -118,8 +130,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="parc_florale_champ_de_dahlias.png" alt="Parc Florale - Champ de Dahlias" class="work-image">
-                        <button class="btn-like" data-work-id="parc-florale" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="parc-florale" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -138,8 +153,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="jardin_des_tuileries.png" alt="Jardin des Tuileries" class="work-image">
-                        <button class="btn-like" data-work-id="jardin-tuileries" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="jardin-tuileries" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -155,8 +173,11 @@
                 <article class="work-card">
                     <div class="work-image-wrapper">
                         <img src="avenue_des_champs_elysees.png" alt="Avenue des Champs-Élysées" class="work-image">
-                        <button class="btn-like" data-work-id="champs-elysees" onclick="darLike(this)">
-                            <span class="heart-icon">♡</span> <span class="like-count">0</span>
+                    </div>
+                    <div class="like-container-wrapper">
+                        <button class="btn-like" data-work-id="champs-elysees" onclick="toggleLike(this)">
+                            <img src="corazon-vacio.png" alt="Me gusta" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png">
+                            <span class="like-count">0</span>
                         </button>
                     </div>
                     <div class="work-info">
@@ -181,21 +202,29 @@
         </footer>
     </div>
 
-    <!-- SCRIPT PARA EL CONTADOR DE LIKES (CONECTADO A GOOGLE SHEETS) -->
+    <!-- SCRIPT PARA EL CONTADOR DE LIKES (CON MARCAR Y DESMARCAR) -->
     <script>
-        const GOOGLE_SCRIPT_URL = 'TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwmvkutY3X0m7Y_POmkMMFBUkiN_ehjJ0hJXEKu1HCc2bViahcX11W0dX1yO10ngHFHXA/exec';
 
-        function darLike(button) {
-            if (button.classList.contains('liked')) return;
-            
+        function toggleLike(button) {
             const workId = button.getAttribute('data-work-id');
             const countSpan = button.querySelector('.like-count');
-            const heartSpan = button.querySelector('.heart-icon');
+            const heartImg = button.querySelector('.heart-img');
             
-            button.classList.add('liked');
-            heartSpan.textContent = '♥';
             let currentCount = parseInt(countSpan.textContent) || 0;
-            countSpan.textContent = currentCount + 1;
+            let action = '';
+
+            if (button.classList.contains('liked')) {
+                button.classList.remove('liked');
+                heartImg.src = heartImg.getAttribute('data-empty');
+                countSpan.textContent = Math.max(0, currentCount - 1);
+                action = 'unlike';
+            } else {
+                button.classList.add('liked');
+                heartImg.src = heartImg.getAttribute('data-filled');
+                countSpan.textContent = currentCount + 1;
+                action = 'like';
+            }
 
             fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
@@ -203,9 +232,9 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ id: workId })
+                body: JSON.stringify({ id: workId, action: action })
             }).catch(error => {
-                console.error('Error al registrar el like:', error);
+                console.error('Error al actualizar el like:', error);
             });
         }
     </script>
