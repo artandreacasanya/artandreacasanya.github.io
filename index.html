@@ -212,7 +212,7 @@
     <!-- SCRIPT PARA GESTIONAR LA MEMORIA LOCAL Y EL ENVÍO A GOOGLE SHEETS -->
     <script>
         // REEMPLAZA ESTA URL CON TU URL DE WEB APP DE GOOGLE APPS SCRIPT
-        const SCRIPT_URL = "AQUÍ_PEGAS_TU_URL_DE_GOOGLE_APPS_SCRIPT";
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxX7nNcnJSmsKWZxwU_d49HDtLEJr7m6zwDeiaUCbB9_ihjPMW0fWjf3eTNqPOcsdCIZQ/exec";
 
         document.addEventListener("DOMContentLoaded", function() {
             const likeButtons = document.querySelectorAll('.btn-like');
@@ -244,7 +244,7 @@
                 localStorage.setItem('liked_' + workId, 'true');
 
                 // Enviar la petición al Google Apps Script para sumar un like en Google Sheets
-                if (SCRIPT_URL && SCRIPT_URL !== "AQUÍ_PEGAS_TU_URL_DE_GOOGLE_APPS_SCRIPT") {
+                if (SCRIPT_URL && SCRIPT_URL !== "https://script.google.com/macros/s/AKfycbxX7nNcnJSmsKWZxwU_d49HDtLEJr7m6zwDeiaUCbB9_ihjPMW0fWjf3eTNqPOcsdCIZQ/exec") {
                     fetch(SCRIPT_URL, {
                         method: 'POST',
                         mode: 'no-cors', // Necesario para evitar bloqueos CORS por defecto en Apps Script
