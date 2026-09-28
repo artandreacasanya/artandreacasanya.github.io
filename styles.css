@@ -472,13 +472,14 @@ footer p,
 
 @media (max-width: 768px) {
 
-       :root {
-        --tamano-fuente-base: 1.00rem;      /* antes 1.05rem */
-        --tamano-fuente-obras: 0.72rem;     /* antes 0.77rem */
-        --tamano-fuente-sobremi: 0.81rem;   /* antes 0.86rem */
+    /* Fuente medio punto más pequeña, solo en móvil */
+    :root {
+        --tamano-fuente-base: 1.00rem;
+        --tamano-fuente-obras: 0.72rem;
+        --tamano-fuente-sobremi: 0.81rem;
     }
-   
-   .site-container {
+
+    .site-container {
         padding: 10px;
     }
 
@@ -490,7 +491,7 @@ footer p,
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    
+
     .nav-left {
         width: 100%;
         display: flex;
@@ -502,21 +503,22 @@ footer p,
         width: auto;
     }
 
-       /* Forzamos línea única sin salto */
+    /* Menú en una línea (con wrap para que ES/EN baje a su propia fila) */
     .nav-right {
         width: 100%;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;   /* antes: center → ahora va a los bordes */
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        gap: 6px;
-        padding: 0 12px;                  /* separación con el borde de la pantalla */
+        gap: 4px;
+        padding: 0 8px;
         box-sizing: border-box;
     }
 
     .nav-right > a {
         display: inline-flex;
         align-items: center;
+        flex-shrink: 0;
     }
 
     .nav-item-obras,
@@ -527,11 +529,11 @@ footer p,
         width: auto;
     }
 
-    /* Menú más grande */
-    .nav-item-obras { height: 27px; }
-    .nav-item-proceso { height: 27px; }
-    .nav-item-sobre-mi { height: 27px; }
-    .nav-item-contacto { height: 26px; }
+    /* Menú: tamaño relativo al ancho de pantalla (baja a 4.5vw si va justo, sube a 5vw si sobra) */
+    .nav-item-obras { height: 4.8vw; }
+    .nav-item-proceso { height: 4.8vw; }
+    .nav-item-sobre-mi { height: 4.8vw; }
+    .nav-item-contacto { height: 4.6vw; }
 
     /* Selector de idioma en su propia fila debajo del menú */
     .lang-selector {
@@ -546,12 +548,12 @@ footer p,
     }
 
     .lang-img {
-        height: 20px;                     /* antes: 13px */
+        height: 20px;
         width: auto;
     }
 
     .lang-img-divider {
-        height: 13px;                     /* antes: 9px */
+        height: 13px;
         width: auto;
     }
 
@@ -585,5 +587,4 @@ footer p,
     .proceso-image-container {
         height: 300px;
     }
-}
 }
