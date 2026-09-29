@@ -21,7 +21,7 @@
             <nav class="nav-right">
                 <a href="index-en.html#obras" class="active"><img src="works.png" alt="Works" class="nav-item-obras"></a>
                 <a href="process-en.html"><img src="process.png" alt="Process" class="nav-item-proceso"></a>
-                <a href="about-en.html"><img src="about_me.png" alt="About" class="nav-item-sobre-mi"></a>
+                <a href="about.html"><img src="about_me.png" alt="About" class="nav-item-sobre-mi"></a>
                 <a href="contact-en.html"><img src="contact.png" alt="Contact" class="nav-item-contacto"></a>
                 
                 <div class="lang-selector">
@@ -50,62 +50,97 @@
                 <article class="work-card">
                     <img src="parc_monceau.png" alt="Parc Monceau" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Parc Monceau</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Parc Monceau</strong></p>
+                            <button class="btn-like" data-work-id="Parc Monceau" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Parc%20Monceau" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Parc%20Monceau" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="work-card">
                     <img src="jardin_du_luxembourg.png" alt="Jardin du Luxembourg" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Jardin du Luxembourg</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Jardin du Luxembourg</strong></p>
+                            <button class="btn-like" data-work-id="Jardin du Luxembourg" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Jardin%20du%20Luxembourg" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Jardin%20du%20Luxembourg" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="work-card">
                     <img src="maison_du_14e.png" alt="Maison du 14e" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Maison du 14e</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Maison du 14e</strong></p>
+                            <button class="btn-like" data-work-id="Maison du 14e" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Maison%20du%2014e" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Maison%20du%2014e" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="work-card">
                     <img src="maison_a_montmartre.png" alt="Maison à Montmartre" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Maison à Montmartre</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Maison à Montmartre</strong></p>
+                            <button class="btn-like" data-work-id="Maison à Montmartre" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Maison%20%C3%A0%20Montmartre" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Maison%20%C3%A0%20Montmartre" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="work-card">
                     <img src="parc_florale_champ_de_dahlias.png" alt="Parc Florale - Champ de Dahlias" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Parc Florale - Champ de Dahlias</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Parc Florale - Champ de Dahlias</strong></p>
+                            <button class="btn-like" data-work-id="Parc Florale - Champ de Dahlias" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>300 €</strong></p>
-                        <div class="status-sold">
-                            <span class="red-dot"></span>
-                            <span class="status-text">Acquired</span>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                            <div class="status-sold" style="margin-top: 0;">
+                                <span class="red-dot"></span>
+                                <span class="status-text">Acquired</span>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -113,24 +148,38 @@
                 <article class="work-card">
                     <img src="jardin_des_tuileries.png" alt="Jardin des Tuileries" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Jardin des Tuileries</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Jardin des Tuileries</strong></p>
+                            <button class="btn-like" data-work-id="Jardin des Tuileries" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>280 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Jardin%20des%20Tuileries" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Jardin%20des%20Tuileries" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="work-card">
                     <img src="avenue_des_champs_elysees.png" alt="Avenue des Champs-Élysées" class="work-image">
                     <div class="work-info">
-                        <p>Title: <strong>Avenue des Champs-Élysées</strong></p>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <p style="margin: 0;">Title: <strong>Avenue des Champs-Élysées</strong></p>
+                            <button class="btn-like" data-work-id="Avenue des Champs-Élysées" onclick="toggleLike(this)" style="background: none; border: none; cursor: pointer; padding: 0; line-height: 1;">
+                                <img src="corazon-vacio.png" alt="Like" class="heart-img" data-empty="corazon-vacio.png" data-filled="corazon-lleno.png" style="width: 21px; height: auto; display: block;">
+                            </button>
+                        </div>
                         <p>Medium: <strong>Oil on canvas</strong></p>
                         <p>Dimensions: <strong>34 x 24 cm</strong></p>
                         <p>Year: <strong>2025</strong></p>
                         <p>Price: <strong>300 €</strong></p>
-                        <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Avenue%20des%20Champs-%C3%89lys%C3%A9es" class="btn-inquire">Acquire artwork</a>
+                        <div style="margin-top: 12px;">
+                            <a href="mailto:art.andreacasanya@gmail.com?subject=Inquire%20%E2%80%94%20Avenue%20des%20Champs-%C3%89lys%C3%A9es" class="btn-inquire" style="margin-top: 0; display: inline-block;">Acquire artwork</a>
+                        </div>
                     </div>
                 </article>
 
@@ -143,5 +192,51 @@
         </footer>
     </div>
 
+    <!-- SCRIPT PARA GESTIONAR LA MEMORIA LOCAL Y EL ENVÍO A GOOGLE SHEETS -->
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxX7nNcnJSmsKWZxwU_d49HDtLEJr7m6zwDeiaUCbB9_ihjPMW0fWjf3eTNqPOcsdCIZQ/exec";
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const likeButtons = document.querySelectorAll('.btn-like');
+
+            likeButtons.forEach(button => {
+                const workId = button.getAttribute('data-work-id');
+                const heartImg = button.querySelector('.heart-img');
+
+                if (localStorage.getItem('liked_' + workId) === 'true') {
+                    button.classList.add('liked');
+                    heartImg.src = heartImg.getAttribute('data-filled');
+                }
+            });
+        });
+
+        function enviarLike(workId, action) {
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ id: workId, action: action })
+            }).catch(error => {
+                console.error('Error al registrar el like:', error);
+            });
+        }
+
+        function toggleLike(button) {
+            const workId = button.getAttribute('data-work-id');
+            const heartImg = button.querySelector('.heart-img');
+
+            if (button.classList.contains('liked')) {
+                button.classList.remove('liked');
+                heartImg.src = heartImg.getAttribute('data-empty');
+                localStorage.setItem('liked_' + workId, 'false');
+                enviarLike(workId, 'unlike');
+            } else {
+                button.classList.add('liked');
+                heartImg.src = heartImg.getAttribute('data-filled');
+                localStorage.setItem('liked_' + workId, 'true');
+                enviarLike(workId, 'like');
+            }
+        }
+    </script>
 </body>
 </html>
