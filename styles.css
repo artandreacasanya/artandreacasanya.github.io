@@ -225,9 +225,10 @@ footer p,
     width: 100%;
 }
 
+/* TODAS las fotos de obra usan exactamente el mismo marco y recorte */
 .work-image {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 17 / 12;
     object-fit: cover;
     display: block;
 }
@@ -619,4 +620,11 @@ footer p,
     }
 
     .proceso-grid {
-        flex-direction:
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .proceso-image-container {
+        height: 300px;
+    }
+}
