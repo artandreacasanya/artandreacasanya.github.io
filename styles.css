@@ -227,7 +227,8 @@ footer p,
 
 .work-image {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     display: block;
 }
 
@@ -618,11 +619,4 @@ footer p,
     }
 
     .proceso-grid {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .proceso-image-container {
-        height: 300px;
-    }
-}
+        flex-direction:
