@@ -228,8 +228,7 @@ footer p,
 /* TODAS las fotos de obra usan exactamente el mismo marco y recorte */
 .work-image {
     width: 100%;
-    aspect-ratio: 17 / 12;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
