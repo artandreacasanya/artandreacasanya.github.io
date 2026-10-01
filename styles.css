@@ -570,10 +570,10 @@ footer p,
         width: auto;
     }
 
-    .nav-item-obras { height: 4.9vw; }
-    .nav-item-proceso { height: 4.9vw; }
-    .nav-item-sobre-mi { height: 4.9vw; }
-    .nav-item-contacto { height: 4.8vw; }
+    .nav-item-obras { height: 6.3vw; }
+    .nav-item-proceso { height: 6.3vw; }
+    .nav-item-sobre-mi { height: 6.3vw; }
+    .nav-item-contacto { height: 6.1vw; }
 
     .lang-selector {
         flex-basis: 100%;
@@ -587,12 +587,12 @@ footer p,
     }
 
     .lang-img {
-        height: 20px;
+        height: 16px;
         width: auto;
     }
 
     .lang-img-divider {
-        height: 13px;
+        height: 11px;
         width: auto;
     }
 
