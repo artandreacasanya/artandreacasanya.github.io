@@ -570,10 +570,10 @@ footer p,
         width: auto;
     }
 
-    .nav-item-obras { height: 6.3vw; }
-    .nav-item-proceso { height: 6.3vw; }
-    .nav-item-sobre-mi { height: 6.3vw; }
-    .nav-item-contacto { height: 6.1vw; }
+    .nav-item-obras { height: 6.4vw; }
+    .nav-item-proceso { height: 6.4vw; }
+    .nav-item-sobre-mi { height: 6.4vw; }
+    .nav-item-contacto { height: 6.2vw; }
 
     .lang-selector {
         flex-basis: 100%;
