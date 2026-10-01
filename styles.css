@@ -602,7 +602,7 @@ footer p,
     .aviso-legal,
     footer p,
     .site-footer p {
-        font-size: calc(var(--tamano-fuente-legal) * 0.9) !important;
+        font-size: calc(var(--tamano-fuente-legal) * 0.65) !important;
     }
 
     .title-obras-img { height: 32px; }
