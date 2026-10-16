@@ -305,6 +305,22 @@ footer p,
     color: #ffffff;
 }
 
+/* ESTILO PARA EL ENLACE CONSULTAR ENVÍO */
+.link-envio {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #888888;
+    text-decoration: none;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    transition: color 0.2s ease;
+}
+
+.link-envio:hover {
+    color: #222222;
+}
+
 /* ESTADO OBRA VENDIDA (PUNTO ROJO) */
 .status-sold {
     display: inline-flex;
