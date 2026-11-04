@@ -305,19 +305,29 @@ footer p,
     color: #ffffff;
 }
 
-/* ESTILO PARA EL ENLACE CONSULTAR ENVÍO */
-.link-envio {
-    display: inline-block;
+/* ==========================================================
+   ENLACES DE ENVÍO Y MARCO ARTESANAL
+   ========================================================== */
+
+.work-info .link-envio {
+    display: block !important;
+    width: fit-content;
     margin-top: 6px;
     font-size: 0.7rem;
     font-style: italic;
     color: #888888;
     text-decoration: none;
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.6;
     transition: color 0.2s ease;
 }
 
-.link-envio:hover {
+.work-info .link-envio + .link-envio {
+    margin-top: 2px !important;
+}
+
+.work-info .link-envio:hover {
     color: #222222;
 }
 
