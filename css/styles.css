@@ -1,9 +1,4 @@
 /* ==========================================================
-   IMPORTACIÓN DE TIPOGRAFÍAS EXTERNAS (CINZEL)
-   ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
-
-/* ==========================================================
    PANEL DE CONTROL INDEPENDIENTE DE TAMAÑOS (MODIFICA AQUÍ)
    ========================================================== */
 :root {
@@ -138,7 +133,7 @@ body {
 }
 
 /* CONTENIDO GENERAL Y TEXTOS JUSTIFICADOS */
-.page-content, .site-content {
+.page-content {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -149,17 +144,24 @@ p {
 }
 
 /* PIE DE PÁGINA Y AVISO LEGAL */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    opacity: 0.7;
+}
+
 footer,
-.site-footer,
-.legal-notice,
-.aviso-legal {
+footer p {
     font-size: var(--tamano-fuente-legal) !important;
 }
 
-footer p,
-.site-footer p {
-    font-size: var(--tamano-fuente-legal) !important;
+footer p {
     text-align: center;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 /* TÍTULOS DE PÁGINAS INTERIORES INDIVIDUALIZADOS */
@@ -221,10 +223,6 @@ footer p,
     margin-bottom: 15px;
 }
 
-.work-image-wrapper {
-    width: 100%;
-}
-
 /* TODAS las fotos de obra usan exactamente el mismo marco y recorte */
 .work-image {
     width: 100%;
@@ -232,22 +230,26 @@ footer p,
     display: block;
 }
 
-/* CONTENEDOR DEL BOTÓN DE LIKE (FUERA DE LA FOTO, ABAJO A LA DERECHA) */
-.like-container-wrapper {
+/* TÍTULO DE LA OBRA + BOTÓN DE LIKE EN LA MISMA LÍNEA */
+.work-title-row {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.work-info .work-title {
+    margin: 0;
 }
 
 .btn-like {
-    background: transparent;
+    background: none;
     border: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 2px 4px;
+    padding: 0;
+    line-height: 1;
     font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
     font-size: 0.85rem;
     color: #444;
@@ -259,15 +261,9 @@ footer p,
 }
 
 .heart-img {
-    height: 15px;
-    width: auto;
+    width: 21px;
+    height: auto;
     display: block;
-}
-
-.like-count {
-    font-size: 0.8rem;
-    color: #555;
-    line-height: 1;
 }
 
 /* FICHA TÉCNICA DE LAS OBRAS */
@@ -305,6 +301,14 @@ footer p,
     color: #ffffff;
 }
 
+.work-actions {
+    margin-top: 12px;
+}
+
+.work-actions .btn-inquire {
+    margin-top: 0;
+}
+
 /* ==========================================================
    ENLACES DE ENVÍO Y MARCO ARTESANAL
    ========================================================== */
@@ -331,9 +335,15 @@ footer p,
     color: #222222;
 }
 
+/* "Marco artesanal incluido": texto, no enlace */
+.work-info .frame-note {
+    margin-bottom: 0;
+    cursor: default;
+}
+
 /* ESTADO OBRA VENDIDA (PUNTO ROJO) */
 .status-sold {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 10px;
@@ -519,6 +529,40 @@ footer p,
     margin: 45px 0;
 }
 
+ul.contacto-list {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+.contacto-social {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* ==========================================================
+   AVISO LEGAL
+   ========================================================== */
+.legal-container {
+    max-width: 800px;
+}
+
+.legal-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.contacto-block.legal-block {
+    margin-bottom: 30px;
+}
+
+.legal-block .contacto-heading {
+    font-size: 16px;
+}
+
 /* ==========================================================
    RESPONSIVO (MÓVIL)
    ========================================================== */
@@ -623,11 +667,7 @@ footer p,
     }
 
     footer,
-    .site-footer,
-    .legal-notice,
-    .aviso-legal,
-    footer p,
-    .site-footer p {
+    footer p {
         font-size: calc(var(--tamano-fuente-legal) * 0.65) !important;
     }
 
