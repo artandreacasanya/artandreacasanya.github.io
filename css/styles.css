@@ -208,13 +208,11 @@ footer a {
 
 .filter-wrap {
     position: relative;
-    display: flex;
-    align-items: center;
-    gap: 14px;
 }
 
 /* "13 de 14 disponibles", mismo estilo que "Consultar envío" */
 .works-count {
+    margin-left: auto;
     font-size: 0.72rem;
     font-style: italic;
     color: #888888;
@@ -788,6 +786,26 @@ ul.contacto-list {
 
     .title-obras-img { height: 32px; }
     .title-serie-img { height: 30px; }
+
+    /* móvil: contador debajo de "Serie París 2025" y botón separado del borde */
+    .serie-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "title filter"
+            "count count";
+        row-gap: 6px;
+    }
+
+    .serie-row .title-serie-img { grid-area: title; }
+    .serie-row .filter-wrap {
+        grid-area: filter;
+        margin-right: 8px;
+    }
+    .serie-row .works-count {
+        grid-area: count;
+        margin-left: 0;
+    }
     .title-proceso-img,
     .title-sobremi-img,
     .title-contacto-img {
