@@ -197,6 +197,77 @@ footer a {
     display: block;
 }
 
+/* "SERIE PARÍS 2025" + BOTÓN DE FILTROS EN LA MISMA LÍNEA */
+.serie-row {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.filter-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* "13 de 14 disponibles", mismo estilo que "Consultar envío" */
+.works-count {
+    font-size: 0.72rem;
+    font-style: italic;
+    color: #888888;
+    white-space: nowrap;
+}
+
+/* los <button> usan el mismo estilo que el enlace "Adquirir obra" */
+button.btn-inquire {
+    margin-top: 0;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.btn-inquire[aria-pressed="true"],
+.filter-toggle[aria-expanded="true"] {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.filter-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 10;
+    width: max-content;
+    max-width: calc(100vw - 40px);
+    padding: 16px 18px 18px;
+    background-color: #ffffff;
+    border: 1px solid #222222;
+}
+
+.filter-label {
+    margin: 12px 0 6px;
+    font-size: 0.72rem;
+    font-style: italic;
+    color: #888888;
+    text-align: left;
+}
+
+.filter-label:first-child {
+    margin-top: 0;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.work-card[hidden] {
+    display: none;
+}
+
 /* PORTADA Y CUADRÍCULA DE OBRAS */
 .hero-section {
     margin-bottom: 30px;
@@ -532,6 +603,50 @@ footer a {
 ul.contacto-list {
     list-style-type: disc;
     margin: 10px 0 10px 20px;
+}
+
+/* PREGUNTAS FRECUENTES (DESPLEGABLES) */
+.faq-item {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.faq-item summary {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 28px 14px 0;
+    font-family: "Minion Variable Concept", "Minion Pro", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    font-weight: 600;
+    color: #111;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary:hover {
+    opacity: 0.7;
+}
+
+.faq-item .contacto-text a {
+    color: inherit;
+    text-underline-offset: 3px;
 }
 
 .contacto-social {

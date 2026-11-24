@@ -41,7 +41,31 @@
         <section id="obras" class="obras-section">
             <div class="section-title-container">
                 <img src="images/ui/obras.png" alt="Obras" class="title-obras-img">
-                <img src="images/ui/serie_paris.png" alt="Serie París 2025" class="title-serie-img">
+                <div class="serie-row">
+                    <img src="images/ui/serie_paris.png" alt="Serie París 2025" class="title-serie-img">
+                    <div class="filter-wrap">
+                        <span class="works-count" data-template="{available} de {total} disponibles"></span>
+                        <button type="button" class="btn-inquire filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filtros</button>
+                        <div class="filter-panel" id="filter-panel" hidden>
+                            <p class="filter-label">Disponibilidad</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-filter="all">Todas</button>
+                                <button type="button" class="btn-inquire" data-filter="available">Disponible</button>
+                                <button type="button" class="btn-inquire" data-filter="sold">Adquirido</button>
+                            </div>
+                            <p class="filter-label">Precio</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-sort="price-desc">Mayor a menor</button>
+                                <button type="button" class="btn-inquire" data-sort="price-asc">Menor a mayor</button>
+                            </div>
+                            <p class="filter-label">Fecha</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-sort="date-new">Más reciente</button>
+                                <button type="button" class="btn-inquire" data-sort="date-old">Más antigua</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- GALERÍA DE OBRAS -->
@@ -369,5 +393,6 @@
     </div>
 
     <script src="js/likes.js"></script>
+    <script src="js/filters.js"></script>
 </body>
 </html>

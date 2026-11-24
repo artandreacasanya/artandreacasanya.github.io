@@ -41,7 +41,31 @@
         <section id="obras" class="obras-section">
             <div class="section-title-container">
                 <img src="images/ui/works.png" alt="Works" class="title-obras-img">
-                <img src="images/ui/paris_series.png" alt="Paris Series" class="title-serie-img">
+                <div class="serie-row">
+                    <img src="images/ui/paris_series.png" alt="Paris Series" class="title-serie-img">
+                    <div class="filter-wrap">
+                        <span class="works-count" data-template="{available} of {total} available"></span>
+                        <button type="button" class="btn-inquire filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filters</button>
+                        <div class="filter-panel" id="filter-panel" hidden>
+                            <p class="filter-label">Availability</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-filter="all">All</button>
+                                <button type="button" class="btn-inquire" data-filter="available">Available</button>
+                                <button type="button" class="btn-inquire" data-filter="sold">Acquired</button>
+                            </div>
+                            <p class="filter-label">Price</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-sort="price-desc">High to low</button>
+                                <button type="button" class="btn-inquire" data-sort="price-asc">Low to high</button>
+                            </div>
+                            <p class="filter-label">Date</p>
+                            <div class="filter-options">
+                                <button type="button" class="btn-inquire" data-sort="date-new">Newest</button>
+                                <button type="button" class="btn-inquire" data-sort="date-old">Oldest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- GALERÍA DE OBRAS -->
@@ -365,5 +389,6 @@
     </div>
 
     <script src="js/likes.js"></script>
+    <script src="js/filters.js"></script>
 </body>
 </html>
