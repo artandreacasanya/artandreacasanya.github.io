@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://andreacasanya.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/index-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/index-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/index-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/sobre-mi.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/about_me-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/about_me-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/about_me-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/proceso.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/proceso.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/process-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/process-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/proceso.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/process-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/contact-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/contact-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/contact-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/aviso-legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/aviso-legal-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.2</priority>
+  </url>
+</urlset>
