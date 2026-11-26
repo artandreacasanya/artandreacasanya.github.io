@@ -26,7 +26,7 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 - [ ] **Imágenes WebP con `srcset`**, para que el móvil descargue versiones más pequeñas.
 - [ ] **Añadir `width` y `height` a las `<img>`**, para que la página no «salte» mientras cargan las fotos.
 - [ ] **Menú y títulos en SVG** (o con una fuente manuscrita) en lugar de 20 imágenes PNG (876 KB). Pesan menos, se ven nítidos en cualquier pantalla y Google puede leerlos.
-- [ ] **Reducir el favicon** de 138 KB a unos 5 KB.
+- [x] **Favicon nuevo**: redondel de «Parc Florale - Champ de Dahlias» (3 KB en lugar de 138 KB).
 
 ## 5. SEO y aspectos técnicos
 
@@ -48,5 +48,19 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 
 - [ ] **Preguntas frecuentes comentadas** en `contacto.html` y `contact-en.html`: «¿Hacéis envíos internacionales? ¿Tendré seguimiento?» y «¿Puedo comprar prints o reproducciones?». Escribir la respuesta y borrar el comentario.
 - [x] **Aviso legal**: quitada la mención a las «solicitudes de acceso anticipado» y añadido el formulario (FormSubmit). Completada la versión inglesa, que estaba cortada.
-- [ ] **Datos personales en el aviso legal**: el NIF y el domicilio son públicos. Confirmar con la titular qué exige la LSSI y si está de acuerdo en publicarlos.
+- [x] **Datos personales en el aviso legal**: la LSSI obliga a publicar NIF y domicilio si se vende desde la web; se usa la dirección del estudio. El aviso legal ya no aparece en Google (noindex).
 - [x] **Revisar las traducciones al inglés**: correctas. Mejorados «Shipping inquiries», «Sold», «Acquire this work» y el texto de envíos; arreglado el enlace a la sección de envíos.
+
+## 8. Redes sociales (Instagram, TikTok, YouTube)
+
+Instagram es la red principal; TikTok y YouTube Shorts sirven de embudo con el mismo vídeo vertical.
+
+- [ ] **Bio de Instagram con enlace directo a la web** (`andreacasanya.com`) y una frase clara: qué pintas, dónde y que las obras están a la venta.
+- [ ] **Historias destacadas fijas**: «Obras disponibles», «Proceso», «Envíos y pago», «Sobre mí». Responden de antemano a las preguntas de quien quiere comprar.
+- [ ] **Fijar 3 publicaciones** arriba del perfil: el reel con más alcance, una obra disponible y una presentación («quién soy y qué pinto»).
+- [ ] **Unificar el nombre de usuario** en las tres redes: ahora son `@andreacasanya_art`, `@casanya.art` y `@andreacasanya`. Con el mismo nombre en todas, es más fácil encontrarte.
+- [ ] **Enlazar obras concretas** en historias y mensajes con las páginas propias de cada obra (`andreacasanya.com/obras/...`), que muestran su foto al compartirlas.
+- [ ] **Textos con palabras que la gente busca** («pintura al óleo», «París», «plein air», el nombre del lugar), porque Instagram también funciona como buscador. Etiquetar la ubicación de cada cuadro.
+- [ ] **Reels con gancho en el primer segundo** y un formato que se repita (serie reconocible), publicados con regularidad.
+- [ ] **Subir cada reel también a TikTok y YouTube Shorts**, exportado sin marca de agua.
+- [ ] **Revisar las estadísticas cada mes** (alcance, guardados, visitas al perfil y clics en el enlace) para repetir lo que funciona.

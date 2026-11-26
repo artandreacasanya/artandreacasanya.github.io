@@ -79,7 +79,7 @@ IDIOMAS = {
         "volver": "Volver a las obras",
         "anterior": "Obra anterior",
         "siguiente": "Obra siguiente",
-        "asunto": "Consulta de adquisición — {titulo}",
+        "asunto": "[Web] Consulta de adquisición — {titulo}",
         "mensaje": "Hola Andrea,\r\n\r\nMe gustaría adquirir la obra \"{titulo}\".\r\n\r\n"
                    "Quedo a la espera de tu respuesta.\r\n\r\nUn saludo,",
         "descripcion": "{titulo}, {tecnica} de Andrea Casanya ({medidas}, {mes} de {año}). "
@@ -108,7 +108,7 @@ IDIOMAS = {
         "volver": "Back to works",
         "anterior": "Previous work",
         "siguiente": "Next work",
-        "asunto": "Purchase inquiry — {titulo}",
+        "asunto": "[Web] Purchase inquiry — {titulo}",
         "mensaje": "Hello Andrea,\r\n\r\nI would like to acquire the artwork \"{titulo}\".\r\n\r\n"
                    "Looking forward to your reply.\r\n\r\nBest regards,",
         "descripcion": "{titulo}, {tecnica} by Andrea Casanya ({medidas}, {mes} {año}). "
@@ -426,7 +426,8 @@ def generar_pagina_obra(obras, n, lang):
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
     <link rel="stylesheet" href="../css/styles.css?v={version("css/styles.css")}">
-    <link rel="icon" type="image/png" href="../images/ui/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/ui/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/ui/apple-touch-icon.png">
 </head>
 <body>
 
