@@ -5,70 +5,190 @@
     <loc>https://andreacasanya.com/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/index-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/index-en.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/index-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/sobre-mi.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/sobre-mi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/about_me-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/about_me-en.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/sobre-mi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/about_me-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/proceso.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/proceso.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/process-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/process-en.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/proceso.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/process-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/contacto.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/contact-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/contact-en.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/contact-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/aviso-legal.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.2</priority>
   </url>
   <url>
     <loc>https://andreacasanya.com/aviso-legal-en.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
-    <lastmod>2026-11-25</lastmod>
-    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-du-luxembourg.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-du-luxembourg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-du-luxembourg-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-du-luxembourg-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-du-luxembourg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-du-luxembourg-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-monceau.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-monceau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-monceau-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-monceau-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-monceau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-monceau-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-du-luxembourg-fontaine-medicis-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/maison-du-14e.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/maison-du-14e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/maison-du-14e-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/maison-du-14e-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/maison-du-14e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/maison-du-14e-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/pont-neuf.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/pont-neuf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/pont-neuf-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/pont-neuf-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/pont-neuf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/pont-neuf-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/maison-a-montmartre.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/maison-a-montmartre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/maison-a-montmartre-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/maison-a-montmartre-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/maison-a-montmartre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/maison-a-montmartre-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale-champ-de-dahlias.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale-champ-de-dahlias.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-champ-de-dahlias-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale-champ-de-dahlias-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale-champ-de-dahlias.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-champ-de-dahlias-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-montsouris.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-montsouris.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-montsouris-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-montsouris-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-montsouris.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-montsouris-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-des-tuileries.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-des-tuileries.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-des-tuileries-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/jardin-des-tuileries-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-des-tuileries.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-des-tuileries-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/canal-saint-martin.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/canal-saint-martin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/canal-saint-martin-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/canal-saint-martin-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/canal-saint-martin.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/canal-saint-martin-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/avenue-des-champs-elysees.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/avenue-des-champs-elysees.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/avenue-des-champs-elysees-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/avenue-des-champs-elysees-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/avenue-des-champs-elysees.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/avenue-des-champs-elysees-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale-jardin-bonsais.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale-jardin-bonsais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-jardin-bonsais-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/parc-florale-jardin-bonsais-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/parc-florale-jardin-bonsais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/parc-florale-jardin-bonsais-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/pont-alexandre-iii.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/pont-alexandre-iii.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/pont-alexandre-iii-en.html"/>
+  </url>
+  <url>
+    <loc>https://andreacasanya.com/obras/pont-alexandre-iii-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/pont-alexandre-iii.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/pont-alexandre-iii-en.html"/>
   </url>
 </urlset>

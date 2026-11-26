@@ -399,7 +399,6 @@ button.btn-inquire {
     font-style: normal;
     font-weight: 400;
     color: #222222;
-    user-select: all;
 }
 
 .work-info .inquire-note.is-hiding {
@@ -644,6 +643,16 @@ button.btn-inquire {
     opacity: 0.6;
 }
 
+/* Los botones-cuadro de Contacto (correo, Instagram, TikTok, YouTube) van sin subrayado,
+   y al pasar el ratón se rellenan de negro como el resto de botones de la web */
+.contacto-value a.btn-inquire {
+    text-decoration: none;
+}
+
+.contacto-value a.btn-inquire:hover {
+    opacity: 1;
+}
+
 .contacto-divider {
     border: none;
     height: 1px;
@@ -730,217 +739,301 @@ ul.contacto-list {
 }
 
 /* ==========================================================
-   VISOR DE OBRAS (al pulsar una foto)
+   FOTO DE LA GALERÍA (enlace a la página de la obra)
    ========================================================== */
 
-.work-image {
-    cursor: zoom-in;
+/* foto de la galería: enlaza a la página de la obra */
+.work-image-link {
+    display: block;
 }
 
-.work-image:focus-visible {
+.work-image-link .work-image {
+    transition: opacity 0.3s ease;
+}
+
+.work-image-link:hover .work-image {
+    opacity: 0.88;
+}
+
+.work-image-link:focus-visible {
     outline: 1px solid #222222;
     outline-offset: 4px;
 }
 
-.lightbox-lock,
-.lightbox-lock body {
-    overflow: hidden;
+/* ==========================================================
+   PÁGINA PROPIA DE CADA OBRA (obras/*.html, generadas por build.py)
+   ========================================================== */
+
+.obra-page {
+    padding-top: 10px;
 }
 
-.lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 90px;
-    background-color: #faf9f7;          /* blanco roto sólido: la página de detrás no se transparenta */
-    animation: lightbox-in 0.3s ease;   /* la animación solo afecta a la entrada; al terminar, todo queda 100% visible */
-}
-
-.lightbox[hidden] {
-    display: none;
-}
-
-.lightbox.is-closing {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.lightbox-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    min-width: 0;          /* deja que la foto se encoja en pantallas estrechas */
-    margin: 0;
-    animation: lightbox-zoom 0.35s ease;
-    transition: opacity 0.2s ease;
-}
-
-.lightbox-figure.is-changing {
-    opacity: 0;
-}
-
-@keyframes lightbox-in {
-    from { opacity: 0; }
-}
-
-@keyframes lightbox-zoom {
-    from { opacity: 0; transform: scale(0.98); }
-}
-
-.lightbox-img {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    /* deja sitio arriba y abajo para el título y los márgenes */
-    max-height: calc(100vh - 200px);
-    max-height: calc(100dvh - 200px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
-    cursor: default;
-}
-
-.lightbox-caption {
-    flex: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    max-width: 100%;
-    padding-top: 22px;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
-
-/* mismo estilo que el título en la ficha de la obra (seminegrita, recta) */
-.lightbox-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #222222;
-    letter-spacing: 0.01em;
-}
-
-.lightbox-details {
-    font-size: 0.86rem;
+.obra-volver {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 0.78rem;
+    font-style: italic;
     color: #666666;
-    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.lightbox-counter {
-    margin-top: 6px;
-    font-size: 0.68rem;
+.obra-volver:hover {
+    color: #222222;
+}
+
+.obra-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 60px;
+    align-items: start;
+}
+
+.obra-imagen img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* la ficha acompaña a la foto al bajar, en pantallas grandes */
+.obra-ficha {
+    position: sticky;
+    top: 30px;
+    padding-top: 10px;
+}
+
+.work-info.obra-ficha p.obra-serie {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
     color: #666666;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
-/* flechas y cruz: trazo fino, sin fondo */
-.lightbox-btn {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    padding: 0;
+.obra-titulo {
+    margin: 0 0 26px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
     color: #222222;
-    background: none;
-    border: none;
-    cursor: pointer;
-    opacity: 0.55;
-    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-.lightbox-btn[hidden] {
-    display: none;
+.obra-datos {
+    margin: 0 0 26px;
+    padding: 0;
+    border-top: 1px solid #eaeaea;
 }
 
-.lightbox-btn:hover,
-.lightbox-btn:focus-visible {
-    opacity: 1;
+.obra-datos div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 0.9rem;
 }
 
-.lightbox-btn:focus-visible {
-    outline: 1px solid #222222;
-    outline-offset: 2px;
+.obra-datos dt {
+    color: #666666;
 }
 
-.lightbox-btn svg {
-    width: 26px;
-    height: 26px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.obra-datos dd {
+    margin: 0;
+    color: #222222;
+    font-weight: 600;
+    text-align: right;
 }
 
-.lightbox-close {
-    top: 18px;
-    right: 18px;
+.work-info.obra-ficha p.obra-texto {
+    margin: 0 0 16px;
+    font-size: var(--tamano-fuente-sobremi);
+    line-height: 1.7;
+    color: #222222;
 }
 
-.lightbox-close svg {
-    width: 22px;
-    height: 22px;
+.obra-ficha .work-actions {
+    margin-top: 26px;
 }
 
-.lightbox-prev {
-    left: 24px;
-    top: 50%;
-    margin-top: -24px;
+.obra-ficha .btn-inquire {
+    padding: 9px 18px;
+    font-size: 0.8rem;
 }
 
-.lightbox-next {
-    right: 24px;
-    top: 50%;
-    margin-top: -24px;
+.work-info.obra-ficha .link-envio {
+    font-size: 0.8rem;
 }
 
-.lightbox-prev:hover { transform: translateX(-3px); }
-.lightbox-next:hover { transform: translateX(3px); }
+.obra-ficha .status-sold {
+    margin-top: 26px;
+}
+
+/* anterior / siguiente */
+.obra-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 70px;
+    padding-top: 26px;
+    border-top: 1px solid #eaeaea;
+}
+
+.obra-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 45%;
+    color: #222222;
+    text-decoration: none;
+}
+
+.obra-nav-next {
+    margin-left: auto;
+    text-align: right;
+}
+
+.obra-nav-label {
+    font-size: 0.72rem;
+    color: #666666;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.obra-nav-titulo {
+    font-size: 1rem;
+    font-style: italic;
+    transition: opacity 0.2s ease;
+}
+
+.obra-nav a:hover .obra-nav-titulo {
+    opacity: 0.6;
+}
 
 @media (max-width: 768px) {
-    .lightbox {
-        padding: 64px 16px 24px;
+    .obra-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
     }
 
-    .lightbox-close {
-        top: 8px;
-        right: 8px;
+    .obra-ficha {
+        position: static;
+        padding-top: 0;
     }
 
-    /* en el móvil las flechas van abajo, a los lados del título */
-    .lightbox-prev,
-    .lightbox-next {
-        top: auto;
-        bottom: 22px;
-        margin-top: 0;
+    .obra-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
 
-    .lightbox-prev { left: 4px; }
-    .lightbox-next { right: 4px; }
-
-    .lightbox-caption {
-        padding: 18px 44px 0;
-    }
-
-    .lightbox-img {
-        max-height: calc(100vh - 220px);
-        max-height: calc(100dvh - 220px);
+    .obra-nav {
+        margin-top: 50px;
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .lightbox,
-    .lightbox-figure,
-    .lightbox-btn {
-        animation: none;
-        transition: none;
-    }
+/* ==========================================================
+   FORMULARIO DE CONTACTO (contacto.html / contact-en.html)
+   ========================================================== */
+
+.contact-form-wrap {
+    margin-top: 36px;
+    scroll-margin-top: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 520px;
+    margin-top: 18px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field span {
+    font-size: 0.72rem;
+    color: #666666;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 0;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: var(--tamano-fuente-contacto);
+    color: #222222;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+    border-radius: 0;
+    transition: border-color 0.2s ease;
+}
+
+.form-field textarea {
+    min-height: 140px;
+    padding: 10px 12px;
+    border: 1px solid #bbbbbb;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: #222222;
+}
+
+/* campo trampa contra el spam: invisible para las personas */
+.form-honey {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.form-privacy {
+    margin: -6px 0 0;
+    font-size: 0.74rem;
+    font-style: italic;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.form-privacy a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.contact-form .btn-inquire {
+    align-self: flex-start;
+    margin-top: 0;
+    font-size: var(--tamano-fuente-contacto);   /* igual que los demás botones de Contacto */
+    cursor: pointer;
+}
+
+.form-sent {
+    max-width: 520px;
+    margin-top: 18px;
+    padding: 16px 20px;
+    font-size: var(--tamano-fuente-contacto);
+    font-style: italic;
+    color: #222222;
+    border: 1px solid #222222;
+}
+
+/* enlace al formulario dentro del aviso de "Adquirir obra" */
+.work-info .inquire-note a {
+    color: #222222;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 /* ==========================================================

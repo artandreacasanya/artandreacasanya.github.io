@@ -11,14 +11,14 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 
 ## 2. Prioridad media-alta: experiencia de compra
 
-- [x] **Ampliar las obras.** Que al pulsar una obra se vea en grande (visor tipo lightbox).
-- [ ] **Página propia para cada obra**, con varias fotos (detalle de la pincelada, canto, obra colgada en una pared), ficha completa y botón de compra. Esas páginas se pueden compartir por enlace y las encuentra Google.
-- [ ] **Formulario de contacto** (por ejemplo Formspree, gratis y sin servidor) como alternativa al `mailto:`.
+- [x] **Ampliar las obras.** Al pulsar una obra se abre su página, con la foto grande y la ficha completa.
+- [x] **Página propia para cada obra**, con varias fotos (detalle de la pincelada, canto, obra colgada en una pared), ficha completa y botón de compra. Esas páginas se pueden compartir por enlace y las encuentra Google.
+- [x] **Formulario de contacto** (por ejemplo Formspree, gratis y sin servidor) como alternativa al `mailto:`.
 
 ## 3. Organización: ahorra tiempo al mantener la web
 
-- [ ] **Pasar a Jekyll** (viene incluido en GitHub Pages). Un único archivo `_data/obras.yml` con título, precio, medidas, año y estado de cada obra, del que se generen las tarjetas en español e inglés. Añadir una obra o marcarla como vendida se reduce a editar una línea.
-- [ ] **Una fecha por obra** (mes y año) en lugar de solo el año. Ahora el filtro por fecha usa el orden de la página como orden cronológico.
+- [x] **Una sola lista de obras** (en lugar de Jekyll): `data/obras.json` con título, precio, medidas, año y estado de cada obra; `python3 build.py` genera las tarjetas en español e inglés. Sin instalar nada.
+- [x] **Una fecha por obra** (mes y año) en lugar de solo el año. Ahora el filtro por fecha usa el orden de la página como orden cronológico.
 - [ ] **Correo con dominio propio** (`hola@andreacasanya.com` en lugar de Gmail).
 
 ## 4. Optimización
@@ -33,7 +33,7 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 - [x] **`hreflang`** en cada página, para enlazar entre sí las versiones en español e inglés.
 - [x] **`sitemap.xml` y `robots.txt`.**
 - [ ] **Página `404.html`** con el diseño de la web.
-- [ ] **Datos estructurados** (`VisualArtwork` de schema.org) para cada obra.
+- [x] **Datos estructurados** (`VisualArtwork` de schema.org) para cada obra.
 - [ ] **Año del copyright** del pie de página actualizado automáticamente.
 
 ## 6. Contenido y confianza
@@ -47,6 +47,6 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 ## 7. Pendientes de información
 
 - [ ] **Preguntas frecuentes comentadas** en `contacto.html` y `contact-en.html`: «¿Hacéis envíos internacionales? ¿Tendré seguimiento?» y «¿Puedo comprar prints o reproducciones?». Escribir la respuesta y borrar el comentario.
-- [ ] **Aviso legal**: sigue mencionando las «solicitudes de acceso anticipado», que ahora está oculto. Revisar el texto en `aviso-legal.html` y `aviso-legal-en.html`.
+- [x] **Aviso legal**: quitada la mención a las «solicitudes de acceso anticipado» y añadido el formulario (FormSubmit). Completada la versión inglesa, que estaba cortada.
 - [ ] **Datos personales en el aviso legal**: el NIF y el domicilio son públicos. Confirmar con la titular qué exige la LSSI y si está de acuerdo en publicarlos.
 - [ ] **Revisar las traducciones al inglés** de «Sistema de Pago» y de las preguntas frecuentes.

@@ -1,5 +1,6 @@
 // Filtros de la galería: disponibilidad (filtra) + precio o fecha (ordena).
-// Precio, año y estado se leen del propio texto de cada ficha, así no hay que duplicarlos.
+// Precio y estado se leen del propio texto de cada ficha; la fecha (año-mes), del atributo data-fecha
+// que escribe build.py en cada tarjeta.
 (function () {
     const grid = document.querySelector('.works-grid');
     const toggle = document.querySelector('.filter-toggle');
@@ -9,13 +10,12 @@
     const cards = [...grid.querySelectorAll('.work-card')].map((el, i) => {
         const texts = [...el.querySelectorAll('.work-info p')].map(p => p.textContent);
         const priceText = texts.find(t => t.includes('€')) || '';
-        const yearText = texts.find(t => /\b(19|20)\d{2}\b/.test(t)) || '';
         return {
             el,
-            // shortcut: con el mismo año, la posición en la página hace de fecha (la primera = la más antigua); añadir mes si hace falta más precisión
+            // con la misma fecha, se mantiene el orden de la página
             order: i,
             price: parseFloat(priceText.replace(/[^\d,.]/g, '').replace(',', '.')) || 0,
-            year: parseInt((yearText.match(/\b(19|20)\d{2}\b/) || [0])[0], 10),
+            date: el.dataset.fecha || '',
             sold: !!el.querySelector('.status-sold'),
         };
     });
@@ -33,8 +33,8 @@
     const sorters = {
         'price-desc': (a, b) => b.price - a.price || a.order - b.order,
         'price-asc': (a, b) => a.price - b.price || a.order - b.order,
-        'date-old': (a, b) => a.year - b.year || a.order - b.order,
-        'date-new': (a, b) => b.year - a.year || b.order - a.order,
+        'date-old': (a, b) => a.date.localeCompare(b.date) || a.order - b.order,
+        'date-new': (a, b) => b.date.localeCompare(a.date) || a.order - b.order,
     };
 
     function apply() {

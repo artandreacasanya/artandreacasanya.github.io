@@ -61,6 +61,33 @@
                     <h2 class="contacto-heading">Acquisitions and Commissions</h2>
                     <p class="contacto-text">To check the availability of original works or propose a commissioned piece, please contact us via email:</p>
                     <p class="contacto-value"><a href="mailto:art.andreacasanya@gmail.com?subject=Acquisition%20Inquiry&body=Hello%20Andrea,%0D%0A%0D%0AI%20would%20like%20to%20make%20an%20inquiry%20about%20the%20artworks.%0D%0A%0D%0ABest%20regards," class="btn-inquire">Send inquiry email</a></p>
+                    <div class="contact-form-wrap" id="formulario">
+                        <p class="contacto-text">Or write to me directly here:</p>
+                        <!-- Los mensajes llegan a art.andreacasanya@gmail.com a través de FormSubmit (formsubmit.co) -->
+                        <form class="contact-form" action="https://formsubmit.co/art.andreacasanya@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New message from andreacasanya.com">
+                            <input type="hidden" name="_next" value="https://andreacasanya.com/contact-en.html?enviado=1#formulario">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <!-- campo trampa contra el spam: las personas no lo ven -->
+                            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            <label class="form-field">
+                                <span>Name</span>
+                                <input type="text" name="nombre" required autocomplete="name">
+                            </label>
+                            <label class="form-field">
+                                <span>Email</span>
+                                <input type="email" name="email" required autocomplete="email">
+                            </label>
+                            <label class="form-field">
+                                <span>Message</span>
+                                <textarea name="mensaje" rows="6" required></textarea>
+                            </label>
+                            <p class="form-privacy">Your details are only used to reply to your message. More information in the <a href="aviso-legal-en.html">legal notice</a>.</p>
+                            <button type="submit" class="btn-inquire">Send message</button>
+                        </form>
+                        <p class="form-sent" role="status" hidden>Thank you, your message has been sent. I will reply as soon as possible.</p>
+                    </div>
                 </div>
 
                 <hr class="contacto-divider">
@@ -168,5 +195,6 @@
         </footer>
     </div>
 
+    <script src="js/contact-form.js"></script>
 </body>
 </html>
