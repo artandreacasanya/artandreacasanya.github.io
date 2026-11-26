@@ -42,16 +42,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/contact-en.html"/>
   </url>
   <url>
-    <loc>https://andreacasanya.com/aviso-legal.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
-  </url>
-  <url>
-    <loc>https://andreacasanya.com/aviso-legal-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/aviso-legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/aviso-legal-en.html"/>
-  </url>
-  <url>
     <loc>https://andreacasanya.com/obras/jardin-du-luxembourg.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://andreacasanya.com/obras/jardin-du-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://andreacasanya.com/obras/jardin-du-luxembourg-en.html"/>

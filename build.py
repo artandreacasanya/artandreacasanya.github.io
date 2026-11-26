@@ -54,7 +54,7 @@ PAGINAS = [
     ("sobre-mi.html", "about_me-en.html"),
     ("proceso.html", "process-en.html"),
     ("contacto.html", "contact-en.html"),
-    ("aviso-legal.html", "aviso-legal-en.html"),
+    # el aviso legal no va en el mapa: tiene noindex para que Google no muestre NIF y dirección
 ]
 
 IDIOMAS = {
