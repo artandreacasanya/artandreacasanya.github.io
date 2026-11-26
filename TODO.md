@@ -19,7 +19,7 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 
 - [x] **Una sola lista de obras** (en lugar de Jekyll): `data/obras.json` con título, precio, medidas, año y estado de cada obra; `python3 build.py` genera las tarjetas en español e inglés. Sin instalar nada.
 - [x] **Una fecha por obra** (mes y año) en lugar de solo el año. Ahora el filtro por fecha usa el orden de la página como orden cronológico.
-- [ ] **Correo con dominio propio** (`hola@andreacasanya.com` en lugar de Gmail).
+- [ ] **Correo con dominio propio** (`hola@andreacasanya.com` en lugar de Gmail). Aplazado: la opción recomendada es una redirección gratuita a Gmail.
 
 ## 4. Optimización
 
@@ -49,4 +49,4 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 - [ ] **Preguntas frecuentes comentadas** en `contacto.html` y `contact-en.html`: «¿Hacéis envíos internacionales? ¿Tendré seguimiento?» y «¿Puedo comprar prints o reproducciones?». Escribir la respuesta y borrar el comentario.
 - [x] **Aviso legal**: quitada la mención a las «solicitudes de acceso anticipado» y añadido el formulario (FormSubmit). Completada la versión inglesa, que estaba cortada.
 - [ ] **Datos personales en el aviso legal**: el NIF y el domicilio son públicos. Confirmar con la titular qué exige la LSSI y si está de acuerdo en publicarlos.
-- [ ] **Revisar las traducciones al inglés** de «Sistema de Pago» y de las preguntas frecuentes.
+- [x] **Revisar las traducciones al inglés**: correctas. Mejorados «Shipping inquiries», «Sold», «Acquire this work» y el texto de envíos; arreglado el enlace a la sección de envíos.

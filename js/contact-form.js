@@ -23,7 +23,7 @@
         mensaje.value = en
             ? `Hello Andrea,\n\nI would like to acquire the artwork "${obra}".\n\n`
             : `Hola Andrea,\n\nMe gustaría adquirir la obra "${obra}".\n\n`;
-        asunto.value = en ? `Inquire — ${obra}` : `Consulta de adquisición — ${obra}`;
+        asunto.value = en ? `Purchase inquiry — ${obra}` : `Consulta de adquisición — ${obra}`;
         // el cursor empieza en el nombre, que es lo primero que falta
         form.querySelector('[name="nombre"]').focus({ preventScroll: true });
     }

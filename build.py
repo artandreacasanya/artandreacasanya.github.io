@@ -99,22 +99,22 @@ IDIOMAS = {
         "fecha": "Date",
         "precio": "Price",
         "me_gusta": "Like",
-        "vendida": "Acquired",
-        "comprar": "Acquire artwork",
-        "envio": "Inquire shipping",
+        "vendida": "Sold",
+        "comprar": "Acquire this work",
+        "envio": "Shipping inquiries",
         "envio_enlace": "contact-en.html#shipping",
         "marco": "Handcrafted frame included",
         "serie": "Paris Series 2025",
         "volver": "Back to works",
         "anterior": "Previous work",
         "siguiente": "Next work",
-        "asunto": "Inquire — {titulo}",
+        "asunto": "Purchase inquiry — {titulo}",
         "mensaje": "Hello Andrea,\r\n\r\nI would like to acquire the artwork \"{titulo}\".\r\n\r\n"
                    "Looking forward to your reply.\r\n\r\nBest regards,",
         "descripcion": "{titulo}, {tecnica} by Andrea Casanya ({medidas}, {mes} {año}). "
                        "Paris Series 2025. {estado}",
         "disponible": "Original artwork, available.",
-        "adquirida": "Original artwork, acquired.",
+        "adquirida": "Original artwork, sold.",
     },
 }
 
