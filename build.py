@@ -32,8 +32,10 @@ Campos de cada obra:
 
 import hashlib
 import json
+import os
 import re
 import shutil
+import subprocess
 import struct
 import sys
 from html import escape
@@ -118,6 +120,41 @@ IDIOMAS = {
     },
 }
 
+# ---------------------------------------------------------------- imágenes WebP
+# Versiones más ligeras de cada foto, en dos anchos, para que el móvil descargue la pequeña.
+# Se crean con ffmpeg (el de RRSS/HERRAMIENTAS si no está instalado) solo cuando faltan o la foto cambia.
+FFMPEG = shutil.which("ffmpeg") or str(Path.home() / "Desktop" / "RRSS" / "HERRAMIENTAS" / "ffmpeg")
+ANCHOS_OBRA = (600, 910)
+# Fotos de las páginas fijas: (archivo en images/photos, anchos)
+FOTOS = [("foto_portada.jpg", (800, 1248)), ("imagen_sobre_mi.jpg", (700, 1100)),
+         ("proceso_exterior.jpg", (700, 1100)), ("proceso_interior.jpg", (600, 900))]
+
+
+def webp(ruta, anchos):
+    """Crea <carpeta>/webp/<nombre>-<ancho>.webp para cada ancho. Devuelve el texto para srcset."""
+    ruta = ROOT / ruta
+    destino = ruta.parent / "webp"
+    destino.mkdir(exist_ok=True)
+    partes = []
+    for ancho in anchos:
+        salida = destino / f"{ruta.stem}-{ancho}.webp"
+        if not salida.exists() or salida.stat().st_mtime < ruta.stat().st_mtime:
+            if not os.path.exists(FFMPEG):
+                sys.exit(f"Falta ffmpeg para crear {salida.name}")
+            subprocess.run([FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-i", str(ruta),
+                            "-vf", f"scale={ancho}:-2:flags=lanczos", "-quality", "80", str(salida)], check=True)
+        partes.append(f"{salida.relative_to(ROOT).as_posix()} {ancho}w")
+    return ", ".join(partes)
+
+
+def picture(src, alt, clase, tamanos, anchos, prefijo="", extra=""):
+    """<picture> con WebP y la foto original de reserva, con su ancho y alto (evita saltos al cargar)."""
+    ancho, alto = medidas_jpeg(ROOT / src)
+    srcset = ", ".join(prefijo + p for p in webp(src, anchos).split(", "))
+    return (f'<picture><source type="image/webp" srcset="{srcset}" sizes="{tamanos}">'
+            f'<img src="{prefijo}{src}" alt="{alt}" class="{clase}" width="{ancho}" height="{alto}"{extra}></picture>')
+
+
 CAMPOS = ["id", "titulo", "imagen", "tecnica", "tecnica_en", "medidas", "fecha", "precio", "vendida", "marco"]
 
 
@@ -196,13 +233,14 @@ def tarjeta(o, t, lang):
     lineas = [
         f'<article class="work-card" data-fecha="{o["fecha"]}">',
         f'{i}<a href="{pagina_obra(o, lang)}" class="work-image-link">',
-        f'{i*2}<img src="images/works/{escape(o["imagen"])}" alt="{titulo}" class="work-image" loading="lazy">',
+        f'{i*2}' + picture(f'images/works/{o["imagen"]}', titulo, "work-image", "(max-width: 768px) 100vw, 360px",
+                           ANCHOS_OBRA, extra=' loading="lazy"'),
         f'{i}</a>',
         f'{i}<div class="work-info">',
         f'{i*2}<div class="work-title-row">',
         f'{i*3}<p class="work-title">{t["titulo"]}: <strong>{titulo}</strong></p>',
         f'{i*3}<button class="btn-like" data-work-id="{titulo}" onclick="toggleLike(this)">',
-        f'{i*4}<img src="images/ui/corazon-vacio.png" alt="{t["me_gusta"]}" class="heart-img" '
+        f'{i*4}<img src="images/ui/corazon-vacio.png" alt="{t["me_gusta"]}" class="heart-img" width="128" height="128" '
         f'data-empty="images/ui/corazon-vacio.png" data-filled="images/ui/corazon-lleno.png">',
         f'{i*3}</button>',
         f'{i*2}</div>',
@@ -373,7 +411,8 @@ def generar_pagina_obra(obras, n, lang):
         '',
         '    <article class="obra-layout">',
         '        <div class="obra-imagen">',
-        f'            <img src="../images/works/{escape(o["imagen"])}" alt="{titulo}" width="{ancho}" height="{alto}">',
+        '            ' + picture(f'images/works/{o["imagen"]}', titulo, "", "(max-width: 768px) 100vw, 580px",
+                                 ANCHOS_OBRA, prefijo="../"),
         '        </div>',
         '        <div class="work-info obra-ficha">',
         sangrar(ficha, " " * 12),
@@ -441,6 +480,8 @@ def generar_pagina_obra(obras, n, lang):
     </div>
 
     <script src="../js/inquire.js?v={version("js/inquire.js")}"></script>
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
@@ -473,6 +514,8 @@ def generar_sitemap(obras):
 
 def main():
     obras = cargar_obras()
+    for foto, anchos in FOTOS:
+        webp(f"images/photos/{foto}", anchos)
 
     for lang in IDIOMAS:
         generar_galeria(obras, lang)

@@ -23,30 +23,30 @@ Mejoras pendientes, de mayor a menor prioridad. Marca cada una con `[x]` al term
 
 ## 4. Optimización
 
-- [ ] **Imágenes WebP con `srcset`**, para que el móvil descargue versiones más pequeñas.
-- [ ] **Añadir `width` y `height` a las `<img>`**, para que la página no «salte» mientras cargan las fotos.
-- [ ] **Menú y títulos en SVG** (o con una fuente manuscrita) en lugar de 20 imágenes PNG (876 KB). Pesan menos, se ven nítidos en cualquier pantalla y Google puede leerlos.
+- [x] **Imágenes WebP con `srcset`**, para que el móvil descargue versiones más pequeñas.
+- [x] **Añadir `width` y `height` a las `<img>`**, para que la página no «salte» mientras cargan las fotos.
+- [ ] **Menú y títulos con la fuente propia de Casanya** (pendiente de que rehaga la fuente; probado el 26/11 y funciona) en lugar de 20 imágenes PNG (876 KB). Pesan menos, se ven nítidos en cualquier pantalla y Google puede leerlos.
 - [x] **Favicon nuevo**: redondel de «Parc Florale - Champ de Dahlias» (3 KB en lugar de 138 KB).
 
 ## 5. SEO y aspectos técnicos
 
 - [x] **`hreflang`** en cada página, para enlazar entre sí las versiones en español e inglés.
 - [x] **`sitemap.xml` y `robots.txt`.**
-- [ ] **Página `404.html`** con el diseño de la web.
+- [x] **Página `404.html`** con el diseño de la web.
 - [x] **Datos estructurados** (`VisualArtwork` de schema.org) para cada obra.
-- [ ] **Año del copyright** del pie de página actualizado automáticamente.
+- [x] **Año del copyright** del pie de página actualizado automáticamente.
 
 ## 6. Contenido y confianza
 
 - [ ] **Ampliar «Sobre mí»**: trayectoria, formación, exposiciones, prensa.
-- [ ] **Unificar el trato** en los textos: ahora se mezcla «¿Hacéis…?» / «¿Tienen…?» con «¿Haces…?» / «trabajo sobre series…».
-- [ ] **Estadísticas de visitas** respetuosas con la privacidad (GoatCounter: gratis y sin cookies).
+- [x] **Unificar el trato** en los textos: ahora se mezcla «¿Hacéis…?» / «¿Tienen…?» con «¿Haces…?» / «trabajo sobre series…».
+- [x] **Estadísticas de visitas** respetuosas con la privacidad (GoatCounter: gratis y sin cookies).
 - [ ] **Decidir qué hacer con los «me gusta»**: el recuento no se muestra a nadie, y cualquiera podría enviar «me gustas» falsos a la hoja de Google. Mostrar el número o quitar la función.
 - [ ] **Acceso anticipado como suscripción real** (Buttondown, Mailchimp) si se recupera ese apartado.
 
 ## 7. Pendientes de información
 
-- [ ] **Preguntas frecuentes comentadas** en `contacto.html` y `contact-en.html`: «¿Hacéis envíos internacionales? ¿Tendré seguimiento?» y «¿Puedo comprar prints o reproducciones?». Escribir la respuesta y borrar el comentario.
+- [ ] **Preguntas frecuentes comentadas** en `contacto.html` y `contact-en.html`: «¿Haces envíos internacionales? ¿Tendré seguimiento?» y «¿Puedo comprar prints o reproducciones?». Escribir la respuesta y borrar el comentario.
 - [x] **Aviso legal**: quitada la mención a las «solicitudes de acceso anticipado» y añadido el formulario (FormSubmit). Completada la versión inglesa, que estaba cortada.
 - [x] **Datos personales en el aviso legal**: la LSSI obliga a publicar NIF y domicilio si se vende desde la web; se usa la dirección del estudio. El aviso legal ya no aparece en Google (noindex).
 - [x] **Revisar las traducciones al inglés**: correctas. Mejorados «Shipping inquiries», «Sold», «Acquire this work» y el texto de envíos; arreglado el enlace a la sección de envíos.

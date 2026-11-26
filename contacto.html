@@ -34,20 +34,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="index.html">
-                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras" width="360" height="166"></a>
+                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi" width="579" height="200"></a>
+                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto" width="682" height="200"></a>
                            
                 <div class="lang-selector">
-                    <a href="contacto.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="contact-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="contacto.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="contact-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>   
             </nav>
         </header>
@@ -55,7 +55,7 @@
         <main class="page-content">
             <div class="contacto-container">
                 <div class="section-title-container">
-                    <img src="images/ui/contacto.png" alt="Contacto" class="title-contacto-img">
+                    <img src="images/ui/contacto.png" alt="Contacto" class="title-contacto-img" width="682" height="200">
                 </div>
                 
                 <div class="contacto-block">
@@ -146,7 +146,7 @@
 
                     <!-- PENDIENTE: activar cuando se concrete la información de envíos internacionales y seguimiento
                     <details class="faq-item">
-                        <summary>¿Hacéis envíos internacionales? ¿Tendré seguimiento?</summary>
+                        <summary>¿Haces envíos internacionales? ¿Tendré seguimiento?</summary>
                         <p class="contacto-text">[Respuesta pendiente]</p>
                     </details>
                     -->
@@ -172,8 +172,8 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary>¿Cada cuánto tiempo se sube obra nueva a la web?</summary>
-                        <p class="contacto-text">No hay un calendario fijo exacto, ya que cada óleo requiere su tiempo de pintura, secado y preparación. A medida que las series y piezas están listas, se van incorporando a la galería.</p>
+                        <summary>¿Cada cuánto tiempo subes obra nueva a la web?</summary>
+                        <p class="contacto-text">No tengo un calendario fijo, ya que cada óleo requiere su tiempo de pintura, secado y preparación. A medida que termino las series y las piezas, las voy añadiendo a la galería.</p>
                     </details>
 
                     <!-- PENDIENTE: activar cuando se decida cómo gestionar prints y reproducciones
@@ -192,10 +192,13 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html">Aviso Legal</a></p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html">Aviso Legal</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
     <script src="js/contact-form.js"></script>
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

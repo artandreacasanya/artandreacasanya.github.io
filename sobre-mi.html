@@ -35,20 +35,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="index.html">
-                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras" width="360" height="166"></a>
+                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi" width="579" height="200"></a>
+                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto" width="682" height="200"></a>
                 
                 <div class="lang-selector">
-                    <a href="sobre-mi.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="about_me-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="sobre-mi.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="about_me-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>
             </nav>
         </header>
@@ -59,12 +59,12 @@
                 
                 <!-- Columna 1: Título (Izquierda) -->
                 <div class="about-title-col">
-                    <img src="images/ui/sobre_mi.png" alt="Sobre mi" class="title-sobremi-img">
+                    <img src="images/ui/sobre_mi.png" alt="Sobre mi" class="title-sobremi-img" width="579" height="200">
                 </div>
                 
                 <!-- Columna 2: Imagen (Centro) -->
                 <div class="about-image-col">
-                    <img src="images/photos/imagen_sobre_mi.jpg" alt="Andrea Casanya" class="about-image">
+                    <picture><source type="image/webp" srcset="images/photos/webp/imagen_sobre_mi-700.webp 700w, images/photos/webp/imagen_sobre_mi-1100.webp 1100w" sizes="(max-width: 768px) 100vw, 480px"><img src="images/photos/imagen_sobre_mi.jpg" alt="Andrea Casanya" class="about-image" width="1330" height="2000"></picture>
                 </div>
 
                 <!-- Columna 3: Texto (Derecha) -->
@@ -78,9 +78,12 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html">Aviso Legal</a></p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html">Aviso Legal</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

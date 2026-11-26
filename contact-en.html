@@ -34,20 +34,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="index-en.html">
-                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="index-en.html#obras"><img src="images/ui/works.png" alt="Works" class="nav-item-obras"></a>
-                <a href="process-en.html"><img src="images/ui/process.png" alt="Process" class="nav-item-proceso"></a>
-                <a href="about_me-en.html"><img src="images/ui/about_me.png" alt="About" class="nav-item-sobre-mi"></a>
-                <a href="contact-en.html" class="active"><img src="images/ui/contact.png" alt="Contact" class="nav-item-contacto"></a>
+                <a href="index-en.html#obras"><img src="images/ui/works.png" alt="Works" class="nav-item-obras" width="370" height="167"></a>
+                <a href="process-en.html"><img src="images/ui/process.png" alt="Process" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="about_me-en.html"><img src="images/ui/about_me.png" alt="About" class="nav-item-sobre-mi" width="532" height="200"></a>
+                <a href="contact-en.html" class="active"><img src="images/ui/contact.png" alt="Contact" class="nav-item-contacto" width="585" height="200"></a>
                 
                 <div class="lang-selector">
-                    <a href="contacto.html" class="lang-btn"><img src="images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="contact-en.html" class="lang-btn active"><img src="images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="contacto.html" class="lang-btn"><img src="images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="contact-en.html" class="lang-btn active"><img src="images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>
             </nav>
         </header>
@@ -55,7 +55,7 @@
         <main class="page-content">
             <div class="contacto-container">
                 <div class="section-title-container">
-                    <img src="images/ui/contact.png" alt="Contact" class="title-contacto-img">
+                    <img src="images/ui/contact.png" alt="Contact" class="title-contacto-img" width="585" height="200">
                 </div>
                 
                 <div class="contacto-block">
@@ -172,8 +172,8 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary>How often are new works added to the website?</summary>
-                        <p class="contacto-text">There is no fixed schedule, as each oil painting needs its own time for painting, drying and preparation. New series and pieces are added to the gallery as they are ready.</p>
+                        <summary>How often do you add new works to the website?</summary>
+                        <p class="contacto-text">I don't follow a fixed schedule, as each oil painting needs its own time for painting, drying and preparation. I add new series and pieces to the gallery as soon as they are ready.</p>
                     </details>
 
                     <!-- PENDING: enable once it is decided how prints and reproductions will be handled
@@ -192,10 +192,13 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="aviso-legal-en.html">Legal Notice</a></p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. All rights reserved. &mdash; <a href="aviso-legal-en.html">Legal Notice</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
     <script src="js/contact-form.js"></script>
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

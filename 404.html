@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Página que muestra GitHub Pages cuando una dirección no existe.
+     Las rutas empiezan por / porque esta página puede aparecer en cualquier dirección (p. ej. /obras/algo). -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada — Casanya</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon-32.png">
+    <link rel="apple-touch-icon" href="/images/ui/apple-touch-icon.png">
+</head>
+<body>
+
+    <div class="site-container">
+        <!-- CABECERA -->
+        <header class="navbar">
+            <div class="nav-left">
+                <a href="/">
+                    <img src="/images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
+                </a>
+            </div>
+
+            <nav class="nav-right">
+                <a href="/#obras"><img src="/images/ui/obras.png" alt="Obras" class="nav-item-obras" width="360" height="166"></a>
+                <a href="/proceso.html"><img src="/images/ui/proceso.png" alt="Proceso" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="/sobre-mi.html"><img src="/images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi" width="579" height="200"></a>
+                <a href="/contacto.html"><img src="/images/ui/contacto.png" alt="Contacto" class="nav-item-contacto" width="682" height="200"></a>
+
+                <div class="lang-selector">
+                    <a href="/" class="lang-btn active"><img src="/images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="/images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="/index-en.html" class="lang-btn"><img src="/images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-content error-page">
+            <img src="/images/works/pont_neuf.jpg" alt="Pont Neuf, óleo de Casanya" class="error-image" width="910" height="1200">
+            <div class="error-text">
+                <p class="error-code">404</p>
+                <h1 class="error-title">Esta página no existe</h1>
+                <p class="error-message">Puede que el enlace esté mal escrito o que la página ya no esté disponible.</p>
+                <a href="/#obras" class="btn-inquire">Ver las obras</a>
+                <p class="error-en">Page not found — <a href="/index-en.html#obras">see the works</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. Todos los derechos reservados. &mdash; <a href="/aviso-legal.html">Aviso Legal</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
+        </footer>
+    </div>
+
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -62,7 +62,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
-    <link rel="stylesheet" href="../css/styles.css?v=b77b3fd8">
+    <link rel="stylesheet" href="../css/styles.css?v=b5f3c482">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/ui/favicon-32.png">
     <link rel="apple-touch-icon" href="../images/ui/apple-touch-icon.png">
 </head>
@@ -73,20 +73,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="../index.html">
-                    <img src="../images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="../images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="../index.html#obras"><img src="../images/ui/obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="../proceso.html"><img src="../images/ui/proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="../sobre-mi.html"><img src="../images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="../contacto.html"><img src="../images/ui/contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                <a href="../index.html#obras"><img src="../images/ui/obras.png" alt="Obras" class="nav-item-obras" width="360" height="166"></a>
+                <a href="../proceso.html"><img src="../images/ui/proceso.png" alt="Proceso" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="../sobre-mi.html"><img src="../images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi" width="579" height="200"></a>
+                <a href="../contacto.html"><img src="../images/ui/contacto.png" alt="Contacto" class="nav-item-contacto" width="682" height="200"></a>
                 
                 <div class="lang-selector">
-                    <a href="maison-du-14e.html" class="lang-btn active"><img src="../images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="../images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="maison-du-14e-en.html" class="lang-btn"><img src="../images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="maison-du-14e.html" class="lang-btn active"><img src="../images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="../images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="maison-du-14e-en.html" class="lang-btn"><img src="../images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>
             </nav>
         </header>
@@ -96,7 +96,7 @@
 
             <article class="obra-layout">
                 <div class="obra-imagen">
-                    <img src="../images/works/maison_du_14e.jpg" alt="Maison du 14e" width="910" height="1200">
+                    <picture><source type="image/webp" srcset="../images/works/webp/maison_du_14e-600.webp 600w, ../images/works/webp/maison_du_14e-910.webp 910w" sizes="(max-width: 768px) 100vw, 580px"><img src="../images/works/maison_du_14e.jpg" alt="Maison du 14e" class="" width="910" height="1200"></picture>
                 </div>
                 <div class="work-info obra-ficha">
                     <p class="obra-serie">Serie París 2025</p>
@@ -128,10 +128,13 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Andrea Casanya. Todos los derechos reservados. &mdash; <a href="../aviso-legal.html">Aviso Legal</a></p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. Todos los derechos reservados. &mdash; <a href="../aviso-legal.html">Aviso Legal</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
     <script src="../js/inquire.js?v=653b3c94"></script>
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

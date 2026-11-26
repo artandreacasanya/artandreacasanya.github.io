@@ -36,20 +36,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="index.html">
-                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras"></a>
-                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso"></a>
-                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi"></a>
-                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto"></a>
+                <a href="index.html#obras"><img src="images/ui/obras.png" alt="Obras" class="nav-item-obras" width="360" height="166"></a>
+                <a href="proceso.html"><img src="images/ui/proceso.png" alt="Proceso" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="sobre-mi.html"><img src="images/ui/sobre_mi.png" alt="Sobre mi" class="nav-item-sobre-mi" width="579" height="200"></a>
+                <a href="contacto.html"><img src="images/ui/contacto.png" alt="Contacto" class="nav-item-contacto" width="682" height="200"></a>
                 
                 <div class="lang-selector">
-                    <a href="aviso-legal.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="aviso-legal-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="aviso-legal.html" class="lang-btn active"><img src="images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="aviso-legal-en.html" class="lang-btn"><img src="images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>
             </nav>
         </header>
@@ -109,15 +109,18 @@
 
                 <div class="contacto-block legal-block">
                     <h2 class="contacto-heading">9. Servicios de Terceros</h2>
-                    <p class="contacto-text">Este sitio web utiliza Google Fonts para la visualización de determinadas tipografías, lo cual implica una conexión técnica con los servidores de Google. Asimismo, la función de "me gusta" de las obras emplea Google Sheets y Google Apps Script como herramienta de almacenamiento del recuento anónimo. El uso de estos servicios está sujeto a las políticas de privacidad de Google. El formulario de contacto utiliza el servicio FormSubmit (formsubmit.co), que reenvía los mensajes al correo electrónico de la titular; los datos enviados pasan por sus servidores únicamente con esta finalidad.</p>
+                    <p class="contacto-text">Este sitio web utiliza Google Fonts para la visualización de determinadas tipografías, lo cual implica una conexión técnica con los servidores de Google. Asimismo, la función de "me gusta" de las obras emplea Google Sheets y Google Apps Script como herramienta de almacenamiento del recuento anónimo. El uso de estos servicios está sujeto a las políticas de privacidad de Google. Para conocer el número de visitas se utiliza GoatCounter (goatcounter.com), un servicio de estadísticas que no usa cookies ni recoge datos personales: solo registra de forma agregada las páginas visitadas, el país aproximado, el tipo de dispositivo y la web de procedencia. El formulario de contacto utiliza el servicio FormSubmit (formsubmit.co), que reenvía los mensajes al correo electrónico de la titular; los datos enviados pasan por sus servidores únicamente con esta finalidad.</p>
                 </div>
             </div>
         </main>
 
         <footer>
-            <p>&copy; 2026 Casanya. Todos los derechos reservados.</p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. Todos los derechos reservados. &mdash; <a href="aviso-legal.html">Aviso Legal</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

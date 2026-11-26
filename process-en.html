@@ -35,20 +35,20 @@
         <header class="navbar">
             <div class="nav-left">
                 <a href="index-en.html">
-                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo">
+                    <img src="images/ui/casanya.png" alt="Casanya" class="nav-logo" width="1306" height="315">
                 </a>
             </div>
             
             <nav class="nav-right">
-                <a href="index-en.html#obras"><img src="images/ui/works.png" alt="Works" class="nav-item-obras"></a>
-                <a href="process-en.html"><img src="images/ui/process.png" alt="Process" class="nav-item-proceso"></a>
-                <a href="about_me-en.html"><img src="images/ui/about_me.png" alt="About me" class="nav-item-sobre-mi"></a>
-                <a href="contact-en.html"><img src="images/ui/contact.png" alt="Contact" class="nav-item-contacto"></a>
+                <a href="index-en.html#obras"><img src="images/ui/works.png" alt="Works" class="nav-item-obras" width="370" height="167"></a>
+                <a href="process-en.html"><img src="images/ui/process.png" alt="Process" class="nav-item-proceso" width="267" height="105"></a>
+                <a href="about_me-en.html"><img src="images/ui/about_me.png" alt="About me" class="nav-item-sobre-mi" width="532" height="200"></a>
+                <a href="contact-en.html"><img src="images/ui/contact.png" alt="Contact" class="nav-item-contacto" width="585" height="200"></a>
                 
                 <div class="lang-selector">
-                    <a href="proceso.html" class="lang-btn"><img src="images/ui/es.png" alt="ES" class="lang-img"></a>
-                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider"></span>
-                    <a href="process-en.html" class="lang-btn active"><img src="images/ui/en.png" alt="EN" class="lang-img"></a>
+                    <a href="proceso.html" class="lang-btn"><img src="images/ui/es.png" alt="ES" class="lang-img" width="52" height="60"></a>
+                    <span class="lang-divider"><img src="images/ui/barra.png" alt="/" class="lang-img-divider" width="23" height="36"></span>
+                    <a href="process-en.html" class="lang-btn active"><img src="images/ui/en.png" alt="EN" class="lang-img" width="55" height="60"></a>
                 </div>
             </nav>
         </header>
@@ -57,7 +57,7 @@
         <main class="page-content">
             <div class="proceso-container">
                 <div class="section-title-container">
-                    <img src="images/ui/creative_process.png" alt="Creative Process" class="title-proceso-img">
+                    <img src="images/ui/creative_process.png" alt="Creative Process" class="title-proceso-img" width="1108" height="200">
                 </div>
 
                 <!-- CONTENEDOR DE DOS COLUMNAS DE FOTOS Y TEXTOS -->
@@ -66,7 +66,7 @@
                     <!-- COLUMNA 1: EXTERIOR -->
                     <article class="proceso-card">
                         <div class="proceso-image-container">
-                            <img src="images/photos/proceso_exterior.jpg" alt="Painting outdoors" class="proceso-image">
+                            <picture><source type="image/webp" srcset="images/photos/webp/proceso_exterior-700.webp 700w, images/photos/webp/proceso_exterior-1100.webp 1100w" sizes="(max-width: 768px) 100vw, 540px"><img src="images/photos/proceso_exterior.jpg" alt="Painting outdoors" class="proceso-image" width="1330" height="2000"></picture>
                         </div>
                         <h2 class="proceso-heading">Plein Air</h2>
                         <p class="proceso-text">My process begins outside the studio. Working <em>plein air</em> allows me to capture real light, the atmosphere of the place, and the immediate energy of the surroundings. In front of the easel, I record the initial brushstrokes, live color, and the essential structure of the scene.</p>
@@ -75,7 +75,7 @@
                     <!-- COLUMNA 2: INTERIOR -->
                     <article class="proceso-card">
                         <div class="proceso-image-container">
-                            <img src="images/photos/proceso_interior.jpg" alt="Working in the studio" class="proceso-image">
+                            <picture><source type="image/webp" srcset="images/photos/webp/proceso_interior-600.webp 600w, images/photos/webp/proceso_interior-900.webp 900w" sizes="(max-width: 768px) 100vw, 540px"><img src="images/photos/proceso_interior.jpg" alt="Working in the studio" class="proceso-image" width="900" height="1600"></picture>
                         </div>
                         <h2 class="proceso-heading">The Studio</h2>
                         <p class="proceso-text">Back in the studio, the pace shifts. It is a space for pause, reflection, and technical development. In the studio, I pick up the work started outdoors to refine the composition, work the matter and layers with more calm, until reaching the definitive balance of the piece.</p>
@@ -86,9 +86,12 @@
         </main>
         
         <footer>
-            <p>&copy; 2026 Andrea Casanya. All rights reserved. &mdash; <a href="aviso-legal-en.html">Legal Notice</a></p>
+            <p>&copy; <span class="year">2026</span> Andrea Casanya. All rights reserved. &mdash; <a href="aviso-legal-en.html">Legal Notice</a></p>
+            <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
         </footer>
     </div>
 
+    <!-- Estadísticas de visitas (GoatCounter: sin cookies ni datos personales) -->
+    <script data-goatcounter="https://andreacasanya.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
